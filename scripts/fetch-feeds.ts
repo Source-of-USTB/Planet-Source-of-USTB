@@ -1,7 +1,7 @@
 import Parser from "rss-parser";
 import { mkdir, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
-import { members } from "../src/data/member";
+import { members } from "../src/data/members";
 
 
 type FeedPost = {
