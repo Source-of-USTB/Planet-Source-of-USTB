@@ -1,4 +1,4 @@
-# Planet Source of USTB
+# Planet Source-of-USTB
 
 RSS-based blog aggregation site for Source of USTB members.
 
