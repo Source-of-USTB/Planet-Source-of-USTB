@@ -1,8 +1,67 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+import "../styles/page.css";
 ---
 
 <BaseLayout>
-    <h1>this is Title</h1>
-    <p>this is about page</p>
+    <section class="page">
+        <h1 class="page-title">About</h1>
+        <p class="page-description">
+            Planet Source-of-USTB is an RSS-based blog aggregation site for
+            Source-of-USTB members.
+        </p>
+
+        <section class="about-section">
+            <h2>What it does</h2>
+            <p>
+                This site reads member RSS feeds and displays basic post
+                metadata: title, link, description, publish date, and author.
+            </p>
+            <p>
+                It does not crawl full article content. Each post card links
+                back to the original blog.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>How to join</h2>
+            <p>
+                Add your blog information to <code>src/data/members.ts</code>,
+                then put your avatar file under <code>public/avatars/</code>.
+            </p>
+            <p>
+                Member <code>id</code> is used as a stable identifier. Display names
+                can be changed, but ids should not be changed casually.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Update schedule</h2>
+            <p>
+                The site is deployed by GitHub Actions. It can be updated
+                manually, and it also runs on a weekly schedule.
+            </p>
+        </section>
+    </section>
 </BaseLayout>
+
+<style>
+    .about-section {
+        margin-top: 2rem;
+    }
+
+    .about-section h2 {
+        margin: 0 0 0.75rem;
+    }
+
+    .about-section p {
+        margin: 0.5rem 0;
+        line-height: 1.6;
+    }
+
+    code {
+        font-family:
+            ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+</style>
