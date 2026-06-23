@@ -14,6 +14,8 @@ export const members: Member[] = [
 		name: "wdlin",
 		site: "https://wdlin233.github.io",
 		feed: "https://wdlin233.github.io/rss.xml",
+		avatar: "wdlin.jpg",
+		description: "nihao",
 	},
 	{
 		id: "revlogi",
