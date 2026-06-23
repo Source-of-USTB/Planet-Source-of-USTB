@@ -10,18 +10,6 @@ The site does not crawl article content. It only reads member RSS feeds and show
 - publish date
 - author
 
-## Structure
-
-```txt
-src/data/members.ts          # member source config
-src/data/generated/          # generated data
-scripts/build-member-map.ts  # build member map
-scripts/fetch-feeds.ts       # fetch RSS feeds
-src/pages/index.astro        # blog timeline
-src/pages/members.astro      # member list
-src/pages/about.astro        # about page
-```
-
 ## Add a member
 
 Edit `src/data/members.ts`:
@@ -41,6 +29,18 @@ Put avatar files in:
 
 ```txt
 public/avatars/
+```
+
+## Structure
+
+```txt
+src/data/members.ts          # member source config
+src/data/generated/          # generated data
+scripts/build-member-map.ts  # build member map
+scripts/fetch-feeds.ts       # fetch RSS feeds
+src/pages/index.astro        # blog timeline
+src/pages/members.astro      # member list
+src/pages/about.astro        # about page
 ```
 
 ## Development
