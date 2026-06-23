@@ -7,11 +7,12 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "npm run build:data && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "fetch:feeds": "tsx scripts/fetch-feeds.ts",
-    "build:member-map": "tsx scripts/build-member-map.ts"
+    "build:member-map": "tsx scripts/build-member-map.ts",
+    "build:data": "tsx scripts/build-member-map.ts && tsx scripts/fetch-feeds.ts"
   },
   "dependencies": {
     "astro": "^7.0.0",
