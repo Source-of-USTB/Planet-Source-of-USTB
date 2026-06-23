@@ -2,6 +2,8 @@
 
 RSS-based blog aggregation site for Source of USTB members.
 
+Site: https://source-of-ustb.github.io/Planet-Source-of-USTB/
+
 The site does not crawl article content. It only reads member RSS feeds and shows basic post metadata:
 
 - title
