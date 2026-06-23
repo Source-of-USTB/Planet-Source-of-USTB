@@ -1,5 +1,7 @@
 # Planet Source-of-USTB
 
+[Chinese](./README.zh-CN.md)
+
 RSS-based blog aggregation site for Source of USTB members.
 
 Site: https://source-of-ustb.github.io/Planet-Source-of-USTB/
@@ -32,6 +34,12 @@ Put avatar files in:
 ```txt
 public/avatars/
 ```
+
+Notes: 
+
+- `id` is a stable identifier used by generated data and post ownership. Do not change it casually.
+- `name` is only for display and can be changed.
+- The RSS feed should provide `title`, `link`, `description`, and `pubDate` for each post.
 
 ## Structure
 
