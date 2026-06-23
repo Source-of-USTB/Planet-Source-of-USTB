@@ -4,15 +4,15 @@
 
 Source-of-USTB 成员博客聚合站。
 
-站点地址：https://source-of-ustb.github.io/Planet-Source-of-USTB/
+[点此访问](https://source-of-ustb.github.io/Planet-Source-of-USTB/)。
 
 本项目不爬取文章正文，只读取成员 RSS，并展示基础文章元信息：
 
-* 标题
-* 链接
-* 描述
-* 发布时间
-* 作者
+- 标题
+- 链接
+- 描述
+- 发布时间
+- 作者
 
 ## 添加成员
 
