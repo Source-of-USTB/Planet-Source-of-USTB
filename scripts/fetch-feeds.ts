@@ -2,29 +2,9 @@ import Parser from "rss-parser";
 import { mkdir, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { members } from "../src/data/members";
+import type { FeedStatus, Post } from "../src/type/feed";
 
 
-type FeedPost = {
-    id: string;
-    title: string;
-    link: string;
-    description: string;
-    publishedAt: string | null;
-    dateKey: string | null;
-    monthKey: string | null;
-    yearKey: string | null;
-    authorId: string;
-    authorName: string;
-    sourceFeed: string;
-};
-
-type FeedStatus = {
-    memberId: string;
-    ok: boolean;
-    count: number;
-    error?: string;
-    fetchedAt: string;
-};
 
 const parser = new Parser({
     timeout: 10000,
@@ -49,7 +29,7 @@ function extractDate(item: Parser.Item) {
     return null;
 }
 
-const posts: FeedPost[] = [];
+const posts: Post[] = [];
 const status: FeedStatus[] = [];
 const fetchedAt = new Date().toISOString();
 
