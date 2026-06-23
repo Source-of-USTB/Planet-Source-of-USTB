@@ -7,7 +7,7 @@ export const members: Member[] = [
         name: "Siriuns",
         site: "https://siriuns.netlify.app",
         feed: "https://siriuns.netlify.app/rss.xml",
-        avatar: "avatars/siriuns.jpg",
+        avatar: "siriuns.jpg",
         description: "this is a description",
     },
     {

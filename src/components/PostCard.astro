@@ -10,7 +10,7 @@ const { post } = Astro.props as Props;
 
 const author = members.find((member) => member.id === post.authorId);
 const avatarSrc = author?.avatar
-    ? `${import.meta.env.BASE_URL}${author.avatar}`
+    ? `${import.meta.env.BASE_URL}avatars/${author.avatar}`
     : `${import.meta.env.BASE_URL}avatars/default.png`;
 
 const displayDate = post.dateKey ?? "unknown date";

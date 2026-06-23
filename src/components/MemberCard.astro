@@ -8,7 +8,7 @@ type Props = {
 const { member } = Astro.props as Props;
 
 const avatarSrc = member.avatar
-    ? `${import.meta.env.BASE_URL}${member.avatar}`
+    ? `${import.meta.env.BASE_URL}avatars/${member.avatar}`
     : `${import.meta.env.BASE_URL}avatars/default.png`;
 ---
 
