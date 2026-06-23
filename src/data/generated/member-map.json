@@ -1,0 +1,16 @@
+{
+  "Siriuns": {
+    "name": "Siriuns",
+    "site": "https://siriuns.netlify.app",
+    "feed": "https://siriuns.netlify.app/rss.xml",
+    "avatar": "siriuns.jpg",
+    "description": "this is a description"
+  },
+  "wdlin": {
+    "name": "wdlin",
+    "site": "https://wdlin233.github.io",
+    "feed": "https://wdlin233.github.io/rss.xml",
+    "avatar": "default.png",
+    "description": "No description"
+  }
+}

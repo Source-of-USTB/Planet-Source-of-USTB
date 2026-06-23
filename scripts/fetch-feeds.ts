@@ -35,7 +35,7 @@ const fetchedAt = new Date().toISOString();
 
 for (const member of members) {
     try {
-        const feed = await parser.parseURL(member.feed); // 解析出xml
+        const feed = await parser.parseURL(member.feed);
 
         for (const item of feed.items) {
 
@@ -101,15 +101,15 @@ deduped.sort((a, b) => {
     return tb - ta;
 });
 
-await mkdir("src/data/planet", { recursive: true });
+await mkdir("src/data/generated", { recursive: true });
 
 await writeFile(
-    "src/data/planet/posts.generated.json",
+    "src/data/generated/posts.json",
     JSON.stringify(deduped, null, 2),
 );
 
 await writeFile(
-    "src/data/planet/feed-status.generated.json",
+    "src/data/generated/feed-status.json",
     JSON.stringify(status, null, 2),
 );
 

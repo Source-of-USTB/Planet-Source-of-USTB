@@ -1,8 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import MemberCard from "../components/MemberCard.astro";
-import { members } from "../data/members";
+import type { MemberMap } from "../type/member";
+import rawMemberMap from "../data/generated/member-map.json";
+
 import "../styles/page.css";
+
+const memberMap = rawMemberMap as MemberMap;
+const members = Object.entries(memberMap);
 ---
 
 <BaseLayout title="Members">
@@ -13,7 +18,7 @@ import "../styles/page.css";
         </p>
 
         <section class="member-page__list">
-            {members.map((member) => <MemberCard member={member} />)}
+            {members.map(([id, member]) => <MemberCard member={member} />)}
         </section>
     </section>
 </BaseLayout>

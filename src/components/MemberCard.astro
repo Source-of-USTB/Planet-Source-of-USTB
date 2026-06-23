@@ -1,15 +1,13 @@
 ---
-import type { Member } from "../type/feed";
+import type { MemberMapItem } from "../type/member";
 
 type Props = {
-    member: Member;
+    member: MemberMapItem;
 };
 
 const { member } = Astro.props as Props;
 
-const avatarSrc = member.avatar
-    ? `${import.meta.env.BASE_URL}avatars/${member.avatar}`
-    : `${import.meta.env.BASE_URL}avatars/default.png`;
+const avatarSrc = `${import.meta.env.BASE_URL}avatars/${member.avatar}`;
 ---
 
 <article class="member-card">
@@ -23,9 +21,7 @@ const avatarSrc = member.avatar
 
         <p>
             <span class="member-card__label">Description: </span>
-            <span class="member-card__description"
-                >{member.description?.trim() || "null"}</span
-            >
+            <span class="member-card__description">{member.description}</span>
         </p>
 
         <div class="member-card__links">

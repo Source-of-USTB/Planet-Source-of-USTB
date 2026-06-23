@@ -1,6 +1,9 @@
 ---
 import type { Post } from "../type/feed";
-import { members } from "../data/members";
+import type { MemberMap } from "../type/member";
+import rawMemberMap from "../data/generated/member-map.json";
+
+const memberMap = rawMemberMap as MemberMap;
 
 type Props = {
     post: Post;
@@ -8,10 +11,8 @@ type Props = {
 
 const { post } = Astro.props as Props;
 
-const author = members.find((member) => member.id === post.authorId);
-const avatarSrc = author?.avatar
-    ? `${import.meta.env.BASE_URL}avatars/${author.avatar}`
-    : `${import.meta.env.BASE_URL}avatars/default.png`;
+const author = memberMap[post.authorId];
+const avatarSrc = `${import.meta.env.BASE_URL}avatars/${author.avatar}`;
 
 const displayDate = post.dateKey ?? "unknown date";
 const description = post.description?.trim() || "No description";
