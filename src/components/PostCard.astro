@@ -1,0 +1,94 @@
+---
+import type { Post } from "../type/feed";
+import { members } from "../data/members";
+
+type Props = {
+    post: Post;
+};
+
+const { post } = Astro.props as Props;
+
+const author = members.find((member) => member.id === post.authorId);
+const avatarSrc = author?.avatar
+    ? `${import.meta.env.BASE_URL}${author.avatar}`
+    : `${import.meta.env.BASE_URL}avatars/default.png`;
+
+const displayDate = post.dateKey ?? "unknown date";
+const description = post.description?.trim() || "No description";
+---
+
+<article class="post-card">
+    <img
+        class="post-card__avatar"
+        src={avatarSrc}
+        alt={`${post.authorName}'s avatar`}
+    />
+    <div class="post-card__body">
+        <h2 class="post-card__title">
+            <a
+                class="post-card__title-link"
+                href={post.link}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                {post.title}
+            </a>
+        </h2>
+
+        <div class="post-card__meta">
+            <time class="post-card__date" datetime={post.publishedAt ?? ""}>
+                {displayDate}
+            </time>
+            <span class="post-card__author">{post.authorName}</span>
+        </div>
+
+        <p class="post-card__description">{description}</p>
+    </div>
+</article>
+
+<style>
+    .post-card {
+        display: flex;
+        align-items: flex-start;
+        height: fit-content;
+        gap: 1rem;
+        padding: 1.5rem;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        min-width: 0;
+    }
+
+    .post-card__avatar {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .post-card__body {
+        margin: 0;
+        padding: 0;
+        min-width: 0;
+    }
+
+    .post-card__meta {
+        display: flex;
+        gap: 0.75rem;
+        font-size: 0.9rem;
+        color: #888;
+    }
+
+    .post-card__title {
+        margin: 0;
+    }
+
+    .post-card__title-link {
+        text-decoration: none;
+    }
+
+    .post-card__description {
+        margin: 0;
+        line-height: 1.5;
+        overflow-wrap: break-word;
+    }
+</style>

@@ -1,5 +1,24 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PostCard from "../components/PostCard.astro";
+import posts from "../data/planet/posts.generated.json";
+import "../styles/page.css";
 ---
 
-<BaseLayout />
+<BaseLayout title="Blogs">
+    <section class="page">
+        <h1 class="page-title">Blogs</h1>
+        <p class="page-description">Latest posts from joined members.</p>
+
+        <section class="blogs-page__list">
+            {posts.map((post) => <PostCard post={post} />)}
+        </section>
+    </section>
+</BaseLayout>
+
+<style>
+    .blogs-page__list {
+        display: grid;
+        gap: 1rem;
+    }
+</style>
