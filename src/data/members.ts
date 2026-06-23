@@ -1,4 +1,4 @@
-import type { Member } from "../type/feed";
+import type { Member } from "../type/member";
 
 export const members: Member[] = [
 	{
@@ -7,7 +7,7 @@ export const members: Member[] = [
 		site: "https://siriuns.netlify.app",
 		feed: "https://siriuns.netlify.app/rss.xml",
 		avatar: "siriuns.jpg",
-		description: "this is a description",
+		description: "hyw",
 	},
 	{
 		id: "wdlin",
@@ -20,7 +20,7 @@ export const members: Member[] = [
 		name: "RevLogi",
 		site: "https://revlogi.github.io",
 		feed: "https://revlogi.github.io/rss.xml",
-		avatar: "avatar.jpg",
+		avatar: "revlogi.jpg",
 		description: "an ignorant learner",
 	},
 ];
