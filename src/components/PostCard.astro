@@ -67,29 +67,45 @@ const description = post.description?.trim() || "No description";
     }
 
     .post-card__body {
-        margin: 0;
-        padding: 0;
         min-width: 0;
-    }
-
-    .post-card__meta {
         display: flex;
-        gap: 0.75rem;
-        font-size: 0.9rem;
-        color: #888;
+        flex-direction: column;
+        gap: 0.5rem;
     }
 
     .post-card__title {
         margin: 0;
+        padding: 0;
     }
 
     .post-card__title-link {
         text-decoration: none;
     }
 
+    .post-card__meta {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 0.75rem;
+        font-size: 0.9rem;
+        color: #888;
+    }
+
+    .post-card__date {
+        margin: 0;
+        padding: 0;
+    }
+
+    .post-card__author {
+        margin: 0;
+        padding: 0;
+    }
+
     .post-card__description {
         margin: 0;
+        padding: 0;
         line-height: 1.5;
         overflow-wrap: break-word;
+        min-width: 0;
     }
 </style>
