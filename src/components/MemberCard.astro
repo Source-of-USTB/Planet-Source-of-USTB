@@ -1,0 +1,90 @@
+---
+import type { Member } from "../data/members";
+
+type Props = {
+    member: Member;
+};
+
+const { member } = Astro.props as Props;
+
+const avatarSrc = member.avatar
+    ? `${import.meta.env.BASE_URL}${member.avatar}`
+    : `${import.meta.env.BASE_URL}avatars/default.png`;
+---
+
+<article class="member-card">
+    <img
+        class="member-card__avatar"
+        src={avatarSrc}
+        alt={`${member.name}'s avatar`}
+    />
+    <div class="member-card__body">
+        <h2 class="member-card__name">{member.name}</h2>
+
+        <p>
+            <span class="member-card__label">Description: </span>
+            <span class="member-card__description"
+                >{member.description?.trim() || "null"}</span
+            >
+        </p>
+
+        <div class="member-card__links">
+            <a
+                class="member-card__link"
+                href={member.site}
+                target="_blank"
+                rel="noopener noreferrer">Blog</a
+            >
+            <a
+                class="member-card__link"
+                href={member.feed}
+                target="_blank"
+                rel="noopener noreferrer">RSS</a
+            >
+        </div>
+    </div>
+</article>
+
+<style>
+    .member-card {
+        display: flex;
+        gap: 1rem;
+        padding: 1.5rem;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        min-width: 0;
+    }
+
+    .member-card__avatar {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .member-card__body {
+        min-width: 0;
+    }
+
+    .member-card__name {
+        margin: 0;
+    }
+
+    .member-card__label {
+        /* color: steelblue; */
+    }
+
+    .member-card__description {
+        overflow-wrap: break-word;
+        /* color: slateblue; */
+    }
+
+    .member-card__links {
+        display: flex;
+        gap: 0.75rem;
+    }
+
+    .member-card__link {
+        text-decoration: none;
+    }
+</style>

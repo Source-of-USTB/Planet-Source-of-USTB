@@ -1,0 +1,21 @@
+---
+import { members } from "../data/members";
+import MemberCard from "../components/MemberCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Members">
+    <h1>Members</h1>
+    <p>Joined members and their Blog site & RSS feeds.</p>
+    <section class="member-list">
+        {members.map((member) => <MemberCard member={member} />)}
+    </section>
+</BaseLayout>
+
+<style>
+    .member-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+        gap: 1rem;
+    }
+</style>

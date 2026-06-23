@@ -1,0 +1,49 @@
+<header class="site-header">
+    <a class="site-header__brand-text" href={import.meta.env.BASE_URL}
+        >Planet Source-of-USTB</a
+    >
+
+    <nav class="site-header__nav">
+        <a href={`${import.meta.env.BASE_URL}`} class="site-header__nav-link"
+            >Blogs</a
+        >
+        <a
+            href={`${import.meta.env.BASE_URL}members/`}
+            class="site-header__nav-link">Members</a
+        >
+        <a
+            href={`${import.meta.env.BASE_URL}about/`}
+            class="site-header__nav-link">About</a
+        >
+    </nav>
+</header>
+
+<style>
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem 2rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .site-header__brand {
+    }
+
+    .site-header__brand-text {
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .site-header__brand-mark {
+    }
+
+    .site-header__nav {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .site-header__nav-link {
+        text-decoration: none;
+    }
+</style>

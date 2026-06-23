@@ -13,8 +13,8 @@ export const members: Member[] = [
         name: "Siriuns",
         site: "https://siriuns.netlify.app",
         feed: "https://siriuns.netlify.app/rss.xml",
-        // avatar: "/avatars/test.webp",
-        description: "Siriuns",
+        avatar: "avatars/siriuns.jpg",
+        description: "this is a description",
     },
     {
         id: "wdlin",
