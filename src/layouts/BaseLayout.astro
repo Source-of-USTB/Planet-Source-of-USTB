@@ -1,4 +1,6 @@
 ---
+import { ClientRouter } from "astro:transitions";
+
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
@@ -20,6 +22,7 @@ const {
         <meta name="viewport" content="width=device-width" />
         <meta name="description" content={description} />
         <title>{title}</title>
+        <ClientRouter />
     </head>
 
     <body>
@@ -39,6 +42,10 @@ const {
     :global(body) {
         margin: 0;
         font-family: system-ui, sans-serif;
+    }
+
+    html {
+        scrollbar-gutter: stable;
     }
 
     .site-shell {
