@@ -4,6 +4,8 @@ import { ClientRouter } from "astro:transitions";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
+import "../styles/global.css";
+
 type Props = {
     title?: string;
     description?: string;
@@ -39,11 +41,6 @@ const {
 </html>
 
 <style>
-    :global(body) {
-        margin: 0;
-        font-family: system-ui, sans-serif;
-    }
-
     html {
         scrollbar-gutter: stable;
     }
