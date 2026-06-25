@@ -1,6 +1,32 @@
 [
   {
-    "id": "a20a9be39eaa4323",
+    "id": "68e0466c096dfece",
+    "title": "Self-reproducing Program",
+    "link": "https://revlogi.github.io/posts/self-reproducing/",
+    "description": "quine",
+    "publishedAt": "2026-06-23T00:00:00.000Z",
+    "dateKey": "2026-06-23",
+    "monthKey": "2026-06",
+    "yearKey": "2026",
+    "authorId": "revlogi",
+    "authorName": "RevLogi",
+    "sourceFeed": "https://revlogi.github.io/rss.xml"
+  },
+  {
+    "id": "24aac6588e71806d",
+    "title": "关于广义 Stokes 定理",
+    "link": "https://siriuns.netlify.app/posts/2026-6-16--Stokes/",
+    "description": "从stokes到形式与向量, 再到升调/降调/Hodge星算子",
+    "publishedAt": "2026-06-16T00:00:00.000Z",
+    "dateKey": "2026-06-16",
+    "monthKey": "2026-06",
+    "yearKey": "2026",
+    "authorId": "Siriuns",
+    "authorName": "Siriuns",
+    "sourceFeed": "https://siriuns.netlify.app/rss.xml"
+  },
+  {
+    "id": "28641c0a29f45f96",
     "title": "Intro to Polyhedral Optimization",
     "link": "https://wdlin233.github.io/posts/polyhedral/",
     "description": "Notes for Polyhedral Optimization",
@@ -13,9 +39,9 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "8b2c299b03bf80d2",
+    "id": "c2beb227e9fceb00",
     "title": "code测试页面",
-    "link": "https://siriuns.netlify.app/posts/code-test/",
+    "link": "https://siriuns.netlify.app/posts/2026-4-30--code-test/",
     "description": "测试代码块显示",
     "publishedAt": "2026-04-30T00:00:00.000Z",
     "dateKey": "2026-04-30",
@@ -26,7 +52,20 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "838fa9097b227db3",
+    "id": "e07adec850f6fc3a",
+    "title": "ICPC 邀请赛 南昌",
+    "link": "https://siriuns.netlify.app/posts/CompProg/2026-4-27--2025-icpc-nanchang/",
+    "description": "补题记录",
+    "publishedAt": "2026-04-27T00:00:00.000Z",
+    "dateKey": "2026-04-27",
+    "monthKey": "2026-04",
+    "yearKey": "2026",
+    "authorId": "Siriuns",
+    "authorName": "Siriuns",
+    "sourceFeed": "https://siriuns.netlify.app/rss.xml"
+  },
+  {
+    "id": "3e1a4ff6888e85a4",
     "title": "How to Scale Your Model",
     "link": "https://wdlin233.github.io/posts/scale/",
     "description": "Some notes for How to Scale Your Model book",
@@ -39,9 +78,9 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "57746522ff5686a4",
+    "id": "382a0df57cfa9bf3",
     "title": "HiPPO推导",
-    "link": "https://siriuns.netlify.app/posts/HiPPO/",
+    "link": "https://siriuns.netlify.app/posts/2026-3-4--HiPPO/",
     "description": "Mathematical foundation of S4: a derivation of HiPPO.",
     "publishedAt": "2026-03-04T00:00:00.000Z",
     "dateKey": "2026-03-04",
@@ -52,7 +91,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "08db3988abdb3039",
+    "id": "d863e716795bdc83",
     "title": "GPUMODE Lec.8",
     "link": "https://wdlin233.github.io/posts/gpumode-lec8/",
     "description": "Lecture 8: CUDA Performance Checklist",
@@ -65,9 +104,9 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "69cde1640402957e",
+    "id": "e5417cadd956bb45",
     "title": "latex测试页面",
-    "link": "https://siriuns.netlify.app/posts/latex-test/",
+    "link": "https://siriuns.netlify.app/posts/2026-1-12--latex-test/",
     "description": "测试latex显示",
     "publishedAt": "2026-01-12T00:00:00.000Z",
     "dateKey": "2026-01-12",
@@ -78,9 +117,35 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "c00de031634b792e",
+    "id": "1c59e57a1c055cba",
+    "title": "Understand Cross Product",
+    "link": "https://revlogi.github.io/posts/cross-product/",
+    "description": "a quick note on cross product",
+    "publishedAt": "2026-01-11T00:00:00.000Z",
+    "dateKey": "2026-01-11",
+    "monthKey": "2026-01",
+    "yearKey": "2026",
+    "authorId": "revlogi",
+    "authorName": "RevLogi",
+    "sourceFeed": "https://revlogi.github.io/rss.xml"
+  },
+  {
+    "id": "0ee3702a95ba7a9d",
+    "title": "Gitlet",
+    "link": "https://revlogi.github.io/posts/Gitlet/",
+    "description": "document the my implementation of gitlet",
+    "publishedAt": "2025-12-12T00:00:00.000Z",
+    "dateKey": "2025-12-12",
+    "monthKey": "2025-12",
+    "yearKey": "2025",
+    "authorId": "revlogi",
+    "authorName": "RevLogi",
+    "sourceFeed": "https://revlogi.github.io/rss.xml"
+  },
+  {
+    "id": "b4012ccd5a7168de",
     "title": "关于LVM",
-    "link": "https://siriuns.netlify.app/posts/LVM/",
+    "link": "https://siriuns.netlify.app/posts/2025-11-17--LVM/",
     "description": "LVM的结构和常用文件命令",
     "publishedAt": "2025-11-17T00:00:00.000Z",
     "dateKey": "2025-11-17",
@@ -91,9 +156,9 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "3195239d82c4c21b",
+    "id": "81296241f029946f",
     "title": "Tmux",
-    "link": "https://siriuns.netlify.app/posts/tmux/",
+    "link": "https://siriuns.netlify.app/posts/2025-11-07--tmux/",
     "description": "列举一些常用tmux命令",
     "publishedAt": "2025-11-07T00:00:00.000Z",
     "dateKey": "2025-11-07",
@@ -104,9 +169,9 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "1baf231f019dc144",
+    "id": "9673797db9b83ccb",
     "title": "My First Blog Post",
-    "link": "https://siriuns.netlify.app/posts/first-post/",
+    "link": "https://siriuns.netlify.app/posts/2025-10-28--first-post/",
     "description": "This is the first post of my new Astro blog.",
     "publishedAt": "2025-10-28T00:00:00.000Z",
     "dateKey": "2025-10-28",
@@ -117,7 +182,20 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "1cf9c4bd6313e78e",
+    "id": "38a340df4e163109",
+    "title": "Proof of Sylvester's Rank Inequality",
+    "link": "https://revlogi.github.io/posts/sylvester-rank-inequality-prood/",
+    "description": "This post is for testing the draft post functionality",
+    "publishedAt": "2025-10-23T00:00:00.000Z",
+    "dateKey": "2025-10-23",
+    "monthKey": "2025-10",
+    "yearKey": "2025",
+    "authorId": "revlogi",
+    "authorName": "RevLogi",
+    "sourceFeed": "https://revlogi.github.io/rss.xml"
+  },
+  {
+    "id": "b25e42b3d8c90614",
     "title": "The Relational Algebra Learning Notes",
     "link": "https://wdlin233.github.io/posts/RelationalAlgebra/",
     "description": "The Relational Algebra learning notes for the database course.",
@@ -130,7 +208,7 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "e1d0531a0dc46eb1",
+    "id": "a0c88ad02749c80c",
     "title": "PLP 阅读随笔",
     "link": "https://wdlin233.github.io/posts/PLP/",
     "description": "《程序设计语言》一书阅读中的一些记录.",
@@ -143,7 +221,7 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "c343dbd36cf24d76",
+    "id": "bcf8806f80a49b19",
     "title": "rCore (RISC-V) 学习笔记",
     "link": "https://wdlin233.github.io/posts/rCore-note/",
     "description": "在学习 rCore 操作系统内核时的各种总结和反思.",
@@ -156,7 +234,7 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "87dc64fd24f3f8fa",
+    "id": "40b84516302701c3",
     "title": "rCoreloongArch 学习笔记",
     "link": "https://wdlin233.github.io/posts/rCoreloongArch/",
     "description": "记录了我在阅读 rCoreloongArch 文档过程中的总结.",
@@ -169,7 +247,7 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "d6e8b8a79b21e5ad",
+    "id": "ef65ca0f23cadf54",
     "title": "对函数栈帧 StackFrame 的理解",
     "link": "https://wdlin233.github.io/posts/StackFrame/",
     "description": "我在学习操作系统中对函数栈帧的一些学习记录.",

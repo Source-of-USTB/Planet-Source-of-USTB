@@ -7,14 +7,16 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run build:data && astro build",
+    "build": "npm run build:data && npm run build:site",
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
     "typecheck": "tsc --noEmit",
     "fetch:feeds": "tsx scripts/fetch-feeds.ts",
     "build:member-map": "tsx scripts/build-member-map.ts",
-    "build:data": "tsx scripts/build-member-map.ts && tsx scripts/fetch-feeds.ts"
+    "build:data": "tsx scripts/build-member-map.ts && tsx scripts/fetch-feeds.ts",
+    "build:post-counts": "tsx scripts/build-post-counts.ts",
+    "build:site": "astro build"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",

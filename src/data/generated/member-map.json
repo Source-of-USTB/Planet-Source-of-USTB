@@ -4,13 +4,20 @@
     "site": "https://siriuns.netlify.app",
     "feed": "https://siriuns.netlify.app/rss.xml",
     "avatar": "siriuns.jpg",
-    "description": "this is a description"
+    "description": "hyw"
   },
   "wdlin": {
     "name": "wdlin",
     "site": "https://wdlin233.github.io",
     "feed": "https://wdlin233.github.io/rss.xml",
-    "avatar": "default.png",
-    "description": "No description"
+    "avatar": "wdlin.jpg",
+    "description": "nihao"
+  },
+  "revlogi": {
+    "name": "RevLogi",
+    "site": "https://revlogi.github.io",
+    "feed": "https://revlogi.github.io/rss.xml",
+    "avatar": "revlogi.jpg",
+    "description": "an ignorant learner"
   }
 }
