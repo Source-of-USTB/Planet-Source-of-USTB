@@ -5,22 +5,8 @@ import "../styles/page.css";
 
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-type PostCountSnapshot = {
-    date: string;
-    total: number;
-    counts: Record<string, number>;
-};
-
-async function readJson<T>(path: string, fallback: T): Promise<T> {
-    try {
-        return JSON.parse(await readFile(path, "utf-8")) as T;
-    } catch (e) {
-        if (e instanceof Error && "code" in e && e.code === "ENOENT") {
-            return fallback;
-        }
-        throw e;
-    }
-}
+import type { PostCountSnapshot } from "../type/post-count";
+import { readJson } from "../utils/json";
 
 const targetPath = "src/data/generated/";
 

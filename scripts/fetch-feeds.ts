@@ -4,6 +4,7 @@ import { createHash } from "node:crypto";
 import { members } from "../src/data/members";
 import type { FeedStatus, Post } from "../src/type/feed";
 import { join } from "node:path";
+import { readJson, writeJson } from "../src/utils/json";
 
 const parser = new Parser({
     timeout: 10000,
@@ -33,21 +34,10 @@ function extractDate(item: Parser.Item): string | null {
         : date.toISOString();
 }
 
-async function readPosts(): Promise<Post[]> {
-    try {
-        const text = await readFile(join(targetPath, "posts.json"), "utf-8");
-        return JSON.parse(text) as Post[];
-    } catch (e) {
-        if (e instanceof Error && "code" in e && e.code === "ENOENT") {
-            return [];
-        }
-        throw e;
-    }
-}
 
 const targetPath = "src/data/generated";
 await mkdir(targetPath, { recursive: true });
-const oldPosts = await readPosts();
+const oldPosts = await readJson<Post[]>(join(targetPath, "posts.json"), []);;
 const postMap = new Map(oldPosts.map((post) => [post.id, post]));
 const status: FeedStatus[] = [];
 const fetchedAt = new Date().toISOString();
@@ -108,11 +98,8 @@ const newPosts = [...postMap.values()].sort((a, b) => {
     return tb - ta;
 });
 
-await writeFile(join(targetPath, "posts.json"), JSON.stringify(newPosts, null, 2));
+await writeJson(join(targetPath, "posts.json"), newPosts);
 
-await writeFile(
-    join(targetPath, "feed-status.json"),
-    JSON.stringify(status, null, 2),
-);
+await writeJson(join(targetPath, "feed-status.json"), status);
 
 console.log(`Fetched ${newPosts.length - oldPosts.length} posts from ${members.length} feeds.`);
