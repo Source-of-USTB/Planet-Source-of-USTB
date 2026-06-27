@@ -1,5 +1,4 @@
 import Parser from "rss-parser";
-import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { members } from "../src/data/members";
 import type { FeedStatus, Post } from "../src/type/feed";
@@ -36,7 +35,6 @@ function extractDate(item: Parser.Item): string | null {
 
 
 const targetPath = "src/data/generated";
-await mkdir(targetPath, { recursive: true });
 const oldPosts = await readJson<Post[]>(join(targetPath, "posts.json"), []);
 const postMap = new Map(oldPosts.map((post) => [post.id, post]));
 const status: FeedStatus[] = [];

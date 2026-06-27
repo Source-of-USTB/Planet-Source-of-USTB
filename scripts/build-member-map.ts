@@ -1,6 +1,6 @@
-import { mkdir, writeFile } from "node:fs/promises";
 import { members } from "../src/data/members";
 import type { MemberMapItem } from "../src/type/member";
+import { writeJson } from "../src/utils/json";
 
 
 const outputDir = "src/data/generated";
@@ -23,11 +23,6 @@ for (const member of members) {
     };
 }
 
-await mkdir(outputDir, { recursive: true });
-
-await writeFile(
-    outputFile,
-    JSON.stringify(memberMap, null, 2) + "\n",
-);
+await writeJson(outputFile, memberMap);
 
 console.log(`Generated ${outputFile}`);
