@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import LineChart from "../components/LineChart.astro";
+
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
+type PostCountSnapshot = {
+    date: string;
+    total: number;
+    counts: Record<string, number>;
+};
+
+async function readJson<T>(path: string, fallback: T): Promise<T> {
+    try {
+        return JSON.parse(await readFile(path, "utf-8")) as T;
+    } catch (e) {
+        if (e instanceof Error && "code" in e && e.code === "ENOENT") {
+            return fallback;
+        }
+        throw e;
+    }
+}
+
+const targetPath = "src/data/generated/";
+
+const snapshots = await readJson<PostCountSnapshot[]>(
+    join(targetPath, "post-counts.json"),
+    [],
+);
+
+const postCounts: number[] = snapshots.map((snapshot) => snapshot.total);
+---
+
+<BaseLayout>
+    <h1>历史曲线</h1>
+    <LineChart counts={postCounts} />
+</BaseLayout>

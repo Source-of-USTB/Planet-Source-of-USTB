@@ -1,0 +1,119 @@
+---
+type Props = {
+    counts: number[];
+};
+
+const { counts } = Astro.props as Props;
+
+const width = 30 * 16;
+const height = 30 * 9;
+const padding = 16;
+const chartScale = 1.3; // 缩放系数, 省的曲线太偏右上角不好看
+
+const max = Math.max(...counts, 1) * chartScale;
+const innerWidth = width - padding * 2;
+const innerHeight = height - padding * 2;
+const realWidth = innerWidth / chartScale;
+// 由于原点在左上角所以不能直接把innerHeight改成innerHeight*chartScale, 曲线会往坐上聚集.
+
+const points = counts.map((count, index) => {
+    const x =
+        counts.length === 1
+            ? width / 2
+            : padding + (index / (counts.length - 1)) * realWidth;
+
+    const y = padding + (1 - count / max) * innerHeight;
+
+    return { x, y };
+});
+
+const pointstring = points.map((point) => `${point.x},${point.y}`).join(" ");
+
+// SVG图的原点在左上角, x轴向右, y轴向下
+const axisStartX = padding;
+const axisStartY = padding + innerHeight;
+
+const xAxisEndX = padding + innerWidth;
+const xAxisEndY = axisStartY;
+
+const yAxisEndX = padding;
+const yAxisEndY = padding;
+---
+
+<svg
+    class="line-chart"
+    viewBox={`0 0 ${width} ${height}`}
+    role="img"
+    aria-label="Blog Posts growth chart"
+>
+    <defs>
+        <marker
+            id="line-chart-arrow"
+            markerWidth="8"
+            markerHeight="8"
+            refX="6"
+            refY="4"
+            orient="auto"
+            markerUnits="strokeWidth"
+        >
+            <path class="line-chart__arrow" d="M0,0 L8,4 L0,8 Z"></path>
+        </marker>
+    </defs>
+
+    <line
+        class="line-chart__axis"
+        x1={axisStartX}
+        y1={axisStartY}
+        x2={xAxisEndX}
+        y2={xAxisEndY}
+        marker-end="url(#line-chart-arrow)"></line>
+
+    <line
+        class="line-chart__axis"
+        x1={axisStartX}
+        y1={axisStartY}
+        x2={yAxisEndX}
+        y2={yAxisEndY}
+        marker-end="url(#line-chart-arrow)"></line>
+
+    <polyline class="line-chart__line" points={pointstring}></polyline>
+
+    {
+        points.map((point) => {
+            return (
+                <circle
+                    class="line-chart__point"
+                    cx={point.x}
+                    cy={point.y}
+                    r="3"
+                />
+            );
+        })
+    }
+</svg>
+
+<style>
+    .line-chart {
+        width: 100%;
+        height: auto;
+    }
+
+    .line-chart__line {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1;
+    }
+
+    .line-chart__point {
+        fill: currentColor;
+    }
+
+    .line-chart__axis {
+        stroke: currentColor;
+        stroke-width: 1.5;
+    }
+
+    .line-chart__arrow {
+        fill: currentColor;
+    }
+</style>
