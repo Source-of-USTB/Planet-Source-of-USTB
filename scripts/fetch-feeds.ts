@@ -37,7 +37,7 @@ function extractDate(item: Parser.Item): string | null {
 
 const targetPath = "src/data/generated";
 await mkdir(targetPath, { recursive: true });
-const oldPosts = await readJson<Post[]>(join(targetPath, "posts.json"), []);;
+const oldPosts = await readJson<Post[]>(join(targetPath, "posts.json"), []);
 const postMap = new Map(oldPosts.map((post) => [post.id, post]));
 const status: FeedStatus[] = [];
 const fetchedAt = new Date().toISOString();
