@@ -78,9 +78,35 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
+    "id": "0b75bc9455e63144",
+    "title": "FASTER:Rethinking Real-Time Flow VLAs",
+    "link": "https://wamingmo.github.io/2026/04/12/faster/",
+    "description": "基于流匹配模型，采取根据时间距离分配不同时间步调度的方法，从而加速了早期动作的生成速度，提高反应能力，并做一些适配（比如使用混合调度的微调方式，与动作条件协同）。",
+    "publishedAt": "2026-04-12T11:41:42.092Z",
+    "dateKey": "2026-04-12",
+    "monthKey": "2026-04",
+    "yearKey": "2026",
+    "authorId": "wamingmo",
+    "authorName": "wamingmo",
+    "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
     "id": "9e7915e9a8f6fc98",
     "title": "VLASH:Real-Time VLAs via Future-State-Aware Asynchronous Inference",
     "link": "http://example.com/2026/04/12/vlash/",
+    "description": "VLASH 是一种通过“未来状态感知”的异步推理框架，在无需修改模型架构的前提下，显著降低延迟并提升 VLA 模型的运行速度，使其实现流畅的实时控制。",
+    "publishedAt": "2026-04-12T11:39:32.407Z",
+    "dateKey": "2026-04-12",
+    "monthKey": "2026-04",
+    "yearKey": "2026",
+    "authorId": "wamingmo",
+    "authorName": "wamingmo",
+    "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
+    "id": "c3da6d44ae4bbf2f",
+    "title": "VLASH:Real-Time VLAs via Future-State-Aware Asynchronous Inference",
+    "link": "https://wamingmo.github.io/2026/04/12/vlash/",
     "description": "VLASH 是一种通过“未来状态感知”的异步推理框架，在无需修改模型架构的前提下，显著降低延迟并提升 VLA 模型的运行速度，使其实现流畅的实时控制。",
     "publishedAt": "2026-04-12T11:39:32.407Z",
     "dateKey": "2026-04-12",
@@ -104,9 +130,35 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
+    "id": "351bdcb04ef5b6a3",
+    "title": "SSH简介",
+    "link": "https://wamingmo.github.io/2026/04/12/ssh/",
+    "description": "SSH（Secure Shell）是一种加密网络协议，用于在不安全的网络中安全地进行远程登录和命令执行，替代了早期的明文传输协议 Telnet。",
+    "publishedAt": "2026-04-12T02:37:08.414Z",
+    "dateKey": "2026-04-12",
+    "monthKey": "2026-04",
+    "yearKey": "2026",
+    "authorId": "wamingmo",
+    "authorName": "wamingmo",
+    "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
     "id": "0d2fe3561a8131b1",
     "title": "基于LIBERO数据集微调GD",
     "link": "http://example.com/2026/04/01/finetune-groundingdino-on-libero/",
+    "description": "一些过程和经验，有些基础内容，思路可供参考",
+    "publishedAt": "2026-04-01T08:09:42.266Z",
+    "dateKey": "2026-04-01",
+    "monthKey": "2026-04",
+    "yearKey": "2026",
+    "authorId": "wamingmo",
+    "authorName": "wamingmo",
+    "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
+    "id": "a19229cf6a420b80",
+    "title": "基于LIBERO数据集微调GD",
+    "link": "https://wamingmo.github.io/2026/04/01/finetune-groundingdino-on-libero/",
     "description": "一些过程和经验，有些基础内容，思路可供参考",
     "publishedAt": "2026-04-01T08:09:42.266Z",
     "dateKey": "2026-04-01",
@@ -169,6 +221,19 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
+    "id": "4c8df8b4ecbaa829",
+    "title": "π0.5:a Vision-Language-Action Model with Open-World Generalization",
+    "link": "https://wamingmo.github.io/2026/02/15/pi-0.5/",
+    "description": "一个基于视觉-语言-动作模型的开放世界泛化模型",
+    "publishedAt": "2026-02-15T10:52:37.483Z",
+    "dateKey": "2026-02-15",
+    "monthKey": "2026-02",
+    "yearKey": "2026",
+    "authorId": "wamingmo",
+    "authorName": "wamingmo",
+    "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
     "id": "09c9822904b87d2a",
     "title": "CMake语法简介",
     "link": "http://example.com/2026/01/26/cmake/",
@@ -182,9 +247,35 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
+    "id": "0bb2d8212c610fb3",
+    "title": "CMake语法简介",
+    "link": "https://wamingmo.github.io/2026/01/26/cmake/",
+    "description": "偶然了解到一个用cmake构建的mlsys工程，于是简单了解了一下cmake的语法",
+    "publishedAt": "2026-01-26T14:08:22.185Z",
+    "dateKey": "2026-01-26",
+    "monthKey": "2026-01",
+    "yearKey": "2026",
+    "authorId": "wamingmo",
+    "authorName": "wamingmo",
+    "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
     "id": "adce1bd5704f5ec8",
     "title": "Makefile简介",
     "link": "http://example.com/2026/01/22/makefile/",
+    "description": "Makefile 是一个用于自动化构建的工具，它通过定义规则来描述如何从源文件生成目标文件。",
+    "publishedAt": "2026-01-22T03:53:16.437Z",
+    "dateKey": "2026-01-22",
+    "monthKey": "2026-01",
+    "yearKey": "2026",
+    "authorId": "wamingmo",
+    "authorName": "wamingmo",
+    "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
+    "id": "4156fff89da8b76b",
+    "title": "Makefile简介",
+    "link": "https://wamingmo.github.io/2026/01/22/makefile/",
     "description": "Makefile 是一个用于自动化构建的工具，它通过定义规则来描述如何从源文件生成目标文件。",
     "publishedAt": "2026-01-22T03:53:16.437Z",
     "dateKey": "2026-01-22",
@@ -299,6 +390,19 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
+    "id": "d962dd01a6f63b83",
+    "title": "系统能力大赛-os内核实现赛道",
+    "link": "https://wamingmo.github.io/2025/09/21/os/",
+    "description": "关于参加系统能力大赛这件事的一点体会",
+    "publishedAt": "2025-09-21T14:47:23.904Z",
+    "dateKey": "2025-09-21",
+    "monthKey": "2025-09",
+    "yearKey": "2025",
+    "authorId": "wamingmo",
+    "authorName": "wamingmo",
+    "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
     "id": "b25e42b3d8c90614",
     "title": "The Relational Algebra Learning Notes",
     "link": "https://wdlin233.github.io/posts/RelationalAlgebra/",
@@ -325,9 +429,35 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
+    "id": "56ae1f4c2bbaaeb7",
+    "title": "OS视角下对Shell的简单理解",
+    "link": "https://wamingmo.github.io/2025/06/11/sh/",
+    "description": "今年的系统能力大赛的评测方式发生改变，需要在启动自己的操作系统之后，自动的扫描磁盘，运行`XXXX-testcode.sh`，为了做shell的支持，去简单了解了一下shell的原理。",
+    "publishedAt": "2025-06-11T13:17:37.000Z",
+    "dateKey": "2025-06-11",
+    "monthKey": "2025-06",
+    "yearKey": "2025",
+    "authorId": "wamingmo",
+    "authorName": "wamingmo",
+    "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
     "id": "0a9dee97ac646daf",
     "title": "Study Butterfly Theme Blog2",
     "link": "http://example.com/2025/06/04/butterfly-theme-blog/",
+    "description": "关于butterfly主题的博客的一些配置简介",
+    "publishedAt": "2025-06-03T16:00:00.000Z",
+    "dateKey": "2025-06-03",
+    "monthKey": "2025-06",
+    "yearKey": "2025",
+    "authorId": "wamingmo",
+    "authorName": "wamingmo",
+    "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
+    "id": "bc797d86637634a2",
+    "title": "Study Butterfly Theme Blog2",
+    "link": "https://wamingmo.github.io/2025/06/04/butterfly-theme-blog/",
     "description": "关于butterfly主题的博客的一些配置简介",
     "publishedAt": "2025-06-03T16:00:00.000Z",
     "dateKey": "2025-06-03",
