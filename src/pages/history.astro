@@ -33,5 +33,5 @@ const postCounts: number[] = snapshots.map((snapshot) => snapshot.total);
 
 <BaseLayout>
     <h1>历史曲线</h1>
-    <LineChart counts={postCounts} />
+    <LineChart counts={postCounts} dates={snapshots.map((s) => s.date)} />
 </BaseLayout>
