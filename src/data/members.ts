@@ -25,4 +25,12 @@ export const members: Member[] = [
 		avatar: "revlogi.jpg",
 		description: "an ignorant learner",
 	},
+		{
+		id: "wamingmo",
+		name: "wamingmo",
+		site: "https://wamingmo.github.io",
+		feed: "https://wamingmo.github.io/atom.xml",
+		avatar: "wamingmo.jpg",
+		description: "this person is lazy and leaves nothing here",
+	},
 ];
