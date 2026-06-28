@@ -13,6 +13,7 @@
     "check": "astro check",
     "typecheck": "tsc --noEmit",
     "fetch:feeds": "tsx scripts/fetch-feeds.ts",
+    "audit:links": "tsx scripts/audit-links.ts",
     "build:member-map": "tsx scripts/build-member-map.ts",
     "build:data": "tsx scripts/build-member-map.ts && tsx scripts/fetch-feeds.ts",
     "build:post-counts": "tsx scripts/build-post-counts.ts",
