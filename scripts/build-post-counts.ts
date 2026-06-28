@@ -1,4 +1,3 @@
-import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import type { Post } from "../src/type/feed";
 import { members } from "../src/data/members";
