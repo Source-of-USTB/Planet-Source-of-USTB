@@ -1,26 +1,11 @@
-import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import type { Post } from "../src/type/feed";
 import { members } from "../src/data/members";
-
-type PostCountSnapshot = {
-    date: string;
-    total: number;
-    counts: Record<string, number>;
-};
+import type { PostCountSnapshot } from "../src/type/post-count";
+import { readJson, writeJson } from "../src/utils/json";
+import { todayKey } from "../src/utils/date";
 
 const targetPath = "src/data/generated";
-
-async function readJson<T>(path: string, fallback: T): Promise<T> {
-    try {
-        return JSON.parse(await readFile(path, "utf-8")) as T;
-    } catch (e) {
-        if (e instanceof Error && "code" in e && e.code === "ENOENT") {
-            return fallback;
-        }
-        throw e;
-    }
-}
 
 function countPosts(posts: Post[]) {
     const counts: Record<string, number> = Object.fromEntries(
@@ -34,9 +19,6 @@ function countPosts(posts: Post[]) {
     return counts;
 }
 
-function todayKey() {
-    return new Date().toISOString().slice(0, 10);
-}
 
 const posts = await readJson<Post[]>(join(targetPath, "posts.json"), []);
 
@@ -53,7 +35,4 @@ const snapshot: PostCountSnapshot = {
 
 snapshots.push(snapshot);
 
-await writeFile(
-    join(targetPath, "post-counts.json"),
-    JSON.stringify(snapshots, null, 2),
-);
+await writeJson(join(targetPath, "post-counts.json"), snapshots);
