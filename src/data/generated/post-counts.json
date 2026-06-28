@@ -12,5 +12,15 @@
       "wdlin": 8,
       "revlogi": 4
     }
+  },
+  {
+    "date": "2026-06-28",
+    "total": 31,
+    "counts": {
+      "Siriuns": 8,
+      "wdlin": 8,
+      "revlogi": 4,
+      "wamingmo": 11
+    }
   }
 ]
