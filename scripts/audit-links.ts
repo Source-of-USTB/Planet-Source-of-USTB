@@ -4,7 +4,7 @@ import type { LinkAuditCandidate, LinkAuditResult } from "../src/type/link-audit
 import { readJson, writeJson } from "../src/utils/json";
 
 const postsPath = join("src/data/generated", "posts.json");
-const reviewPath = join("data/review", "link-check.json");
+const reviewPath = join("data/review", "link-audit.json");
 
 const CONCURRENCY = 5;   // 同时检测几个链接, 太大容易被对面网站当成攻击
 const TIMEOUT_MS = 10000;
