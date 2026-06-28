@@ -1,5 +1,18 @@
 [
   {
+    "id": "6b8e1c192ed6f977",
+    "title": "当我用AI生成告诉我如何用AI读论文",
+    "link": "https://wamingmo.github.io/2026/06/28/how-to-read-paper-with-ai/",
+    "description": "用 AI 读论文，最忌讳的提示词是：\"帮我总结一下这篇文章。\"",
+    "publishedAt": "2026-06-28T01:37:11.400Z",
+    "dateKey": "2026-06-28",
+    "monthKey": "2026-06",
+    "yearKey": "2026",
+    "authorId": "wamingmo",
+    "authorName": "wamingmo",
+    "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
     "id": "68e0466c096dfece",
     "title": "Self-reproducing Program",
     "link": "https://revlogi.github.io/posts/self-reproducing/",
