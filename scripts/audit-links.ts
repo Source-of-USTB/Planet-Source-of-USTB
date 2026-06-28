@@ -1,6 +1,6 @@
 import { join } from "node:path";
 import type { Post } from "../src/type/feed";
-import type { LinkCheckCandidate, LinkCheckResult } from "../src/type/link-audit";
+import type { LinkAuditCandidate, LinkAuditResult } from "../src/type/link-audit";
 import { readJson, writeJson } from "../src/utils/json";
 
 const postsPath = join("src/data/generated", "posts.json");
@@ -30,7 +30,7 @@ async function mapWithConcurrency<T, R>(
 }
 
 async function checkLink(url: string): Promise<{
-    checkResult: LinkCheckResult;
+    checkResult: LinkAuditResult;
     statusCode?: number;
     errorMessage?: string;
 }> {
@@ -71,9 +71,9 @@ async function checkLink(url: string): Promise<{
 }
 
 function mergeCandidate(
-    existing: LinkCheckCandidate | undefined,
-    fresh: Omit<LinkCheckCandidate, "status" | "note">,
-): LinkCheckCandidate | null {
+    existing: LinkAuditCandidate | undefined,
+    fresh: Omit<LinkAuditCandidate, "status" | "note">,
+): LinkAuditCandidate | null {
     if (fresh.checkResult === "ok") {
         return null; // 链接现在好了, 不用管
     }
@@ -91,12 +91,12 @@ function mergeCandidate(
 }
 
 const posts = await readJson<Post[]>(postsPath, []);
-const existingCandidates = await readJson<LinkCheckCandidate[]>(reviewPath, []);
+const existingCandidates = await readJson<LinkAuditCandidate[]>(reviewPath, []);
 const existingMap = new Map(existingCandidates.map((c) => [c.id, c]));
 
 const checkedAt = new Date().toISOString();
 
-const merged = await mapWithConcurrency<Post, LinkCheckCandidate | null>(posts, CONCURRENCY,
+const merged = await mapWithConcurrency<Post, LinkAuditCandidate | null>(posts, CONCURRENCY,
     async (post) => {
         const result = await checkLink(post.link);
         return mergeCandidate(existingMap.get(post.id), {
@@ -108,7 +108,7 @@ const merged = await mapWithConcurrency<Post, LinkCheckCandidate | null>(posts, 
         });
     });
 
-const newCandidates = merged.filter((c): c is LinkCheckCandidate => c !== null);
+const newCandidates = merged.filter((c): c is LinkAuditCandidate => c !== null);
 
 await writeJson(reviewPath, newCandidates);
 
