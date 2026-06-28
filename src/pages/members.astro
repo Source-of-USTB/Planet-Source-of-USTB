@@ -18,7 +18,7 @@ const members = Object.entries(memberMap);
         </p>
 
         <section class="member-page__list">
-            {members.map(([id, member]) => <MemberCard member={member} />)}
+            {members.map(([, member]) => <MemberCard member={member} />)}
         </section>
     </section>
 </BaseLayout>
