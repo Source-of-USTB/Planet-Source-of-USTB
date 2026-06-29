@@ -1,9 +1,10 @@
 import Parser from "rss-parser";
 import { createHash } from "node:crypto";
+import { join } from "node:path";
 import { members } from "../src/data/members";
 import type { FeedStatus, Post } from "../src/type/feed";
-import { join } from "node:path";
 import { readJson, writeJson } from "../src/utils/json";
+import { toDayKey, toMonthKey, toYearKey } from "../src/utils/date";
 
 const parser = new Parser({
     timeout: 10000,
@@ -53,9 +54,9 @@ for (const member of members) {
             if (postMap.has(id)) continue;
 
             const publishedAt = extractDate(item);
-            const dateKey = publishedAt?.slice(0, 10) ?? null;
-            const monthKey = publishedAt?.slice(0, 7) ?? null;
-            const yearKey = publishedAt?.slice(0, 4) ?? null;
+            const dateKey = publishedAt ? toDayKey(publishedAt) : null;
+            const monthKey = publishedAt ? toMonthKey(publishedAt) : null;
+            const yearKey = publishedAt ? toYearKey(publishedAt) : null;
 
             const newPost: Post = {
                 id,
@@ -101,3 +102,5 @@ await writeJson(join(targetPath, "posts.json"), newPosts);
 await writeJson(join(targetPath, "feed-status.json"), status);
 
 console.log(`Fetched ${newPosts.length - oldPosts.length} posts from ${members.length} feeds.`);
+
+process.exit(0);

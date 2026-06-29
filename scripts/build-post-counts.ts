@@ -3,7 +3,7 @@ import type { Post } from "../src/type/feed";
 import { members } from "../src/data/members";
 import type { PostCountSnapshot } from "../src/type/post-count";
 import { readJson, writeJson } from "../src/utils/json";
-import { todayKey } from "../src/utils/date";
+import { toDayKey, toLocalDayKey } from "../src/utils/date";
 
 const targetPath = "src/data/generated";
 
@@ -28,7 +28,7 @@ const snapshots = await readJson<PostCountSnapshot[]>(
 );
 
 const snapshot: PostCountSnapshot = {
-    date: todayKey(),
+    date: toLocalDayKey(new Date().toISOString()),
     total: posts.length,
     counts: countPosts(posts),
 };
