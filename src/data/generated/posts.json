@@ -1,5 +1,18 @@
 [
   {
+    "id": "064e584b404c764f",
+    "title": "在 uosc_danmaku 中集成 pakkujs 弹幕合并算法",
+    "link": "http://blog.episvr.top/2026/06/29/uosc_danmaku-pakkujs/",
+    "description": "前言 最近搭建了一个 Openlist 站点，存了很多番剧，于是便开始爽爽看番了。 但是出现了一个小问题。 我是用 mpv 看番的，然后装了很有名的插件 uosc_danmaku，这样就可以在 mpv",
+    "publishedAt": "2026-06-28T16:00:00.000Z",
+    "dateKey": "2026-06-28",
+    "monthKey": "2026-06",
+    "yearKey": "2026",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
     "id": "6b8e1c192ed6f977",
     "title": "当我用AI生成告诉我如何用AI读论文",
     "link": "https://wamingmo.github.io/2026/06/28/how-to-read-paper-with-ai/",
@@ -180,6 +193,32 @@
     "authorId": "wamingmo",
     "authorName": "wamingmo",
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
+    "id": "efbfc668e3d00ce0",
+    "title": "a PR for kew",
+    "link": "http://blog.episvr.top/2026/01/31/PR-Kew/",
+    "description": "这大概是我第一次认真地向一个开源项目提交 PR。 kew 。 <img",
+    "publishedAt": "2026-01-30T16:00:00.000Z",
+    "dateKey": "2026-01-30",
+    "monthKey": "2026-01",
+    "yearKey": "2026",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
+    "id": "cf1c8ec67ff4d8a5",
+    "title": "Install Debian on ThinkPad-T420",
+    "link": "http://blog.episvr.top/2026/01/28/Thinkpad-T420/",
+    "description": "我一直想收一台二手笔记本玩玩 Linux，在前前后后纠结了半个学期后正好看到不错的价格，收了一台 ThinkPad-T420，这篇文章就是在这台笔记本上写的。我想回顾一下我倒腾他的短暂的一小段时间，不得不说 Thinkpad 的键盘的真的超级好用。 <img",
+    "publishedAt": "2026-01-27T16:00:00.000Z",
+    "dateKey": "2026-01-27",
+    "monthKey": "2026-01",
+    "yearKey": "2026",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://episvr.github.io/atom.xml"
   },
   {
     "id": "0bb2d8212c610fb3",

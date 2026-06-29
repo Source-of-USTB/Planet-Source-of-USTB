@@ -1,11 +1,1 @@
-[
-  {
-    "id": "c2beb227e9fceb00",
-    "link": "https://siriuns.netlify.app/posts/2026-4-30--code-test/",
-    "title": "code测试页面",
-    "checkedAt": "2026-06-28T08:57:01.358Z",
-    "checkResult": "timeout",
-    "errorMessage": "请求超时",
-    "status": "pending"
-  }
-]
+[]
