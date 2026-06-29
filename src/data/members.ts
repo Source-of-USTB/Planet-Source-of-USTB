@@ -33,4 +33,12 @@ export const members: Member[] = [
 		avatar: "wamingmo.jpg",
 		description: "this person is lazy and leaves nothing here",
 	},
+	{
+		id: "episvr",
+		name: "episvr",
+		site: "https://episvr.github.io",
+		feed: "https://episvr.github.io/atom.xml",
+		avatar: "episvr.jpg",
+		description: "the one who always gets jumped over by the quick fox"
+	},
 ];
