@@ -17,7 +17,7 @@ const snapshots = await readJson<PostCountSnapshot[]>(
 const postCounts: number[] = snapshots.map((snapshot) => snapshot.total);
 ---
 
-<BaseLayout>
+<BaseLayout title="History" favicon="history.svg">
     <section class="page">
         <h1 class="page-title">History</h1>
         <p class="page-description">

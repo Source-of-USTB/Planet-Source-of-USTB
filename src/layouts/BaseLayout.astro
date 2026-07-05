@@ -9,11 +9,13 @@ import "../styles/global.css";
 type Props = {
     title?: string;
     description?: string;
+    favicon?: string;
 };
 
 const {
     title = "Planet Source-of-USTB",
     description = "A blog aggregation page for Source-of-USTB's members.",
+    favicon = "star.svg",
 } = Astro.props;
 ---
 
@@ -23,7 +25,12 @@ const {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="description" content={description} />
-        <title>{title}</title>
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href={`${import.meta.env.BASE_URL}icons/${favicon}`}
+        />
+        <title>{title} | Planet-Source-of-USTB</title>
         <ClientRouter />
     </head>
 
