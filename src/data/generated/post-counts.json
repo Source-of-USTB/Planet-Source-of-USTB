@@ -22,5 +22,16 @@
       "revlogi": 4,
       "wamingmo": 11
     }
+  },
+  {
+    "date": "2026-07-06",
+    "total": 52,
+    "counts": {
+      "Siriuns": 8,
+      "wdlin": 8,
+      "revlogi": 4,
+      "wamingmo": 12,
+      "episvr": 20
+    }
   }
 ]
