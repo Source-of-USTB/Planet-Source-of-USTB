@@ -6,7 +6,9 @@ export type LinkAuditResult =
     | "tls_error"
     | "unknown_error";
 
-export type LinkAuditStatus = "pending" | "confirmed_dead" | "false_positive";
+export const LINK_AUDIT_STATUSES = ["dead", "alive", "pending"] as const;
+export type LinkAuditStatus = (typeof LINK_AUDIT_STATUSES)[number];
+export const STATUS_DOC = LINK_AUDIT_STATUSES.join(" | ");
 
 export type LinkAuditCandidate = {
     id: string;
@@ -18,4 +20,9 @@ export type LinkAuditCandidate = {
     checkedAt: string;
     status: LinkAuditStatus;
     note?: string; // 人工审查时填的备注
+};
+
+export type LinkAuditFile = {
+    _statusValues: string;
+    candidates: LinkAuditCandidate[];
 };

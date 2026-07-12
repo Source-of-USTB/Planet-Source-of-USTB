@@ -1,6 +1,6 @@
 import { join } from "node:path";
 import type { Post } from "../src/type/feed";
-import type { LinkAuditCandidate } from "../src/type/link-audit";
+import { STATUS_DOC, type LinkAuditCandidate, type LinkAuditFile } from "../src/type/link-audit";
 import { readJson, writeJson } from "../src/utils/json";
 
 const postsPath = join("src/data/generated", "posts.json");
@@ -10,10 +10,11 @@ const reviewPath = join("data/review", "link-audit.json");
 const isDryRun = process.argv.includes("--dry-run");
 
 const posts = await readJson<Post[]>(postsPath, []);
-const candidates = await readJson<LinkAuditCandidate[]>(reviewPath, []);
+const file = await readJson<LinkAuditFile>(reviewPath, { _statusValues: STATUS_DOC, candidates: [] });
+const candidates = file.candidates as LinkAuditCandidate[];
 
 const deadIds = new Set(
-    candidates.filter((c) => c.status === "confirmed_dead").map((c) => c.id),
+    candidates.filter((c) => c.status === "dead").map((c) => c.id),
 );
 
 if (deadIds.size === 0) {
@@ -30,7 +31,11 @@ if (deadIds.size === 0) {
 
     if (!isDryRun) {
         await writeJson(postsPath, remainingPosts);
-        await writeJson(reviewPath, remainingCandidates);
+        await writeJson(reviewPath, {
+            _statusValues: STATUS_DOC,
+            candidates: remainingCandidates,
+        });
+        // await writeJson(reviewPath, remainingCandidates);
         console.log(`Done. ${remainingPosts.length} posts remain.`);
     }
 }
