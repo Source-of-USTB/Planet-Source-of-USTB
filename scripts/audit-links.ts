@@ -1,6 +1,6 @@
 import { join } from "node:path";
 import type { Post } from "../src/type/feed";
-import type { LinkAuditCandidate, LinkAuditResult } from "../src/type/link-audit";
+import { STATUS_DOC, type LinkAuditCandidate, type LinkAuditResult, type LinkAuditFile } from "../src/type/link-audit";
 import { readJson, writeJson } from "../src/utils/json";
 
 const postsPath = join("src/data/generated", "posts.json");
@@ -91,7 +91,8 @@ function mergeCandidate(
 }
 
 const posts = await readJson<Post[]>(postsPath, []);
-const existingCandidates = await readJson<LinkAuditCandidate[]>(reviewPath, []);
+const file = await readJson<LinkAuditFile>(reviewPath, { _statusValues: STATUS_DOC, candidates: [] });
+const existingCandidates = file.candidates as LinkAuditCandidate[];
 const existingMap = new Map(existingCandidates.map((c) => [c.id, c]));
 
 const checkedAt = new Date().toISOString();
@@ -110,7 +111,12 @@ const merged = await mapWithConcurrency<Post, LinkAuditCandidate | null>(posts, 
 
 const newCandidates = merged.filter((c): c is LinkAuditCandidate => c !== null);
 
-await writeJson(reviewPath, newCandidates);
+await writeJson(reviewPath,
+    {
+        _statusValues: STATUS_DOC,
+        candidates: newCandidates,
+    }
+);
 
 const pendingCount = newCandidates.filter((c) => c.status === "pending").length;
 console.log(
