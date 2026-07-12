@@ -1,5 +1,18 @@
 [
   {
+    "id": "5c9daf5814e61882",
+    "title": "Git 是怎么工作的",
+    "link": "http://blog.episvr.top/2026/07/12/git-exploration/",
+    "description": "深入探讨Git的原理和底层机制，包括对象模型、存储实现和垃圾回收等。",
+    "publishedAt": "2026-07-11T16:00:00.000Z",
+    "dateKey": "2026-07-11",
+    "monthKey": "2026-07",
+    "yearKey": "2026",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
     "id": "2148edded3ac67a6",
     "title": "怎么为一个陌生的项目添加功能",
     "link": "http://blog.episvr.top/2026/07/04/WorkWithUnfamiliarCode/",
