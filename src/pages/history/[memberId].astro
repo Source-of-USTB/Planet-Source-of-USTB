@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LineChart from "../../components/LineChart.astro";
+import "../../styles/page.css";
+
+import type { Post } from "../../type/feed";
+import type { MemberMap, MemberMapItem } from "../../type/member";
+
+export async function getStaticPaths() {
+    const memberMap = (await import("../../data/generated/member-map.json"))
+        .default as MemberMap;
+
+    return Object.entries(memberMap).map(([id, member]) => ({
+        params: { memberId: id },
+        props: { member },
+    }));
+}
+
+const { memberId } = Astro.params;
+const { member } = Astro.props;
+
+const pageDescription = member.description;
+---
+
+<BaseLayout
+    title={`${member.name}'s History`}
+    favicon="history.svg"
+    description={pageDescription}
+    path={`/history/${memberId}/`}
+>
+    <section class="page">
+        <h1 class="page-title">{member.name}'s History</h1>
+        <p class="page-description">{pageDescription}</p>
+    </section>
+</BaseLayout>
