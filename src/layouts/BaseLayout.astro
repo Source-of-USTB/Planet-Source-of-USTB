@@ -26,9 +26,15 @@ const canonicalUrl = new URL(
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
+
+        <title>{title} | Planet-Source-of-USTB</title>
         <meta name="description" content={description} />
 
         <meta name="robots" content="index, follow" />
+        <meta
+            name="google-site-verification"
+            content="0Vf-FoMOZ24UlF5d7zsCpNlGne8LqifUvIa4QzzplEQ"
+        />
         <link rel="canonical" href={canonicalUrl} />
 
         <meta property="og:title" content={title} />
@@ -39,7 +45,7 @@ const canonicalUrl = new URL(
             type="image/svg+xml"
             href={`${import.meta.env.BASE_URL}icons/${favicon}`}
         />
-        <title>{title} | Planet-Source-of-USTB</title>
+
         <ClientRouter />
     </head>
 
