@@ -26,3 +26,16 @@ body {
     margin: 0;
     font-family: "Source Han Serif SC", serif, system-ui;
 }
+
+a {
+    color: #5740EE;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+a:visited {
+    color: #5F40EE;
+}
