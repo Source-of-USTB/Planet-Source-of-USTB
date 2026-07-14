@@ -6,15 +6,22 @@ import rawMemberMap from "../data/generated/member-map.json";
 
 import "../styles/page.css";
 
+const pageDescription = "Joined members and their Blog site & RSS feeds.";
+
 const memberMap = rawMemberMap as MemberMap;
 const members = Object.entries(memberMap);
 ---
 
-<BaseLayout title="Members" favicon="member.svg">
+<BaseLayout
+    title="Members"
+    favicon="member.svg"
+    description={pageDescription}
+    path="/members/"
+>
     <section class="page">
         <h1 class="page-title">Members</h1>
         <p class="page-description">
-            Joined members and their Blog site & RSS feeds.
+            {pageDescription}
         </p>
 
         <section class="member-page__list">
