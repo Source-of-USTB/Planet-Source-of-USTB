@@ -3,12 +3,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import PostCard from "../components/PostCard.astro";
 import posts from "../data/generated/posts.json";
 import "../styles/page.css";
+
+const pageDescription = "Latest posts from joined members.";
 ---
 
-<BaseLayout title="Blogs" favicon="home.svg">
+<BaseLayout
+    title="Blogs"
+    favicon="home.svg"
+    description={pageDescription}
+    path="/"
+>
     <section class="page">
         <h1 class="page-title">Blogs</h1>
-        <p class="page-description">Latest posts from joined members.</p>
+        <p class="page-description">{pageDescription}</p>
 
         <section class="blogs-page__list">
             {posts.map((post) => <PostCard post={post} />)}

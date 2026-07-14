@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://source-of-ustb.github.io/Planet-Source-of-USTB/sitemap-index.xml

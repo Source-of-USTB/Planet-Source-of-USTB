@@ -2,14 +2,20 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 import "../styles/page.css";
+const pageDescription =
+    "Planet Source-of-USTB is an RSS-based blog aggregation site for Source-of-USTB members.";
 ---
 
-<BaseLayout title="About" favicon="info.svg">
+<BaseLayout
+    title="About"
+    favicon="info.svg"
+    description={pageDescription}
+    path="/about/"
+>
     <section class="page">
         <h1 class="page-title">About</h1>
         <p class="page-description">
-            Planet Source-of-USTB is an RSS-based blog aggregation site for
-            Source-of-USTB members.
+            {pageDescription}
         </p>
 
         <section class="about-section">

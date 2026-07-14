@@ -7,6 +7,8 @@ import { join } from "node:path";
 import type { PostCountSnapshot } from "../type/post-count";
 import { readJson } from "../utils/json";
 
+const pageDescription = "Statistics on the Number of Historical Articles";
+
 const targetPath = "src/data/generated/";
 
 const snapshots = await readJson<PostCountSnapshot[]>(
@@ -17,11 +19,16 @@ const snapshots = await readJson<PostCountSnapshot[]>(
 const postCounts: number[] = snapshots.map((snapshot) => snapshot.total);
 ---
 
-<BaseLayout title="History" favicon="history.svg">
+<BaseLayout
+    title="History"
+    favicon="history.svg"
+    description={pageDescription}
+    path="/history/"
+>
     <section class="page">
         <h1 class="page-title">History</h1>
         <p class="page-description">
-            Statistics on the Number of Historical Articles
+            {pageDescription}
         </p>
     </section>
 
