@@ -41,4 +41,12 @@ export const members: Member[] = [
 		avatar: "episvr.jpg",
 		description: "the one who always gets jumped over by the quick fox"
 	},
+	{
+  		id: "level0-jj",
+  		name: "level0-jj",
+  		site: "https://level0-jj.github.io",
+  		feed: "https://level0-jj.github.io/rss2.xml",
+  		avatar: "level0-jj.jpg",
+  		description: "Type a message…",
+	},
 ];
