@@ -117,6 +117,97 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
+    "id": "f00b142ae6688203",
+    "title": "DLinear复现实验",
+    "link": "https://level0-jj.github.io/2026/05/28/DLinear%E5%A4%8D%E7%8E%B0%E5%AE%9E%E9%AA%8C/",
+    "description": "前言 最近我复现了时间序列预测领域的一篇经典论文： Are Transformers Ef",
+    "publishedAt": "2026-05-28T14:43:36.000Z",
+    "dateKey": "2026-05-28",
+    "monthKey": "2026-05",
+    "yearKey": "2026",
+    "authorId": "level0-jj",
+    "authorName": "level0-jj",
+    "sourceFeed": "https://level0-jj.github.io/rss2.xml"
+  },
+  {
+    "id": "24c741c9e69c8907",
+    "title": "基于 C 语言的图像旋转算法解析",
+    "link": "https://level0-jj.github.io/2026/05/24/%E5%9F%BA%E4%BA%8E-C-%E8%AF%AD%E8%A8%80%E7%9A%84%E5%9B%BE%E5%83%8F%E6%97%8B%E8%BD%AC%E7%AE%97%E6%B3%95%E8%A7%A3%E6%9E%90/",
+    "description": "概述 本文将深入解析一个基于 C 语言实现的图像旋转算法，核心函数为 Image *Rotation(Image *image)</c",
+    "publishedAt": "2026-05-24T08:49:30.000Z",
+    "dateKey": "2026-05-24",
+    "monthKey": "2026-05",
+    "yearKey": "2026",
+    "authorId": "level0-jj",
+    "authorName": "level0-jj",
+    "sourceFeed": "https://level0-jj.github.io/rss2.xml"
+  },
+  {
+    "id": "ed4dd29f976a1600",
+    "title": "数字图像处理中的图像滤波",
+    "link": "https://level0-jj.github.io/2026/05/23/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E4%B8%AD%E7%9A%84%E5%9B%BE%E5%83%8F%E6%BB%A4%E6%B3%A2/",
+    "description": "前言 图像滤波本质上是： 利用某个像素周围邻域的信息，对当前像素进行重新计算。 </blockqu",
+    "publishedAt": "2026-05-23T02:24:45.000Z",
+    "dateKey": "2026-05-23",
+    "monthKey": "2026-05",
+    "yearKey": "2026",
+    "authorId": "level0-jj",
+    "authorName": "level0-jj",
+    "sourceFeed": "https://level0-jj.github.io/rss2.xml"
+  },
+  {
+    "id": "c40bdf3ee1ac6b17",
+    "title": "基于BFS实现迷宫求解",
+    "link": "https://level0-jj.github.io/2026/05/21/%E5%9F%BA%E4%BA%8EBFS%E5%AE%9E%E7%8E%B0%E8%BF%B7%E5%AE%AB%E6%B1%82%E8%A7%A3/",
+    "description": "前言 在学习算法的过程中，广度优先搜索（BFS）是一个非常经典且实用的算法。今天我想分享一个使用C语言实现迷宫最短路径的例子，并附上完整代码。最好",
+    "publishedAt": "2026-05-21T13:21:50.000Z",
+    "dateKey": "2026-05-21",
+    "monthKey": "2026-05",
+    "yearKey": "2026",
+    "authorId": "level0-jj",
+    "authorName": "level0-jj",
+    "sourceFeed": "https://level0-jj.github.io/rss2.xml"
+  },
+  {
+    "id": "d4b00b3807235ccf",
+    "title": "基于DFS实现迷宫求解",
+    "link": "https://level0-jj.github.io/2026/05/17/%E5%9F%BA%E4%BA%8EDFS%E5%AE%9E%E7%8E%B0%E8%BF%B7%E5%AE%AB%E6%B1%82%E8%A7%A3/",
+    "description": "要求 封面、目录、每个方法（算法原理说明、代码、运行结果截图）以及收获体会。 打印运行时间",
+    "publishedAt": "2026-05-17T02:37:38.000Z",
+    "dateKey": "2026-05-17",
+    "monthKey": "2026-05",
+    "yearKey": "2026",
+    "authorId": "level0-jj",
+    "authorName": "level0-jj",
+    "sourceFeed": "https://level0-jj.github.io/rss2.xml"
+  },
+  {
+    "id": "caa804c479c26528",
+    "title": "cpp操纵像素在CPU上跑Shader",
+    "link": "https://level0-jj.github.io/2026/05/12/cpp%E6%93%8D%E7%BA%B5%E5%83%8F%E7%B4%A0%E5%9C%A8CPU%E4%B8%8A%E8%B7%91Shader/",
+    "description": "前言 来自 <a href=\"https://x.com/tsoding/status/1989446257882829",
+    "publishedAt": "2026-05-12T14:15:41.000Z",
+    "dateKey": "2026-05-12",
+    "monthKey": "2026-05",
+    "yearKey": "2026",
+    "authorId": "level0-jj",
+    "authorName": "level0-jj",
+    "sourceFeed": "https://level0-jj.github.io/rss2.xml"
+  },
+  {
+    "id": "56519a2ab2507585",
+    "title": "终端typing_game",
+    "link": "https://level0-jj.github.io/2026/05/12/%E7%BB%88%E7%AB%AFtyping-game/",
+    "description": "游戏简介 这款打字小游戏会在终端中生成一个 4x6 的随机字母矩阵，你需要按照行优先</st",
+    "publishedAt": "2026-05-12T04:05:36.000Z",
+    "dateKey": "2026-05-12",
+    "monthKey": "2026-05",
+    "yearKey": "2026",
+    "authorId": "level0-jj",
+    "authorName": "level0-jj",
+    "sourceFeed": "https://level0-jj.github.io/rss2.xml"
+  },
+  {
     "id": "c2beb227e9fceb00",
     "title": "code测试页面",
     "link": "https://siriuns.netlify.app/posts/2026-4-30--code-test/",
@@ -325,6 +416,19 @@
     "sourceFeed": "https://revlogi.github.io/rss.xml"
   },
   {
+    "id": "68904e7385ddc889",
+    "title": "手写数字识别（LeNet-5）",
+    "link": "https://level0-jj.github.io/2025/12/20/%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB%EF%BC%88LeNet-5%EF%BC%89/",
+    "description": "前言 大一人工智能通识课（一个无用的水课？）上看到了一个深度学习项目，然后就想试一下这个经典项目——手写数字识别",
+    "publishedAt": "2025-12-20T13:17:07.000Z",
+    "dateKey": "2025-12-20",
+    "monthKey": "2025-12",
+    "yearKey": "2025",
+    "authorId": "level0-jj",
+    "authorName": "level0-jj",
+    "sourceFeed": "https://level0-jj.github.io/rss2.xml"
+  },
+  {
     "id": "0ee3702a95ba7a9d",
     "title": "Gitlet",
     "link": "https://revlogi.github.io/posts/Gitlet/",
@@ -336,6 +440,19 @@
     "authorId": "revlogi",
     "authorName": "RevLogi",
     "sourceFeed": "https://revlogi.github.io/rss.xml"
+  },
+  {
+    "id": "147b04c9c08cb7d9",
+    "title": "My first Blog",
+    "link": "https://level0-jj.github.io/2025/12/10/My-first-Blog/",
+    "description": "This is my first blog.I spend the whole afternoon and eventually success!Despite the fact that I haven’t decorated it yet,I still have th",
+    "publishedAt": "2025-12-10T06:59:22.000Z",
+    "dateKey": "2025-12-10",
+    "monthKey": "2025-12",
+    "yearKey": "2025",
+    "authorId": "level0-jj",
+    "authorName": "level0-jj",
+    "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
     "id": "b4012ccd5a7168de",
