@@ -3,7 +3,7 @@ import type { Post } from "../src/type/feed";
 import { members } from "../src/data/members";
 import type { PostCountSnapshot } from "../src/type/post-count";
 import { readJson, writeJson } from "../src/utils/json";
-import { toDayKey, toLocalDayKey } from "../src/utils/date";
+import { toLocalDayKey } from "../src/utils/date";
 
 const targetPath = "src/data/generated";
 
