@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LineChart from "../../components/LineChart.astro";
+import "../../styles/page.css";
+
+import type { MemberMap } from "../../type/member";
+import type { PostCountSnapshot } from "../../type/post-count";
+
+import { readJson } from "../../utils/json";
+import { join } from "node:path";
+
+export async function getStaticPaths() {
+    const memberMap = (await import("../../data/generated/member-map.json"))
+        .default as MemberMap;
+
+    return Object.entries(memberMap).map(([id, member]) => ({
+        params: { memberId: id },
+        props: { member },
+    }));
+}
+const { memberId } = Astro.params;
+const { member } = Astro.props;
+
+const snapshots = await readJson<PostCountSnapshot[]>(
+    join("src/data/generated", "post-counts.json"),
+    [],
+);
+
+const memberCounts: number[] = snapshots.map((s) => s.counts[memberId] ?? 0);
+const allDates: string[] = snapshots.map((s) => s.date);
+
+const firstAppearedIndex = snapshots.findIndex((s) => memberId in s.counts);
+const startIndex = firstAppearedIndex - 1;
+
+const trimmedCounts = memberCounts.slice(startIndex);
+const trimmedDates = allDates.slice(startIndex);
+
+const pageDescription = member.description;
+---
+
+<BaseLayout
+    title={`${member.name}'s History`}
+    favicon="history.svg"
+    description={pageDescription}
+    path={`/history/${memberId}/`}
+>
+    <section class="page">
+        <h1 class="page-title">{member.name}'s History</h1>
+        <p class="page-description">{pageDescription}</p>
+    </section>
+    <LineChart counts={trimmedCounts} dates={trimmedDates} />
+</BaseLayout>

@@ -2,10 +2,11 @@
 import type { MemberMapItem } from "../type/member";
 
 type Props = {
+    memberId: string;
     member: MemberMapItem;
 };
 
-const { member } = Astro.props as Props;
+const { memberId, member } = Astro.props as Props;
 
 const avatarSrc = `${import.meta.env.BASE_URL}avatars/${member.avatar}`;
 ---
@@ -38,6 +39,11 @@ const avatarSrc = `${import.meta.env.BASE_URL}avatars/${member.avatar}`;
                 href={member.feed}
                 target="_blank"
                 rel="noopener noreferrer">RSS</a
+            >
+            <a
+                class="member-card__link"
+                href={`${import.meta.env.BASE_URL}history/${memberId}`}
+                >History</a
             >
         </div>
     </div>

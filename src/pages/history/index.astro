@@ -1,11 +1,11 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import LineChart from "../components/LineChart.astro";
-import "../styles/page.css";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LineChart from "../../components/LineChart.astro";
+import "../../styles/page.css";
 
 import { join } from "node:path";
-import type { PostCountSnapshot } from "../type/post-count";
-import { readJson } from "../utils/json";
+import type { PostCountSnapshot } from "../../type/post-count";
+import { readJson } from "../../utils/json";
 
 const pageDescription = "Statistics on the Number of Historical Articles";
 
