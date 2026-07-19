@@ -44,5 +44,17 @@
       "wamingmo": 12,
       "episvr": 21
     }
+  },
+  {
+    "date": "2026-07-20",
+    "total": 63,
+    "counts": {
+      "Siriuns": 9,
+      "wdlin": 8,
+      "revlogi": 4,
+      "wamingmo": 12,
+      "episvr": 21,
+      "level0-jj": 9
+    }
   }
 ]
