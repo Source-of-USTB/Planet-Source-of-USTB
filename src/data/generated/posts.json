@@ -1,5 +1,31 @@
 [
   {
+    "id": "8108212285da617c",
+    "title": "Finding the Celebrity",
+    "link": "https://revlogi.github.io/posts/find-the-celebrity/",
+    "description": "Using elimination and recursion to find a party celebrity with at most 3n - 4 questions",
+    "publishedAt": "2026-08-06T00:00:00.000Z",
+    "dateKey": "2026-08-06",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "revlogi",
+    "authorName": "RevLogi",
+    "sourceFeed": "https://revlogi.github.io/rss.xml"
+  },
+  {
+    "id": "40d571f35e6d2486",
+    "title": "Using Invariants",
+    "link": "https://revlogi.github.io/posts/using-invariants/",
+    "description": "Reconstructing a C exception interface by identifying the invariant behind its control flow",
+    "publishedAt": "2026-08-05T00:00:00.000Z",
+    "dateKey": "2026-08-05",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "revlogi",
+    "authorName": "RevLogi",
+    "sourceFeed": "https://revlogi.github.io/rss.xml"
+  },
+  {
     "id": "1ab9eea830b4f1f4",
     "title": "如何在一台电脑上配置使用多个github账号以及ssh密钥",
     "link": "https://siriuns.netlify.app/posts/2026-7-24--multi-github/",
