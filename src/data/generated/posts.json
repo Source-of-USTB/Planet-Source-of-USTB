@@ -1,5 +1,18 @@
 [
   {
+    "id": "51c3a7e873703e5b",
+    "title": "如何用 umu+proton 在 linux 上运行游戏",
+    "link": "https://siriuns.netlify.app/posts/2026-8-26--proton/",
+    "description": "Steam 把我账号的 Linux Runtime 4.0 的许给给没收了说是, 也不知道是系统不适用还是什么.",
+    "publishedAt": "2026-08-26T00:00:00.000Z",
+    "dateKey": "2026-08-26",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "Siriuns",
+    "authorName": "Siriuns",
+    "sourceFeed": "https://siriuns.netlify.app/rss.xml"
+  },
+  {
     "id": "8108212285da617c",
     "title": "Finding the Celebrity",
     "link": "https://revlogi.github.io/posts/find-the-celebrity/",
