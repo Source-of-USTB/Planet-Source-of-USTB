@@ -1,4 +1,23 @@
 {
   "_statusValues": "dead | alive | pending",
-  "candidates": []
+  "candidates": [
+    {
+      "id": "51c3a7e873703e5b",
+      "link": "https://siriuns.netlify.app/posts/2026-8-26--proton/",
+      "title": "如何用 umu+proton 在 linux 上运行游戏",
+      "checkedAt": "2026-09-01T22:42:58.823Z",
+      "checkResult": "timeout",
+      "errorMessage": "请求超时",
+      "status": "pending"
+    },
+    {
+      "id": "1ab9eea830b4f1f4",
+      "link": "https://siriuns.netlify.app/posts/2026-7-24--multi-github/",
+      "title": "如何在一台电脑上配置使用多个github账号以及ssh密钥",
+      "checkedAt": "2026-09-01T22:42:58.823Z",
+      "checkResult": "timeout",
+      "errorMessage": "请求超时",
+      "status": "pending"
+    }
+  ]
 }
