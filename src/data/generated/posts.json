@@ -1,5 +1,44 @@
 [
   {
+    "id": "0072617869231991",
+    "title": "保研",
+    "link": "https://wamingmo.github.io/2026/09/13/baoyan/",
+    "description": "保研期间的心理状态",
+    "publishedAt": "2026-09-13T10:37:54.428Z",
+    "dateKey": "2026-09-13",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "wamingmo",
+    "authorName": "wamingmo",
+    "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
+    "id": "6c88385987fac8ed",
+    "title": "Asterinas 开源贡献实战尝试",
+    "link": "https://wamingmo.github.io/2026/09/13/open-source-getting-start--asterinas/",
+    "description": "尝试贡献 Asterinas 项目，记录开发环境搭建和代码贡献流程（未coding）。",
+    "publishedAt": "2026-09-13T10:10:50.222Z",
+    "dateKey": "2026-09-13",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "wamingmo",
+    "authorName": "wamingmo",
+    "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
+    "id": "51de6cde3d146451",
+    "title": "做leetcode160.相交链表有感",
+    "link": "https://level0-jj.github.io/2026/09/07/%E5%81%9Aleetcode160-%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8%E6%9C%89%E6%84%9F/",
+    "description": "缘由 鉴于本人长期使用ai写代码，手搓代码能力堪比成年草履虫，遂听从好友建议刷l",
+    "publishedAt": "2026-09-07T12:35:16.000Z",
+    "dateKey": "2026-09-07",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "level0-jj",
+    "authorName": "level0-jj",
+    "sourceFeed": "https://level0-jj.github.io/rss2.xml"
+  },
+  {
     "id": "51c3a7e873703e5b",
     "title": "如何用 umu+proton 在 linux 上运行游戏",
     "link": "https://siriuns.netlify.app/posts/2026-8-26--proton/",
