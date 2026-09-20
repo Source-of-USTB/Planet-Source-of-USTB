@@ -1,5 +1,44 @@
 [
   {
+    "id": "deecfce47b3e4546",
+    "title": "Asterinas OverlayFS rmdir Panic 修复经验总结",
+    "link": "https://wamingmo.github.io/2026/09/17/first-try-fix-issue-and-pr/",
+    "description": "尝试贡献 Asterinas 项目但是遭遇了重构，pr没有被merge，部分经验。(already coding，though only one line modified)",
+    "publishedAt": "2026-09-17T03:38:05.749Z",
+    "dateKey": "2026-09-17",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "wamingmo",
+    "authorName": "wamingmo",
+    "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
+    "id": "836fd163badb3309",
+    "title": "校园网v6免流",
+    "link": "https://siriuns.netlify.app/posts/2026-9-15--proxy/",
+    "description": "利用ipv6上下行不计费来实现校园网免流",
+    "publishedAt": "2026-09-15T00:00:00.000Z",
+    "dateKey": "2026-09-15",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "Siriuns",
+    "authorName": "Siriuns",
+    "sourceFeed": "https://siriuns.netlify.app/rss.xml"
+  },
+  {
+    "id": "424dad91d4ab342a",
+    "title": "img测试页面",
+    "link": "https://siriuns.netlify.app/posts/2026-9-14--img-test/",
+    "description": "测试图片显示",
+    "publishedAt": "2026-09-14T00:00:00.000Z",
+    "dateKey": "2026-09-14",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "Siriuns",
+    "authorName": "Siriuns",
+    "sourceFeed": "https://siriuns.netlify.app/rss.xml"
+  },
+  {
     "id": "0072617869231991",
     "title": "保研",
     "link": "https://wamingmo.github.io/2026/09/13/baoyan/",
@@ -141,6 +180,19 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
+    "id": "4f04494981081ac8",
+    "title": "Recursion without names",
+    "link": "https://revlogi.github.io/posts/y-combinator/",
+    "description": "y combinator",
+    "publishedAt": "2026-07-06T00:00:00.000Z",
+    "dateKey": "2026-07-06",
+    "monthKey": "2026-07",
+    "yearKey": "2026",
+    "authorId": "revlogi",
+    "authorName": "RevLogi",
+    "sourceFeed": "https://revlogi.github.io/rss.xml"
   },
   {
     "id": "2148edded3ac67a6",
