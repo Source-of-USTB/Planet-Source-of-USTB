@@ -1,5 +1,31 @@
 [
   {
+    "id": "9f481e0661dca6df",
+    "title": "秋、銀杏、君を待つ",
+    "link": "https://blog.wdlin.com/posts/aki/",
+    "description": "",
+    "publishedAt": "2026-09-25T16:13:00.000Z",
+    "dateKey": "2026-09-25",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "wdlin",
+    "authorName": "wdlin",
+    "sourceFeed": "https://wdlin233.github.io/rss.xml"
+  },
+  {
+    "id": "c5c69878b053fc0d",
+    "title": "我与我的保研回忆",
+    "link": "http://blog.episvr.top/2026/09/22/baoyan/",
+    "description": "保研夏令营与预推免阶段的经历记录，以及给学弟学妹的一些主观建议。",
+    "publishedAt": "2026-09-21T16:00:00.000Z",
+    "dateKey": "2026-09-21",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
     "id": "deecfce47b3e4546",
     "title": "Asterinas OverlayFS rmdir Panic 修复经验总结",
     "link": "https://wamingmo.github.io/2026/09/17/first-try-fix-issue-and-pr/",
@@ -390,6 +416,19 @@
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
+    "id": "03298d500c997d06",
+    "title": "Intro to Polyhedral Optimization",
+    "link": "https://blog.wdlin.com/posts/polyhedral/",
+    "description": "Notes for Polyhedral Optimization",
+    "publishedAt": "2026-05-03T12:00:00.000Z",
+    "dateKey": "2026-05-03",
+    "monthKey": "2026-05",
+    "yearKey": "2026",
+    "authorId": "wdlin",
+    "authorName": "wdlin",
+    "sourceFeed": "https://wdlin233.github.io/rss.xml"
+  },
+  {
     "id": "c2beb227e9fceb00",
     "title": "code测试页面",
     "link": "https://siriuns.netlify.app/posts/2026-4-30--code-test/",
@@ -481,6 +520,19 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
+    "id": "a9f273aafbb348db",
+    "title": "How to Scale Your Model",
+    "link": "https://blog.wdlin.com/posts/scale/",
+    "description": "Some notes for How to Scale Your Model book",
+    "publishedAt": "2026-03-16T12:00:00.000Z",
+    "dateKey": "2026-03-16",
+    "monthKey": "2026-03",
+    "yearKey": "2026",
+    "authorId": "wdlin",
+    "authorName": "wdlin",
+    "sourceFeed": "https://wdlin233.github.io/rss.xml"
+  },
+  {
     "id": "382a0df57cfa9bf3",
     "title": "HiPPO推导",
     "link": "https://siriuns.netlify.app/posts/2026-3-4--HiPPO/",
@@ -500,6 +552,19 @@
     "description": "Lecture 8: CUDA Performance Checklist",
     "publishedAt": "2026-02-18T13:00:00.000Z",
     "dateKey": "2026-02-18",
+    "monthKey": "2026-02",
+    "yearKey": "2026",
+    "authorId": "wdlin",
+    "authorName": "wdlin",
+    "sourceFeed": "https://wdlin233.github.io/rss.xml"
+  },
+  {
+    "id": "fbc28558169be603",
+    "title": "GPUMODE Lec.8",
+    "link": "https://blog.wdlin.com/posts/gpumode-lec8/",
+    "description": "Lecture 8: CUDA Performance Checklist",
+    "publishedAt": "2026-02-17T12:00:00.000Z",
+    "dateKey": "2026-02-17",
     "monthKey": "2026-02",
     "yearKey": "2026",
     "authorId": "wdlin",
@@ -715,6 +780,19 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
+    "id": "552a756cd7b8b6e4",
+    "title": "The Relational Algebra Learning Notes",
+    "link": "https://blog.wdlin.com/posts/RelationalAlgebra/",
+    "description": "The Relational Algebra learning notes for the database course.",
+    "publishedAt": "2025-09-20T16:25:00.000Z",
+    "dateKey": "2025-09-20",
+    "monthKey": "2025-09",
+    "yearKey": "2025",
+    "authorId": "wdlin",
+    "authorName": "wdlin",
+    "sourceFeed": "https://wdlin233.github.io/rss.xml"
+  },
+  {
     "id": "56ae1f4c2bbaaeb7",
     "title": "OS视角下对Shell的简单理解",
     "link": "https://wamingmo.github.io/2025/06/11/sh/",
@@ -747,6 +825,19 @@
     "description": "《程序设计语言》一书阅读中的一些记录.",
     "publishedAt": "2025-06-02T11:56:00.000Z",
     "dateKey": "2025-06-02",
+    "monthKey": "2025-06",
+    "yearKey": "2025",
+    "authorId": "wdlin",
+    "authorName": "wdlin",
+    "sourceFeed": "https://wdlin233.github.io/rss.xml"
+  },
+  {
+    "id": "1dc414c633fe67d2",
+    "title": "PLP 阅读随笔",
+    "link": "https://blog.wdlin.com/posts/PLP/",
+    "description": "《程序设计语言》一书阅读中的一些记录.",
+    "publishedAt": "2025-06-01T11:54:00.000Z",
+    "dateKey": "2025-06-01",
     "monthKey": "2025-06",
     "yearKey": "2025",
     "authorId": "wdlin",
@@ -793,6 +884,19 @@
     "sourceFeed": "https://episvr.github.io/atom.xml"
   },
   {
+    "id": "cad68ec89868760f",
+    "title": "rCoreloongArch 学习笔记",
+    "link": "https://blog.wdlin.com/posts/rCoreloongArch/",
+    "description": "记录了我在阅读 rCoreloongArch 文档过程中的总结.",
+    "publishedAt": "2025-04-18T15:50:00.000Z",
+    "dateKey": "2025-04-18",
+    "monthKey": "2025-04",
+    "yearKey": "2025",
+    "authorId": "wdlin",
+    "authorName": "wdlin",
+    "sourceFeed": "https://wdlin233.github.io/rss.xml"
+  },
+  {
     "id": "22d09c188132af87",
     "title": "自表达的代码（命名篇）",
     "link": "http://blog.episvr.top/2025/04/09/SelfexprCodes01/",
@@ -804,6 +908,19 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
+    "id": "517d4c5ef6e03f5d",
+    "title": "rCore (RISC-V) 学习笔记",
+    "link": "https://blog.wdlin.com/posts/rCore-note/",
+    "description": "在学习 rCore 操作系统内核时的各种总结和反思.",
+    "publishedAt": "2025-03-23T21:13:00.000Z",
+    "dateKey": "2025-03-23",
+    "monthKey": "2025-03",
+    "yearKey": "2025",
+    "authorId": "wdlin",
+    "authorName": "wdlin",
+    "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
     "id": "6f78fcf28a8eeea6",
@@ -848,6 +965,19 @@
     "id": "ef65ca0f23cadf54",
     "title": "对函数栈帧 StackFrame 的理解",
     "link": "https://wdlin233.github.io/posts/StackFrame/",
+    "description": "我在学习操作系统中对函数栈帧的一些学习记录.",
+    "publishedAt": "2025-03-01T20:54:00.000Z",
+    "dateKey": "2025-03-01",
+    "monthKey": "2025-03",
+    "yearKey": "2025",
+    "authorId": "wdlin",
+    "authorName": "wdlin",
+    "sourceFeed": "https://wdlin233.github.io/rss.xml"
+  },
+  {
+    "id": "530a2754d01ec68b",
+    "title": "对函数栈帧 StackFrame 的理解",
+    "link": "https://blog.wdlin.com/posts/StackFrame/",
     "description": "我在学习操作系统中对函数栈帧的一些学习记录.",
     "publishedAt": "2025-03-01T20:54:00.000Z",
     "dateKey": "2025-03-01",
