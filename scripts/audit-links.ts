@@ -2,12 +2,24 @@ import { join } from "node:path";
 import type { Post } from "../src/type/feed";
 import { STATUS_DOC, type LinkAuditCandidate, type LinkAuditResult, type LinkAuditFile } from "../src/type/link-audit";
 import { readJson, writeJson } from "../src/utils/json";
+import { members } from "../src/data/members";
 
 const postsPath = join("src/data/generated", "posts.json");
 const reviewPath = join("data/review", "link-audit.json");
 
 const CONCURRENCY = 5;   // 同时检测几个链接, 太大容易被对面网站当成攻击
 const TIMEOUT_MS = 10000;
+
+const memberHosts = new Map(members.map((m) => [m.id, getHostname(m.site)]));
+
+function getHostname(u: string): string | null {
+    try {
+        const x = new URL(u);
+        return x.hostname;
+    } catch {
+        return null;
+    }
+}
 
 // 通用并发函数
 async function mapWithConcurrency<T, R>(
@@ -29,11 +41,19 @@ async function mapWithConcurrency<T, R>(
     return results;
 }
 
-async function checkLink(url: string): Promise<{
+async function checkLink(url: string, authorId: string): Promise<{
     checkResult: LinkAuditResult;
     statusCode?: number;
     errorMessage?: string;
 }> {
+    const host = getHostname(url);
+    if (host == null) {
+        return { checkResult: "invalid_url", errorMessage: `${url} is an invalid url` };
+    }
+    else if (host !== memberHosts.get(authorId)) {
+        return { checkResult: "host_mismatch", errorMessage: `host ${host} does not match ${authorId}'s site` };
+    }
+
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
 
@@ -50,7 +70,7 @@ async function checkLink(url: string): Promise<{
             : { checkResult: "ok", statusCode: res.status };
     } catch (e) {
         if (e instanceof Error && e.name === "AbortError") {
-            return { checkResult: "timeout", errorMessage: "请求超时" };
+            return { checkResult: "timeout", errorMessage: "request timeout" };
         }
 
         const code = (e as { cause?: { code?: string } })?.cause?.code;
@@ -99,7 +119,7 @@ const checkedAt = new Date().toISOString();
 
 const merged = await mapWithConcurrency<Post, LinkAuditCandidate | null>(posts, CONCURRENCY,
     async (post) => {
-        const result = await checkLink(post.link);
+        const result = await checkLink(post.link, post.authorId);
         return mergeCandidate(existingMap.get(post.id), {
             id: post.id,
             link: post.link,

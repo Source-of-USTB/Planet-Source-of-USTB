@@ -312,19 +312,6 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "28641c0a29f45f96",
-    "title": "Intro to Polyhedral Optimization",
-    "link": "https://wdlin233.github.io/posts/polyhedral/",
-    "description": "Notes for Polyhedral Optimization",
-    "publishedAt": "2026-06-07T13:00:00.000Z",
-    "dateKey": "2026-06-07",
-    "monthKey": "2026-06",
-    "yearKey": "2026",
-    "authorId": "wdlin",
-    "authorName": "wdlin",
-    "sourceFeed": "https://wdlin233.github.io/rss.xml"
-  },
-  {
     "id": "f00b142ae6688203",
     "title": "DLinear复现实验",
     "link": "https://level0-jj.github.io/2026/05/28/DLinear%E5%A4%8D%E7%8E%B0%E5%AE%9E%E9%AA%8C/",
@@ -507,19 +494,6 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "3e1a4ff6888e85a4",
-    "title": "How to Scale Your Model",
-    "link": "https://wdlin233.github.io/posts/scale/",
-    "description": "Some notes for How to Scale Your Model book",
-    "publishedAt": "2026-03-24T13:00:00.000Z",
-    "dateKey": "2026-03-24",
-    "monthKey": "2026-03",
-    "yearKey": "2026",
-    "authorId": "wdlin",
-    "authorName": "wdlin",
-    "sourceFeed": "https://wdlin233.github.io/rss.xml"
-  },
-  {
     "id": "a9f273aafbb348db",
     "title": "How to Scale Your Model",
     "link": "https://blog.wdlin.com/posts/scale/",
@@ -544,19 +518,6 @@
     "authorId": "Siriuns",
     "authorName": "Siriuns",
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
-  },
-  {
-    "id": "d863e716795bdc83",
-    "title": "GPUMODE Lec.8",
-    "link": "https://wdlin233.github.io/posts/gpumode-lec8/",
-    "description": "Lecture 8: CUDA Performance Checklist",
-    "publishedAt": "2026-02-18T13:00:00.000Z",
-    "dateKey": "2026-02-18",
-    "monthKey": "2026-02",
-    "yearKey": "2026",
-    "authorId": "wdlin",
-    "authorName": "wdlin",
-    "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
     "id": "fbc28558169be603",
@@ -767,19 +728,6 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "b25e42b3d8c90614",
-    "title": "The Relational Algebra Learning Notes",
-    "link": "https://wdlin233.github.io/posts/RelationalAlgebra/",
-    "description": "The Relational Algebra learning notes for the database course.",
-    "publishedAt": "2025-09-20T16:50:00.000Z",
-    "dateKey": "2025-09-20",
-    "monthKey": "2025-09",
-    "yearKey": "2025",
-    "authorId": "wdlin",
-    "authorName": "wdlin",
-    "sourceFeed": "https://wdlin233.github.io/rss.xml"
-  },
-  {
     "id": "552a756cd7b8b6e4",
     "title": "The Relational Algebra Learning Notes",
     "link": "https://blog.wdlin.com/posts/RelationalAlgebra/",
@@ -819,19 +767,6 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "a0c88ad02749c80c",
-    "title": "PLP 阅读随笔",
-    "link": "https://wdlin233.github.io/posts/PLP/",
-    "description": "《程序设计语言》一书阅读中的一些记录.",
-    "publishedAt": "2025-06-02T11:56:00.000Z",
-    "dateKey": "2025-06-02",
-    "monthKey": "2025-06",
-    "yearKey": "2025",
-    "authorId": "wdlin",
-    "authorName": "wdlin",
-    "sourceFeed": "https://wdlin233.github.io/rss.xml"
-  },
-  {
     "id": "1dc414c633fe67d2",
     "title": "PLP 阅读随笔",
     "link": "https://blog.wdlin.com/posts/PLP/",
@@ -839,32 +774,6 @@
     "publishedAt": "2025-06-01T11:54:00.000Z",
     "dateKey": "2025-06-01",
     "monthKey": "2025-06",
-    "yearKey": "2025",
-    "authorId": "wdlin",
-    "authorName": "wdlin",
-    "sourceFeed": "https://wdlin233.github.io/rss.xml"
-  },
-  {
-    "id": "bcf8806f80a49b19",
-    "title": "rCore (RISC-V) 学习笔记",
-    "link": "https://wdlin233.github.io/posts/rCore-note/",
-    "description": "在学习 rCore 操作系统内核时的各种总结和反思.",
-    "publishedAt": "2025-04-28T16:30:00.000Z",
-    "dateKey": "2025-04-28",
-    "monthKey": "2025-04",
-    "yearKey": "2025",
-    "authorId": "wdlin",
-    "authorName": "wdlin",
-    "sourceFeed": "https://wdlin233.github.io/rss.xml"
-  },
-  {
-    "id": "40b84516302701c3",
-    "title": "rCoreloongArch 学习笔记",
-    "link": "https://wdlin233.github.io/posts/rCoreloongArch/",
-    "description": "记录了我在阅读 rCoreloongArch 文档过程中的总结.",
-    "publishedAt": "2025-04-26T20:31:00.000Z",
-    "dateKey": "2025-04-26",
-    "monthKey": "2025-04",
     "yearKey": "2025",
     "authorId": "wdlin",
     "authorName": "wdlin",
@@ -960,19 +869,6 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://episvr.github.io/atom.xml"
-  },
-  {
-    "id": "ef65ca0f23cadf54",
-    "title": "对函数栈帧 StackFrame 的理解",
-    "link": "https://wdlin233.github.io/posts/StackFrame/",
-    "description": "我在学习操作系统中对函数栈帧的一些学习记录.",
-    "publishedAt": "2025-03-01T20:54:00.000Z",
-    "dateKey": "2025-03-01",
-    "monthKey": "2025-03",
-    "yearKey": "2025",
-    "authorId": "wdlin",
-    "authorName": "wdlin",
-    "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
     "id": "530a2754d01ec68b",

@@ -13,18 +13,18 @@ const posts = await readJson<Post[]>(postsPath, []);
 const file = await readJson<LinkAuditFile>(reviewPath, { _statusValues: STATUS_DOC, candidates: [] });
 const candidates = file.candidates as LinkAuditCandidate[];
 
-const deadIds = new Set(
-    candidates.filter((c) => c.status === "dead").map((c) => c.id),
+const removeIds = new Set(
+    candidates.filter((c) => c.status === "to_remove").map((c) => c.id),
 );
 
-if (deadIds.size === 0) {
-    console.log("No confirmed dead links to clean. Nothing to do.");
+if (removeIds.size === 0) {
+    console.log("No confirmed links to remove. Nothing to do.");
 } else {
-    const removedPosts = posts.filter((post) => deadIds.has(post.id));
-    const remainingPosts = posts.filter((post) => !deadIds.has(post.id));
-    const remainingCandidates = candidates.filter((c) => !deadIds.has(c.id));
+    const removedPosts = posts.filter((post) => removeIds.has(post.id));
+    const remainingPosts = posts.filter((post) => !removeIds.has(post.id));
+    const remainingCandidates = candidates.filter((c) => !removeIds.has(c.id));
 
-    console.log(`${isDryRun ? "[dry run] Would remove" : "Removing"} ${removedPosts.length} confirmed dead posts:`);
+    console.log(`${isDryRun ? "[dry run] Would remove" : "Removing"} ${removedPosts.length} confirmed posts:`);
     for (const post of removedPosts) {
         console.log(`  - [${post.id}] (${post.link}) ${post.title}`);
     }

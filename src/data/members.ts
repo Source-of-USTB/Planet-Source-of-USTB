@@ -7,15 +7,15 @@ export const members: Member[] = [
 		site: "https://siriuns.netlify.app",
 		feed: "https://siriuns.netlify.app/rss.xml",
 		avatar: "siriuns.jpg",
-		description: "hyw",
+		description: "Reconnecting... 1/5",
 	},
 	{
 		id: "wdlin",
 		name: "wdlin",
-		site: "https://wdlin233.github.io",
-		feed: "https://wdlin233.github.io/rss.xml",
+		site: "https://blog.wdlin.com",
+		feed: "https://blog.wdlin.com/rss.xml",
 		avatar: "wdlin.jpg",
-		description: "nihao",
+		description: "Thinking...",
 	},
 	{
 		id: "revlogi",
@@ -25,7 +25,7 @@ export const members: Member[] = [
 		avatar: "revlogi.jpg",
 		description: "an ignorant learner",
 	},
-		{
+	{
 		id: "wamingmo",
 		name: "wamingmo",
 		site: "https://wamingmo.github.io",
@@ -36,17 +36,17 @@ export const members: Member[] = [
 	{
 		id: "episvr",
 		name: "episvr",
-		site: "https://episvr.github.io",
-		feed: "https://episvr.github.io/atom.xml",
+		site: "https://blog.episvr.top",
+		feed: "https://blog.episvr.top/atom.xml",
 		avatar: "episvr.jpg",
 		description: "the one who always gets jumped over by the quick fox"
 	},
 	{
-  		id: "level0-jj",
-  		name: "level0-jj",
-  		site: "https://level0-jj.github.io",
-  		feed: "https://level0-jj.github.io/rss2.xml",
-  		avatar: "level0-jj.jpg",
-  		description: "Type a message…",
+		id: "level0-jj",
+		name: "level0-jj",
+		site: "https://level0-jj.github.io",
+		feed: "https://level0-jj.github.io/rss2.xml",
+		avatar: "level0-jj.jpg",
+		description: "Type a message…",
 	},
 ];

@@ -1,12 +1,14 @@
 export type LinkAuditResult =
     | "ok"
     | "http_error"     // 配合 statusCode, 比如404/403/500
+    | "invalid_url"
+    | "host_mismatch"
     | "timeout"
     | "dns_failure"
     | "tls_error"
     | "unknown_error";
 
-export const LINK_AUDIT_STATUSES = ["dead", "alive", "pending"] as const;
+export const LINK_AUDIT_STATUSES = ["to_remove", "alive", "pending"] as const;
 export type LinkAuditStatus = (typeof LINK_AUDIT_STATUSES)[number];
 export const STATUS_DOC = LINK_AUDIT_STATUSES.join(" | ");
 
