@@ -29,8 +29,8 @@
   },
   "episvr": {
     "name": "episvr",
-    "site": "https://episvr.github.io",
-    "feed": "https://episvr.github.io/atom.xml",
+    "site": "https://blog.episvr.top",
+    "feed": "https://blog.episvr.top/atom.xml",
     "avatar": "episvr.jpg",
     "description": "the one who always gets jumped over by the quick fox"
   },

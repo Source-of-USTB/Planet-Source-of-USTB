@@ -26,6 +26,19 @@
     "sourceFeed": "https://episvr.github.io/atom.xml"
   },
   {
+    "id": "89a51db2cdbf653b",
+    "title": "我与我的保研回忆",
+    "link": "https://blog.episvr.top/2026/09/22/baoyan/",
+    "description": "保研夏令营与预推免阶段的经历记录，以及给学弟学妹的一些主观建议。",
+    "publishedAt": "2026-09-21T16:00:00.000Z",
+    "dateKey": "2026-09-21",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
     "id": "deecfce47b3e4546",
     "title": "Asterinas OverlayFS rmdir Panic 修复经验总结",
     "link": "https://wamingmo.github.io/2026/09/17/first-try-fix-issue-and-pr/",
@@ -208,6 +221,19 @@
     "sourceFeed": "https://episvr.github.io/atom.xml"
   },
   {
+    "id": "5a734fb79caa8c4c",
+    "title": "Git 是怎么工作的",
+    "link": "https://blog.episvr.top/2026/07/12/git-exploration/",
+    "description": "深入探讨Git的原理和底层机制，包括对象模型、存储实现和垃圾回收等。",
+    "publishedAt": "2026-07-11T16:00:00.000Z",
+    "dateKey": "2026-07-11",
+    "monthKey": "2026-07",
+    "yearKey": "2026",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
     "id": "4f04494981081ac8",
     "title": "Recursion without names",
     "link": "https://revlogi.github.io/posts/y-combinator/",
@@ -232,6 +258,19 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
+    "id": "50f667ab28cf56c9",
+    "title": "怎么为一个陌生的项目添加功能",
+    "link": "https://blog.episvr.top/2026/07/04/WorkWithUnfamiliarCode/",
+    "description": "本文探讨如何阅读陌生的项目代码，定位功能位置，并为其添加新功能的方法论。",
+    "publishedAt": "2026-07-03T16:00:00.000Z",
+    "dateKey": "2026-07-03",
+    "monthKey": "2026-07",
+    "yearKey": "2026",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
     "id": "374131213b4123af",
@@ -260,6 +299,19 @@
     "sourceFeed": "https://episvr.github.io/atom.xml"
   },
   {
+    "id": "f142c37396aca087",
+    "title": "一次关于 Thinkpad T420 的升级",
+    "link": "https://blog.episvr.top/2026/06/29/Thinkpad-T420-Upgrade/",
+    "description": "对 ThinkPad T420 进行 CPU、内存、散热、C壳 的全面升级改造记录",
+    "publishedAt": "2026-06-29T13:13:00.000Z",
+    "dateKey": "2026-06-29",
+    "monthKey": "2026-06",
+    "yearKey": "2026",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
     "id": "064e584b404c764f",
     "title": "在 uosc_danmaku 中集成 pakkujs 弹幕合并算法",
     "link": "http://blog.episvr.top/2026/06/29/uosc_danmaku-pakkujs/",
@@ -271,6 +323,19 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
+    "id": "31db352187e537b4",
+    "title": "在 uosc_danmaku 中集成 pakkujs 弹幕合并算法",
+    "link": "https://blog.episvr.top/2026/06/29/uosc_danmaku-pakkujs/",
+    "description": "记录如何将 pakku.js 的弹幕合并算法移植到 mpv Lua 插件 uosc_danmaku 中",
+    "publishedAt": "2026-06-28T16:00:00.000Z",
+    "dateKey": "2026-06-28",
+    "monthKey": "2026-06",
+    "yearKey": "2026",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
     "id": "6b8e1c192ed6f977",
@@ -559,6 +624,19 @@
     "sourceFeed": "https://episvr.github.io/atom.xml"
   },
   {
+    "id": "45a7a7a49b476337",
+    "title": "a PR for kew",
+    "link": "https://blog.episvr.top/2026/01/31/PR-Kew/",
+    "description": "这大概是我第一次认真地向一个开源项目提交 PR。",
+    "publishedAt": "2026-01-30T16:00:00.000Z",
+    "dateKey": "2026-01-30",
+    "monthKey": "2026-01",
+    "yearKey": "2026",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
     "id": "cf1c8ec67ff4d8a5",
     "title": "Install Debian on ThinkPad-T420",
     "link": "http://blog.episvr.top/2026/01/28/Thinkpad-T420/",
@@ -570,6 +648,19 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
+    "id": "d23d989d17158eb6",
+    "title": "Install Debian on ThinkPad-T420",
+    "link": "https://blog.episvr.top/2026/01/28/Thinkpad-T420/",
+    "description": "我一直想收一台二手笔记本玩玩 Linux，终于下手了，本篇文章是记录这件事的部分流程",
+    "publishedAt": "2026-01-27T16:00:00.000Z",
+    "dateKey": "2026-01-27",
+    "monthKey": "2026-01",
+    "yearKey": "2026",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
     "id": "0bb2d8212c610fb3",
@@ -793,6 +884,19 @@
     "sourceFeed": "https://episvr.github.io/atom.xml"
   },
   {
+    "id": "96fbd76506da7594",
+    "title": "第八日的谜：FDUPHWriteup",
+    "link": "https://blog.episvr.top/2025/04/27/FDUPHWriteup/",
+    "description": "Puzzle hunt是一种高度综合性的解谜活动。FDU Puzzle Hunt是复旦大学推理协会谜题分部策划的puzzle hunt解谜活动，面向校内同学与社会公众。此篇文章是对其的赛后回顾。",
+    "publishedAt": "2025-04-26T16:00:00.000Z",
+    "dateKey": "2025-04-26",
+    "monthKey": "2025-04",
+    "yearKey": "2025",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
     "id": "cad68ec89868760f",
     "title": "rCoreloongArch 学习笔记",
     "link": "https://blog.wdlin.com/posts/rCoreloongArch/",
@@ -817,6 +921,19 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
+    "id": "afd6de13186173a3",
+    "title": "自表达的代码（命名篇）",
+    "link": "https://blog.episvr.top/2025/04/09/SelfexprCodes01/",
+    "description": "课上不会教但是感觉必须要会的又一座大山。众所周知：组织得好的代码可以省去大量写文档注释的时间，看着赏心悦目，而且便于调 Bug。那么怎么写出这种并非“非人类”的代码呢？",
+    "publishedAt": "2025-04-08T16:00:00.000Z",
+    "dateKey": "2025-04-08",
+    "monthKey": "2025-04",
+    "yearKey": "2025",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
     "id": "517d4c5ef6e03f5d",
@@ -845,6 +962,19 @@
     "sourceFeed": "https://episvr.github.io/atom.xml"
   },
   {
+    "id": "c85f6ff2aa53658a",
+    "title": "深度学习小记 (二)",
+    "link": "https://blog.episvr.top/2025/03/24/NeuralNetwork02/",
+    "description": "在上一篇博客中，我们共同了解了神经网络的基本原理，这一次将聚焦于代码层次讨论如何“写”出一个神经网络。",
+    "publishedAt": "2025-03-23T16:00:00.000Z",
+    "dateKey": "2025-03-23",
+    "monthKey": "2025-03",
+    "yearKey": "2025",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
     "id": "9b8dcc8bcda31f6c",
     "title": "Cornsnakey Meta Writeup - 每逢佳节倍思戚",
     "link": "http://blog.episvr.top/2025/03/04/CornsnakeyMetaWriteup/",
@@ -858,6 +988,19 @@
     "sourceFeed": "https://episvr.github.io/atom.xml"
   },
   {
+    "id": "eeb727605b35b68b",
+    "title": "Cornsnakey Meta Writeup - 每逢佳节倍思戚",
+    "link": "https://blog.episvr.top/2025/03/04/CornsnakeyMetaWriteup/",
+    "description": "本文是 蛇Hunt 的 meta \"每逢佳节倍思\" 的赛后回顾",
+    "publishedAt": "2025-03-03T16:00:00.000Z",
+    "dateKey": "2025-03-03",
+    "monthKey": "2025-03",
+    "yearKey": "2025",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
     "id": "e6b6e4fdd15a1c58",
     "title": "三月三俳句记",
     "link": "http://blog.episvr.top/2025/03/03/Haiku-Notes/",
@@ -869,6 +1012,19 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
+    "id": "51a1aea031893d21",
+    "title": "三月三俳句记",
+    "link": "https://blog.episvr.top/2025/03/03/Haiku-Notes/",
+    "description": "朋友过 20 岁生日，根据他朋友圈写的自庆诗即兴写了俳句。这里做个小记录。",
+    "publishedAt": "2025-03-02T16:00:00.000Z",
+    "dateKey": "2025-03-02",
+    "monthKey": "2025-03",
+    "yearKey": "2025",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
     "id": "530a2754d01ec68b",
@@ -897,6 +1053,19 @@
     "sourceFeed": "https://episvr.github.io/atom.xml"
   },
   {
+    "id": "18673fbfacb09719",
+    "title": "深度学习小记 (一)",
+    "link": "https://blog.episvr.top/2025/02/28/NeuralNetwork01/",
+    "description": "你说的对，但是【神经网络】是由【沃伦·麦卡洛克】和【沃尔特·皮茨】研发的开放世界推理游戏。在这款游戏中，玩家将被赋予【高等数学】和【线性代数】的武器，编不下去了…",
+    "publishedAt": "2025-02-27T16:00:00.000Z",
+    "dateKey": "2025-02-27",
+    "monthKey": "2025-02",
+    "yearKey": "2025",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
     "id": "6705e66ae86d41f6",
     "title": "新年第一 hunt：Cornsnaky write up",
     "link": "http://blog.episvr.top/2025/02/09/CornsnakeyWriteup/",
@@ -908,6 +1077,19 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
+    "id": "f3ee6b0f71e9fc43",
+    "title": "新年第一 hunt：Cornsnaky write up",
+    "link": "https://blog.episvr.top/2025/02/09/CornsnakeyWriteup/",
+    "description": "Writeup for Cornsnakey hunt！",
+    "publishedAt": "2025-02-08T16:00:00.000Z",
+    "dateKey": "2025-02-08",
+    "monthKey": "2025-02",
+    "yearKey": "2025",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
     "id": "dfc8225c63bb8a5f",
@@ -923,6 +1105,19 @@
     "sourceFeed": "https://episvr.github.io/atom.xml"
   },
   {
+    "id": "939bc8a27dd7467d",
+    "title": "有惊无险的数据抢救",
+    "link": "https://blog.episvr.top/2025/02/07/Data-Recovery-Log/",
+    "description": "一次摔跤引发的一场绞尽脑汁地数据转移战。",
+    "publishedAt": "2025-02-06T16:00:00.000Z",
+    "dateKey": "2025-02-06",
+    "monthKey": "2025-02",
+    "yearKey": "2025",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
     "id": "ca87bb046ca4a11d",
     "title": "This is a test",
     "link": "http://blog.episvr.top/2025/02/02/Test-Lyrics-and-Mahjong/",
@@ -934,6 +1129,19 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
+    "id": "5838f64da621acd4",
+    "title": "This is a test",
+    "link": "https://blog.episvr.top/2025/02/02/Test-Lyrics-and-Mahjong/",
+    "description": "歌词样式的测试，顺便塞了记了记我老家的麻将规则",
+    "publishedAt": "2025-02-01T16:00:00.000Z",
+    "dateKey": "2025-02-01",
+    "monthKey": "2025-02",
+    "yearKey": "2025",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
     "id": "2366ec236ebdac73",
@@ -949,6 +1157,19 @@
     "sourceFeed": "https://episvr.github.io/atom.xml"
   },
   {
+    "id": "def569fea7f1c0d6",
+    "title": "Epi 的组合数学笔记",
+    "link": "https://blog.episvr.top/2025/01/07/Combinatorics/",
+    "description": "组合数学 第4版 (卢开澄，卢华明编著) 第一，二章的内容。",
+    "publishedAt": "2025-01-06T16:00:00.000Z",
+    "dateKey": "2025-01-06",
+    "monthKey": "2025-01",
+    "yearKey": "2025",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
     "id": "f664b664b7db0cd9",
     "title": "Puzzlers' Day 2024@BJ 总结",
     "link": "http://blog.episvr.top/2024/12/30/Pzdaybj2024/",
@@ -960,6 +1181,19 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
+    "id": "0e88c7c8d82fe6ed",
+    "title": "Puzzlers' Day 2024@BJ 总结",
+    "link": "https://blog.episvr.top/2024/12/30/Pzdaybj2024/",
+    "description": "哇，是Puzzlers' Day 2024@BJ！文末有谜题！",
+    "publishedAt": "2024-12-29T16:00:00.000Z",
+    "dateKey": "2024-12-29",
+    "monthKey": "2024-12",
+    "yearKey": "2024",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
     "id": "8bce95c191c02851",
@@ -975,6 +1209,19 @@
     "sourceFeed": "https://episvr.github.io/atom.xml"
   },
   {
+    "id": "028de34213a8455d",
+    "title": "Missing Semester 学习总结（上）",
+    "link": "https://blog.episvr.top/2024/09/05/MissingSemester/",
+    "description": "传奇课程missing semester，威大，无需多验",
+    "publishedAt": "2024-09-04T16:00:00.000Z",
+    "dateKey": "2024-09-04",
+    "monthKey": "2024-09",
+    "yearKey": "2024",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
     "id": "99d69cb8fcc5f54e",
     "title": "《图灵完备》卡关记录 1：锁存器",
     "link": "http://blog.episvr.top/2024/09/03/TuringComplete/",
@@ -986,6 +1233,19 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://episvr.github.io/atom.xml"
+  },
+  {
+    "id": "d7d286587430a843",
+    "title": "《图灵完备》卡关记录 1：锁存器",
+    "link": "https://blog.episvr.top/2024/09/03/TuringComplete/",
+    "description": "传奇计算机组成原理模拟器。推荐外挂：数电教材。",
+    "publishedAt": "2024-09-02T16:00:00.000Z",
+    "dateKey": "2024-09-02",
+    "monthKey": "2024-09",
+    "yearKey": "2024",
+    "authorId": "episvr",
+    "authorName": "episvr",
+    "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
     "id": "b0457177195dd8ca",
