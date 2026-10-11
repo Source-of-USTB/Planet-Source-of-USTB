@@ -46,6 +46,11 @@ const canonicalUrl = new URL(
             href={`${import.meta.env.BASE_URL}icons/${favicon}`}
         />
 
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'"
+        />
+
         <ClientRouter />
     </head>
 

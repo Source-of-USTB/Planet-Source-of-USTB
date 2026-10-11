@@ -2,6 +2,7 @@
 import type { Post } from "../type/feed";
 import type { MemberMap } from "../type/member";
 import rawMemberMap from "../data/generated/member-map.json";
+import sanitizeHtml from "sanitize-html";
 
 const memberMap = rawMemberMap as MemberMap;
 
@@ -15,7 +16,19 @@ const author = memberMap[post.authorId];
 const avatarSrc = `${import.meta.env.BASE_URL}avatars/${author.avatar}`;
 
 const displayDate = post.dateKey ?? "unknown date";
-const description = post.description?.trim() || "No description";
+const description = sanitizeHtml(post.description?.trim() || "No description", {
+    allowedSchemes: ["http", "https"],
+    allowedTags: ["p", "br", "a", "strong", "b", "em", "i", "del", "s", "code"],
+    allowedAttributes: {
+        a: ["href", "target", "rel"],
+    },
+    transformTags: {
+        a: sanitizeHtml.simpleTransform("a", {
+            target: "_blank",
+            rel: "noopener noreferrer nofollow",
+        }),
+    },
+});
 ---
 
 <article class="post-card">
@@ -43,7 +56,7 @@ const description = post.description?.trim() || "No description";
             <span class="post-card__author">{post.authorName}</span>
         </div>
 
-        <p class="post-card__description">{description}</p>
+        <div class="post-card__description" set:html={description} />
     </div>
 </article>
 
