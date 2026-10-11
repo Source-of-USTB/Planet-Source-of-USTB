@@ -1,6 +1,6 @@
 [
   {
-    "id": "e1a656ed166fafb9",
+    "id": "ac861e78e3ecbcfc",
     "title": "Abstraction: Thinking at the Right Level",
     "link": "https://revlogi.github.io/posts/thinking-in-abstractions/",
     "description": "From named procedures and data interfaces to languages, compilers, processors, and operating systems.",
@@ -13,7 +13,7 @@
     "sourceFeed": "https://revlogi.github.io/rss.xml"
   },
   {
-    "id": "01f863b1e9a3ff11",
+    "id": "9ee296cf6f662e7e",
     "title": "关于btrfs遇到enospc的修复",
     "link": "https://siriuns.netlify.app/posts/2026-10-10--btrfs-enospc/",
     "description": "metadata满了",
@@ -26,7 +26,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "9f481e0661dca6df",
+    "id": "b210aa2dbbe9f60e",
     "title": "秋、銀杏、君を待つ",
     "link": "https://blog.wdlin.com/posts/aki/",
     "description": "",
@@ -39,7 +39,7 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "89a51db2cdbf653b",
+    "id": "d479cf677e9d8050",
     "title": "我与我的保研回忆",
     "link": "https://blog.episvr.top/2026/09/22/baoyan/",
     "description": "保研夏令营与预推免阶段的经历记录，以及给学弟学妹的一些主观建议。",
@@ -52,7 +52,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "2c9f2d5a5c92b311",
+    "id": "9a39cee1780a1c8c",
     "title": "NLP：形式语言与自动机",
     "link": "https://blog.harryh.cn/AI/NLP-Formal-Languages-And-Automata/",
     "description": "<p>本文为《自然语言处理》课程中“形式语言与自动机”一讲的整理。</p> <p>这里我们要回答的一个基本问题是：语言能否被有限条规则精确刻画？<strong>形式语言理论</strong>给出了肯定的回答——用一套重写规则（文法）就能生成一个（可能是无限的）句子集合，而<strong>有限自动机</strong>则从识别一侧给出对应的机器模型。</p> <p>本讲先建立文法与推导的形式定义，再给出 Chomsky 四型分类，最后落到有限自动机与正则文法之间的等价关系。</p>",
@@ -65,7 +65,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "deecfce47b3e4546",
+    "id": "d629de1cb85eb6fc",
     "title": "Asterinas OverlayFS rmdir Panic 修复经验总结",
     "link": "https://wamingmo.github.io/2026/09/17/first-try-fix-issue-and-pr/",
     "description": "尝试贡献 Asterinas 项目但是遭遇了重构，pr没有被merge，部分经验。(already coding，though only one line modified)",
@@ -78,7 +78,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "836fd163badb3309",
+    "id": "84d31b102f7cae38",
     "title": "校园网v6免流",
     "link": "https://siriuns.netlify.app/posts/2026-9-15--proxy/",
     "description": "利用ipv6上下行不计费来实现校园网免流",
@@ -91,7 +91,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "424dad91d4ab342a",
+    "id": "935f1e4c97b4a569",
     "title": "img测试页面",
     "link": "https://siriuns.netlify.app/posts/2026-9-14--img-test/",
     "description": "测试图片显示",
@@ -104,7 +104,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "0072617869231991",
+    "id": "e6ecd8438f6adf1b",
     "title": "保研",
     "link": "https://wamingmo.github.io/2026/09/13/baoyan/",
     "description": "保研期间的心理状态",
@@ -117,7 +117,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "6c88385987fac8ed",
+    "id": "878826870555da92",
     "title": "Asterinas 开源贡献实战尝试",
     "link": "https://wamingmo.github.io/2026/09/13/open-source-getting-start--asterinas/",
     "description": "尝试贡献 Asterinas 项目，记录开发环境搭建和代码贡献流程（未coding）。",
@@ -130,7 +130,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "490f54d137dd48d7",
+    "id": "4ed0c42a3b714bc0",
     "title": "《终末地》UI设计分析",
     "link": "https://blog.harryh.cn/Design/UI-Philosophy-Of-Endfield/",
     "description": "<p>本文主要分析了游戏《明日方舟：终末地》（简称《终末地》）的 UI 设计原理与风格，旨在为复现这样的 UI 提供参考。</p>",
@@ -143,7 +143,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "f006915fe3d32830",
+    "id": "d850ab9de1fb9121",
     "title": "NLP：绪论",
     "link": "https://blog.harryh.cn/AI/NLP-Introduction/",
     "description": "<p>本文为《自然语言处理》课程中“绪论”一讲的整理。</p> <p>自然语言处理（Natural Language Processing, NLP）研究如何让计算机处理人类的语言。它既是一门工程学科，也是一门交叉学科：向上要回答“机器能否理解语言”，向下要落成翻译、检索、问答等具体系统。</p> <p>本讲先厘清语言与语言学的基本概念，再回顾 NLP 的发展脉络，随后铺开它的研究内容、基本问题与困难，最后落到理性主义与经验主义两种研究方法。</p>",
@@ -156,7 +156,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "51de6cde3d146451",
+    "id": "bf969b44e4052416",
     "title": "做leetcode160.相交链表有感",
     "link": "https://level0-jj.github.io/2026/09/07/%E5%81%9Aleetcode160-%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8%E6%9C%89%E6%84%9F/",
     "description": "缘由 鉴于本人长期使用ai写代码，手搓代码能力堪比成年草履虫，遂听从好友建议刷l",
@@ -169,7 +169,7 @@
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
-    "id": "9270c290e29711f5",
+    "id": "5bba71f4d167596e",
     "title": "在大型软件项目中使用AI进行编码的经验",
     "link": "https://blog.harryh.cn/Software-Engineering/Experience-About-AI-Coding-In-Large-Softwares/",
     "description": "<p>本文总结了本人近期对接的一个 B 端项目的相关经验，该项目为前后端开发项目，其中 <del class=\"mask\">99%</del> 100% 的代码由 AI 生成。如何在一个庞大的、时间跨度大的项目中<strong>重度使用 AI 进行编码</strong>，并最高限度地<strong>保证代码与需求的一致性和可维护性</strong>，是本文要讨论的核心问题。</p>",
@@ -182,7 +182,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "203e2fd1b6bb3c4e",
+    "id": "a09191799c5320c0",
     "title": "分析与鉴赏那些令人一见钟情的旋律",
     "link": "https://blog.harryh.cn/Music/Appreciate-Impressive-Melodies/",
     "description": "<p>本文鉴赏和分析了一些“听第一遍就让人印象深刻”的现代歌曲旋律，纯个人主观视角、纯业余分析，不代表任何专业意见。希望能给我们作曲带来一些新的见解。</p>",
@@ -195,7 +195,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "51c3a7e873703e5b",
+    "id": "5ccbde7dd4348ddb",
     "title": "如何用 umu+proton 在 linux 上运行游戏",
     "link": "https://siriuns.netlify.app/posts/2026-8-26--proton/",
     "description": "Steam 把我账号的 Linux Runtime 4.0 的许给给没收了说是, 也不知道是系统不适用还是什么.",
@@ -208,7 +208,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "03c0242ce6f10262",
+    "id": "8ea09847b49c9caf",
     "title": "libGDX引擎从1.11.0到1.14.2的变更整理",
     "link": "https://blog.harryh.cn/Programming/LibGDX-Changelog-1110-To-1142/",
     "description": "<p>本文整理了 <a class=\"link\" href=\"https://libgdx.com/\">libGDX<i class=\"fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon\"></i></a> 游戏开发引擎从 1.11.0 到 1.14.2 的主要变更，内容来源于<a class=\"link\" href=\"https://libgdx.com/news/changelog/\">官方变更日志<i class=\"fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon\"></i></a>。</p> <p>我整理这些内容是因为我的开源项目 <a class=\"link\" href=\"https://github.com/isHarryh/Ark-Pets\">ArkPets<i class=\"fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon\"></i></a> 将在近期（2026 年 8 月）针对所使用的 libGDX 版本进行升级。</p>",
@@ -221,7 +221,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "8108212285da617c",
+    "id": "a47c1c2de929e5e7",
     "title": "Finding the Celebrity",
     "link": "https://revlogi.github.io/posts/find-the-celebrity/",
     "description": "Using elimination and recursion to find a party celebrity with at most 3n - 4 questions",
@@ -234,7 +234,7 @@
     "sourceFeed": "https://revlogi.github.io/rss.xml"
   },
   {
-    "id": "40d571f35e6d2486",
+    "id": "d70b3d0c3cec1a51",
     "title": "Using Invariants",
     "link": "https://revlogi.github.io/posts/using-invariants/",
     "description": "Reconstructing a C exception interface by identifying the invariant behind its control flow",
@@ -247,7 +247,7 @@
     "sourceFeed": "https://revlogi.github.io/rss.xml"
   },
   {
-    "id": "1ab9eea830b4f1f4",
+    "id": "f0bcb18287c50902",
     "title": "如何在一台电脑上配置使用多个github账号以及ssh密钥",
     "link": "https://siriuns.netlify.app/posts/2026-7-24--multi-github/",
     "description": "有点神秘的配置",
@@ -260,7 +260,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "ab67ed7d0d4f5572",
+    "id": "4c6095a35d603468",
     "title": "关于我的小学期计算机大作业",
     "link": "https://level0-jj.github.io/2026/07/21/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E5%B0%8F%E5%AD%A6%E6%9C%9F%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A4%A7%E4%BD%9C%E4%B8%9A/",
     "description": "碎碎念念 小学期的大作业（为什么暑假要上课），再也不想写这种令人心情不愉快的作业了口牙！ 本文结合小规模示例介绍以下内容",
@@ -273,7 +273,7 @@
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
-    "id": "feb59cc6973a3031",
+    "id": "54b3fedb520656b2",
     "title": "Arch 如何连接 USTB-V6",
     "link": "https://siriuns.netlify.app/posts/2026-7-20--V6/",
     "description": "Arch 上, wpa_supplicant 在 OpenSSL 的默认安全策略下无法认证采用 TLSv1.1 及以下的 PEAP Wi-Fi",
@@ -286,7 +286,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "f8fa4c6df3ab8299",
+    "id": "c968d064f3c8b20b",
     "title": "Astro 以及 Planet Source-of-USTB",
     "link": "https://siriuns.netlify.app/posts/2026-7-16--Planet/",
     "description": "简单介绍一下文件结构",
@@ -299,7 +299,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "5a734fb79caa8c4c",
+    "id": "0851fbc280261a0e",
     "title": "Git 是怎么工作的",
     "link": "https://blog.episvr.top/2026/07/12/git-exploration/",
     "description": "深入探讨Git的原理和底层机制，包括对象模型、存储实现和垃圾回收等。",
@@ -312,7 +312,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "4f04494981081ac8",
+    "id": "0770acf9a2b1f956",
     "title": "Recursion without names",
     "link": "https://revlogi.github.io/posts/y-combinator/",
     "description": "y combinator",
@@ -325,7 +325,7 @@
     "sourceFeed": "https://revlogi.github.io/rss.xml"
   },
   {
-    "id": "50f667ab28cf56c9",
+    "id": "999db0695bd1fabe",
     "title": "怎么为一个陌生的项目添加功能",
     "link": "https://blog.episvr.top/2026/07/04/WorkWithUnfamiliarCode/",
     "description": "本文探讨如何阅读陌生的项目代码，定位功能位置，并为其添加新功能的方法论。",
@@ -338,7 +338,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "374131213b4123af",
+    "id": "27ef025c8bf358a1",
     "title": "我与存储空间的相爱相杀",
     "link": "https://wamingmo.github.io/2026/07/01/cclean/",
     "description": "如何清理你爆满的C盘和D盘",
@@ -351,7 +351,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "f142c37396aca087",
+    "id": "e98f7c3933e25bbb",
     "title": "一次关于 Thinkpad T420 的升级",
     "link": "https://blog.episvr.top/2026/06/29/Thinkpad-T420-Upgrade/",
     "description": "对 ThinkPad T420 进行 CPU、内存、散热、C壳 的全面升级改造记录",
@@ -364,7 +364,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "31db352187e537b4",
+    "id": "d11b353c6352190c",
     "title": "在 uosc_danmaku 中集成 pakkujs 弹幕合并算法",
     "link": "https://blog.episvr.top/2026/06/29/uosc_danmaku-pakkujs/",
     "description": "记录如何将 pakku.js 的弹幕合并算法移植到 mpv Lua 插件 uosc_danmaku 中",
@@ -377,7 +377,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "6b8e1c192ed6f977",
+    "id": "11733f228db034fd",
     "title": "当我用AI生成告诉我如何用AI读论文",
     "link": "https://wamingmo.github.io/2026/06/28/how-to-read-paper-with-ai/",
     "description": "用 AI 读论文，最忌讳的提示词是：\"帮我总结一下这篇文章。\"",
@@ -390,7 +390,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "68e0466c096dfece",
+    "id": "97950ed5535b2e29",
     "title": "Self-reproducing Program",
     "link": "https://revlogi.github.io/posts/self-reproducing/",
     "description": "quine",
@@ -403,7 +403,7 @@
     "sourceFeed": "https://revlogi.github.io/rss.xml"
   },
   {
-    "id": "24aac6588e71806d",
+    "id": "bc8b82f0550154da",
     "title": "关于广义 Stokes 定理",
     "link": "https://siriuns.netlify.app/posts/2026-6-16--Stokes/",
     "description": "从stokes到形式与向量, 再到升调/降调/Hodge星算子",
@@ -416,7 +416,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "b5862f9c369f7d3b",
+    "id": "21f2987598bd94a8",
     "title": "Ubuntu创建分页文件",
     "link": "https://blog.harryh.cn/CS/Ubuntu-Create-Swap-File/",
     "description": "<p>本文将介绍如何在 Ubuntu 系统中创建<a class=\"link\" href=\"https://wiki.archlinuxcn.org/wiki/Swap\">分页文件<i class=\"fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon\"></i></a>。</p>",
@@ -429,7 +429,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "f00b142ae6688203",
+    "id": "effd9f8e5487e539",
     "title": "DLinear复现实验",
     "link": "https://level0-jj.github.io/2026/05/28/DLinear%E5%A4%8D%E7%8E%B0%E5%AE%9E%E9%AA%8C/",
     "description": "前言 最近我复现了时间序列预测领域的一篇经典论文： Are Transformers Ef",
@@ -442,7 +442,7 @@
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
-    "id": "24c741c9e69c8907",
+    "id": "ddb95c9ab0896a57",
     "title": "基于 C 语言的图像旋转算法解析",
     "link": "https://level0-jj.github.io/2026/05/24/%E5%9F%BA%E4%BA%8E-C-%E8%AF%AD%E8%A8%80%E7%9A%84%E5%9B%BE%E5%83%8F%E6%97%8B%E8%BD%AC%E7%AE%97%E6%B3%95%E8%A7%A3%E6%9E%90/",
     "description": "概述 本文将深入解析一个基于 C 语言实现的图像旋转算法，核心函数为 Image *Rotation(Image *image)</c",
@@ -455,7 +455,7 @@
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
-    "id": "ed4dd29f976a1600",
+    "id": "76b1fa25c07cd054",
     "title": "数字图像处理中的图像滤波",
     "link": "https://level0-jj.github.io/2026/05/23/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E4%B8%AD%E7%9A%84%E5%9B%BE%E5%83%8F%E6%BB%A4%E6%B3%A2/",
     "description": "前言 图像滤波本质上是： 利用某个像素周围邻域的信息，对当前像素进行重新计算。 </blockqu",
@@ -468,7 +468,7 @@
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
-    "id": "c40bdf3ee1ac6b17",
+    "id": "7ea7589feef9d43b",
     "title": "基于BFS实现迷宫求解",
     "link": "https://level0-jj.github.io/2026/05/21/%E5%9F%BA%E4%BA%8EBFS%E5%AE%9E%E7%8E%B0%E8%BF%B7%E5%AE%AB%E6%B1%82%E8%A7%A3/",
     "description": "前言 在学习算法的过程中，广度优先搜索（BFS）是一个非常经典且实用的算法。今天我想分享一个使用C语言实现迷宫最短路径的例子，并附上完整代码。最好",
@@ -481,7 +481,7 @@
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
-    "id": "d4b00b3807235ccf",
+    "id": "7f5722a0fbf110aa",
     "title": "基于DFS实现迷宫求解",
     "link": "https://level0-jj.github.io/2026/05/17/%E5%9F%BA%E4%BA%8EDFS%E5%AE%9E%E7%8E%B0%E8%BF%B7%E5%AE%AB%E6%B1%82%E8%A7%A3/",
     "description": "要求 封面、目录、每个方法（算法原理说明、代码、运行结果截图）以及收获体会。 打印运行时间",
@@ -494,7 +494,7 @@
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
-    "id": "caa804c479c26528",
+    "id": "4e38576cd5ce2d90",
     "title": "cpp操纵像素在CPU上跑Shader",
     "link": "https://level0-jj.github.io/2026/05/12/cpp%E6%93%8D%E7%BA%B5%E5%83%8F%E7%B4%A0%E5%9C%A8CPU%E4%B8%8A%E8%B7%91Shader/",
     "description": "前言 来自 <a href=\"https://x.com/tsoding/status/1989446257882829",
@@ -507,7 +507,7 @@
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
-    "id": "56519a2ab2507585",
+    "id": "78c02fa247a144f7",
     "title": "终端typing_game",
     "link": "https://level0-jj.github.io/2026/05/12/%E7%BB%88%E7%AB%AFtyping-game/",
     "description": "游戏简介 这款打字小游戏会在终端中生成一个 4x6 的随机字母矩阵，你需要按照行优先</st",
@@ -520,7 +520,7 @@
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
-    "id": "03298d500c997d06",
+    "id": "477a87fa7671006a",
     "title": "Intro to Polyhedral Optimization",
     "link": "https://blog.wdlin.com/posts/polyhedral/",
     "description": "Notes for Polyhedral Optimization",
@@ -533,7 +533,7 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "c2beb227e9fceb00",
+    "id": "c1e6d724adbd2f7e",
     "title": "code测试页面",
     "link": "https://siriuns.netlify.app/posts/2026-4-30--code-test/",
     "description": "测试代码块显示",
@@ -546,7 +546,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "7178b96c181fc04e",
+    "id": "3bf56e4bb19d9985",
     "title": "某即时通讯软件的逆向工程——数据库解密",
     "link": "https://blog.harryh.cn/Reverse-Engineering/An-IM-Software-Reverse-Engineering-Database-Decryption/",
     "description": "<p>本文记录了我对某个用于商家询盘的即时通讯（IM）软件的本地数据库的逆向工程过程。主要介绍了如何通过 IDA Pro 调试来分析其数据库文件的加密机制。</p>",
@@ -559,7 +559,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "e07adec850f6fc3a",
+    "id": "c06191394556d4b0",
     "title": "ICPC 邀请赛 南昌",
     "link": "https://siriuns.netlify.app/posts/CompProg/2026-4-27--2025-icpc-nanchang/",
     "description": "补题记录",
@@ -572,7 +572,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "0b75bc9455e63144",
+    "id": "e916348f34ab6c49",
     "title": "FASTER:Rethinking Real-Time Flow VLAs",
     "link": "https://wamingmo.github.io/2026/04/12/faster/",
     "description": "基于流匹配模型，采取根据时间距离分配不同时间步调度的方法，从而加速了早期动作的生成速度，提高反应能力，并做一些适配（比如使用混合调度的微调方式，与动作条件协同）。",
@@ -585,7 +585,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "c3da6d44ae4bbf2f",
+    "id": "c4d34056babad2e8",
     "title": "VLASH:Real-Time VLAs via Future-State-Aware Asynchronous Inference",
     "link": "https://wamingmo.github.io/2026/04/12/vlash/",
     "description": "VLASH 是一种通过“未来状态感知”的异步推理框架，在无需修改模型架构的前提下，显著降低延迟并提升 VLA 模型的运行速度，使其实现流畅的实时控制。",
@@ -598,7 +598,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "351bdcb04ef5b6a3",
+    "id": "d395dde22f3f84c7",
     "title": "SSH简介",
     "link": "https://wamingmo.github.io/2026/04/12/ssh/",
     "description": "SSH（Secure Shell）是一种加密网络协议，用于在不安全的网络中安全地进行远程登录和命令执行，替代了早期的明文传输协议 Telnet。",
@@ -611,7 +611,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "a19229cf6a420b80",
+    "id": "6f968a3e41297e6d",
     "title": "基于LIBERO数据集微调GD",
     "link": "https://wamingmo.github.io/2026/04/01/finetune-groundingdino-on-libero/",
     "description": "一些过程和经验，有些基础内容，思路可供参考",
@@ -624,7 +624,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "a9f273aafbb348db",
+    "id": "739b446c8cba02f6",
     "title": "How to Scale Your Model",
     "link": "https://blog.wdlin.com/posts/scale/",
     "description": "Some notes for How to Scale Your Model book",
@@ -637,7 +637,7 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "382a0df57cfa9bf3",
+    "id": "432138614561da00",
     "title": "HiPPO推导",
     "link": "https://siriuns.netlify.app/posts/2026-3-4--HiPPO/",
     "description": "Mathematical foundation of S4: a derivation of HiPPO.",
@@ -650,7 +650,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "fbc28558169be603",
+    "id": "950af7ed0ced06b6",
     "title": "GPUMODE Lec.8",
     "link": "https://blog.wdlin.com/posts/gpumode-lec8/",
     "description": "Lecture 8: CUDA Performance Checklist",
@@ -663,7 +663,7 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "4c8df8b4ecbaa829",
+    "id": "2113430974abf1bb",
     "title": "π0.5:a Vision-Language-Action Model with Open-World Generalization",
     "link": "https://wamingmo.github.io/2026/02/15/pi-0.5/",
     "description": "一个基于视觉-语言-动作模型的开放世界泛化模型",
@@ -676,7 +676,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "45a7a7a49b476337",
+    "id": "e27123b81dae90fe",
     "title": "a PR for kew",
     "link": "https://blog.episvr.top/2026/01/31/PR-Kew/",
     "description": "这大概是我第一次认真地向一个开源项目提交 PR。",
@@ -689,7 +689,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "d23d989d17158eb6",
+    "id": "fae0392633fb65c5",
     "title": "Install Debian on ThinkPad-T420",
     "link": "https://blog.episvr.top/2026/01/28/Thinkpad-T420/",
     "description": "我一直想收一台二手笔记本玩玩 Linux，终于下手了，本篇文章是记录这件事的部分流程",
@@ -702,7 +702,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "0bb2d8212c610fb3",
+    "id": "e32fb93b541fbf8d",
     "title": "CMake语法简介",
     "link": "https://wamingmo.github.io/2026/01/26/cmake/",
     "description": "偶然了解到一个用cmake构建的mlsys工程，于是简单了解了一下cmake的语法",
@@ -715,7 +715,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "4156fff89da8b76b",
+    "id": "9541f689ca925d6e",
     "title": "Makefile简介",
     "link": "https://wamingmo.github.io/2026/01/22/makefile/",
     "description": "Makefile 是一个用于自动化构建的工具，它通过定义规则来描述如何从源文件生成目标文件。",
@@ -728,7 +728,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "e5417cadd956bb45",
+    "id": "879e3f1a330cb6a3",
     "title": "latex测试页面",
     "link": "https://siriuns.netlify.app/posts/2026-1-12--latex-test/",
     "description": "测试latex显示",
@@ -741,7 +741,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "c811a6d6e1a52fc8",
+    "id": "7e8b42766855a509",
     "title": "数学建模基础",
     "link": "https://blog.harryh.cn/Maths/Mathematical-Modeling-Basis/",
     "description": "<p>本文是张文宇老师的数学建模培训课程的大纲整理。</p>",
@@ -754,7 +754,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "1c59e57a1c055cba",
+    "id": "f567cc641d340485",
     "title": "Understand Cross Product",
     "link": "https://revlogi.github.io/posts/cross-product/",
     "description": "a quick note on cross product",
@@ -767,7 +767,7 @@
     "sourceFeed": "https://revlogi.github.io/rss.xml"
   },
   {
-    "id": "68904e7385ddc889",
+    "id": "23284a845bb5ca82",
     "title": "手写数字识别（LeNet-5）",
     "link": "https://level0-jj.github.io/2025/12/20/%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB%EF%BC%88LeNet-5%EF%BC%89/",
     "description": "前言 大一人工智能通识课（一个无用的水课？）上看到了一个深度学习项目，然后就想试一下这个经典项目——手写数字识别",
@@ -780,7 +780,7 @@
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
-    "id": "df57d3c74a5df6fe",
+    "id": "659b97084defb392",
     "title": "《终末地》CBT3逆向工程2：PCK文件解密",
     "link": "https://blog.harryh.cn/Reverse-Engineering/Endfield-CBT3-Reverse-Engineering-2-PCK-Files-Decryption/",
     "description": "<p>本文记录了我对 Unity 游戏<a class=\"link\" href=\"https://endfield.hypergryph.com/\">《明日方舟：终末地》<i class=\"fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon\"></i></a>（简称《终末地》）全面测试版本中的 <strong>PCK 文件</strong>的逆向工程过程。</p>",
@@ -793,7 +793,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "0ee3702a95ba7a9d",
+    "id": "283967517dbf6596",
     "title": "Gitlet",
     "link": "https://revlogi.github.io/posts/Gitlet/",
     "description": "document the my implementation of gitlet",
@@ -806,7 +806,7 @@
     "sourceFeed": "https://revlogi.github.io/rss.xml"
   },
   {
-    "id": "147b04c9c08cb7d9",
+    "id": "d629f55d2fe52f58",
     "title": "My first Blog",
     "link": "https://level0-jj.github.io/2025/12/10/My-first-Blog/",
     "description": "This is my first blog.I spend the whole afternoon and eventually success!Despite the fact that I haven’t decorated it yet,I still have th",
@@ -819,7 +819,7 @@
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
-    "id": "e351cb50d592397b",
+    "id": "da74079797bc5776",
     "title": "《终末地》CBT3逆向工程1：VFS资源存储解密",
     "link": "https://blog.harryh.cn/Reverse-Engineering/Endfield-CBT3-Reverse-Engineering-1-VFS-Storage-Decryption/",
     "description": "<p>本文记录了我对 Unity 游戏<a class=\"link\" href=\"https://endfield.hypergryph.com/\">《明日方舟：终末地》<i class=\"fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon\"></i></a>（简称《终末地》）全面测试版本中的 VFS 资源存储逻辑的逆向工程过程。主要介绍了如何通过对反编译代码的静态分析，结合调试器的动态分析，解析《终末地》的 VFS 资源存储格式，并实现解析工具。</p>",
@@ -832,7 +832,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "b4012ccd5a7168de",
+    "id": "4bf7ddb9111e6b41",
     "title": "关于LVM",
     "link": "https://siriuns.netlify.app/posts/2025-11-17--LVM/",
     "description": "LVM的结构和常用文件命令",
@@ -845,7 +845,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "81296241f029946f",
+    "id": "333a80c0162698f7",
     "title": "Tmux",
     "link": "https://siriuns.netlify.app/posts/2025-11-07--tmux/",
     "description": "列举一些常用tmux命令",
@@ -858,7 +858,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "51a6e29d77ea197a",
+    "id": "649a6de54cb9018d",
     "title": "Ubuntu自定义欢迎消息",
     "link": "https://blog.harryh.cn/CS/Ubuntu-Custom-Welcom-Message/",
     "description": "<p>本文将介绍如何自定义 Ubuntu 系统远程 SSH 登录时显示的欢迎消息。</p>",
@@ -871,7 +871,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "9673797db9b83ccb",
+    "id": "ae55253789957859",
     "title": "My First Blog Post",
     "link": "https://siriuns.netlify.app/posts/2025-10-28--first-post/",
     "description": "This is the first post of my new Astro blog.",
@@ -884,7 +884,7 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
-    "id": "38a340df4e163109",
+    "id": "a53d17ac81ab5427",
     "title": "Proof of Sylvester's Rank Inequality",
     "link": "https://revlogi.github.io/posts/sylvester-rank-inequality-prood/",
     "description": "This post is for testing the draft post functionality",
@@ -897,7 +897,7 @@
     "sourceFeed": "https://revlogi.github.io/rss.xml"
   },
   {
-    "id": "d962dd01a6f63b83",
+    "id": "b3f91d78bad47867",
     "title": "系统能力大赛-os内核实现赛道",
     "link": "https://wamingmo.github.io/2025/09/21/os/",
     "description": "关于参加系统能力大赛这件事的一点体会",
@@ -910,7 +910,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "552a756cd7b8b6e4",
+    "id": "60395fb725cfb035",
     "title": "The Relational Algebra Learning Notes",
     "link": "https://blog.wdlin.com/posts/RelationalAlgebra/",
     "description": "The Relational Algebra learning notes for the database course.",
@@ -923,7 +923,7 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "6a554cf0608fb60b",
+    "id": "a653880fbc3c8377",
     "title": "计算机视觉导言",
     "link": "https://blog.harryh.cn/AI/CV-Preface/",
     "description": "<p>本文是 鲁鹏 教授的《计算机视觉与深度学习》（2022 年）课程的一部分。</p>",
@@ -936,7 +936,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "d3ce78a557b1150e",
+    "id": "2ad342f807d9b048",
     "title": "开始上手OhMyZsh",
     "link": "https://blog.harryh.cn/CS/Hello-OhMyZsh/",
     "description": "<p>本文是作者在 Ubuntu 系统上配置 zsh 和 Oh My Zsh 的记录。</p>",
@@ -949,7 +949,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "56ae1f4c2bbaaeb7",
+    "id": "fd61c56f78e2a735",
     "title": "OS视角下对Shell的简单理解",
     "link": "https://wamingmo.github.io/2025/06/11/sh/",
     "description": "今年的系统能力大赛的评测方式发生改变，需要在启动自己的操作系统之后，自动的扫描磁盘，运行`XXXX-testcode.sh`，为了做shell的支持，去简单了解了一下shell的原理。",
@@ -962,7 +962,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "bc797d86637634a2",
+    "id": "270b009b6c016162",
     "title": "Study Butterfly Theme Blog2",
     "link": "https://wamingmo.github.io/2025/06/04/butterfly-theme-blog/",
     "description": "关于butterfly主题的博客的一些配置简介",
@@ -975,7 +975,7 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
-    "id": "1dc414c633fe67d2",
+    "id": "139cede48024713d",
     "title": "PLP 阅读随笔",
     "link": "https://blog.wdlin.com/posts/PLP/",
     "description": "《程序设计语言》一书阅读中的一些记录.",
@@ -988,7 +988,7 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "96fbd76506da7594",
+    "id": "7c66e326a3e511da",
     "title": "第八日的谜：FDUPHWriteup",
     "link": "https://blog.episvr.top/2025/04/27/FDUPHWriteup/",
     "description": "Puzzle hunt是一种高度综合性的解谜活动。FDU Puzzle Hunt是复旦大学推理协会谜题分部策划的puzzle hunt解谜活动，面向校内同学与社会公众。此篇文章是对其的赛后回顾。",
@@ -1001,7 +1001,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "cad68ec89868760f",
+    "id": "106cae3061c3852d",
     "title": "rCoreloongArch 学习笔记",
     "link": "https://blog.wdlin.com/posts/rCoreloongArch/",
     "description": "记录了我在阅读 rCoreloongArch 文档过程中的总结.",
@@ -1014,7 +1014,7 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "86bc614450e1346c",
+    "id": "d68ecaa466eb3c54",
     "title": "LZ4压缩算法的块数据格式解析",
     "link": "https://blog.harryh.cn/CS/LZ4-Compression-Block-Parsing/",
     "description": "<p>本文是针对 <a class=\"link\" href=\"https://github.com/lz4/lz4/blob/fa1634e2ccd41ac09c087ab65e96bcbbd003fd20/doc/lz4_Block_format.md\">LZ4 Block Format Description<i class=\"fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon\"></i></a> 的部分内容的翻译和综述，解释了 LZ4 压缩算法的块数据的格式规定。</p>",
@@ -1027,7 +1027,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "afd6de13186173a3",
+    "id": "55329b20b2264399",
     "title": "自表达的代码（命名篇）",
     "link": "https://blog.episvr.top/2025/04/09/SelfexprCodes01/",
     "description": "课上不会教但是感觉必须要会的又一座大山。众所周知：组织得好的代码可以省去大量写文档注释的时间，看着赏心悦目，而且便于调 Bug。那么怎么写出这种并非“非人类”的代码呢？",
@@ -1040,7 +1040,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "517d4c5ef6e03f5d",
+    "id": "7b53897b58c4f7d4",
     "title": "rCore (RISC-V) 学习笔记",
     "link": "https://blog.wdlin.com/posts/rCore-note/",
     "description": "在学习 rCore 操作系统内核时的各种总结和反思.",
@@ -1053,7 +1053,7 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "c85f6ff2aa53658a",
+    "id": "7fe3542974516946",
     "title": "深度学习小记 (二)",
     "link": "https://blog.episvr.top/2025/03/24/NeuralNetwork02/",
     "description": "在上一篇博客中，我们共同了解了神经网络的基本原理，这一次将聚焦于代码层次讨论如何“写”出一个神经网络。",
@@ -1066,7 +1066,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "0829b371af96a07d",
+    "id": "aded715ab20e9e10",
     "title": "开始上手Nginx服务器",
     "link": "https://blog.harryh.cn/CS/Hello-Nginx-Server/",
     "description": "<p>本文是作者在 Ubuntu 系统上部署 Nginx 服务器的记录。</p>",
@@ -1079,7 +1079,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "7b0177aebfa53822",
+    "id": "3cccf09c6de70105",
     "title": "开始上手PostgreSQL",
     "link": "https://blog.harryh.cn/CS/Hello-PostgreSQL/",
     "description": "<p>本文是作者在 Ubuntu 系统上部署 PostgreSQL 数据库的记录。</p>",
@@ -1092,7 +1092,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "cd4e57e6d762777c",
+    "id": "7ccc6d6f95d01f19",
     "title": "高等数学（下）知识框架",
     "link": "https://blog.harryh.cn/Maths/Advanced-Mathematics-2-Notes/",
     "description": "<p>本文是《高等数学》（下）的知识框架，主要包括空间解析几何、多元函数积分等内容。</p>",
@@ -1105,7 +1105,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "eeb727605b35b68b",
+    "id": "67f0a68ccc7f62e7",
     "title": "Cornsnakey Meta Writeup - 每逢佳节倍思戚",
     "link": "https://blog.episvr.top/2025/03/04/CornsnakeyMetaWriteup/",
     "description": "本文是 蛇Hunt 的 meta \"每逢佳节倍思\" 的赛后回顾",
@@ -1118,7 +1118,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "51a1aea031893d21",
+    "id": "233470fb3c11ceb5",
     "title": "三月三俳句记",
     "link": "https://blog.episvr.top/2025/03/03/Haiku-Notes/",
     "description": "朋友过 20 岁生日，根据他朋友圈写的自庆诗即兴写了俳句。这里做个小记录。",
@@ -1131,7 +1131,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "530a2754d01ec68b",
+    "id": "3c58da671b4191b8",
     "title": "对函数栈帧 StackFrame 的理解",
     "link": "https://blog.wdlin.com/posts/StackFrame/",
     "description": "我在学习操作系统中对函数栈帧的一些学习记录.",
@@ -1144,7 +1144,7 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
-    "id": "18673fbfacb09719",
+    "id": "80c1ab8086db097c",
     "title": "深度学习小记 (一)",
     "link": "https://blog.episvr.top/2025/02/28/NeuralNetwork01/",
     "description": "你说的对，但是【神经网络】是由【沃伦·麦卡洛克】和【沃尔特·皮茨】研发的开放世界推理游戏。在这款游戏中，玩家将被赋予【高等数学】和【线性代数】的武器，编不下去了…",
@@ -1157,7 +1157,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "b763a1ceb26aeb27",
+    "id": "48d591a4f30ac5db",
     "title": "Ubuntu系统开荒记录",
     "link": "https://blog.harryh.cn/CS/Ubuntu-System-Hello-World/",
     "description": "<p>本文是作者自用的 Ubuntu 操作系统（版本 24.04）服务器的一次开荒记录。</p>",
@@ -1170,7 +1170,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "f3ee6b0f71e9fc43",
+    "id": "e6c7c5647c0eb57f",
     "title": "新年第一 hunt：Cornsnaky write up",
     "link": "https://blog.episvr.top/2025/02/09/CornsnakeyWriteup/",
     "description": "Writeup for Cornsnakey hunt！",
@@ -1183,7 +1183,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "939bc8a27dd7467d",
+    "id": "d107e168501a4754",
     "title": "有惊无险的数据抢救",
     "link": "https://blog.episvr.top/2025/02/07/Data-Recovery-Log/",
     "description": "一次摔跤引发的一场绞尽脑汁地数据转移战。",
@@ -1196,7 +1196,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "5838f64da621acd4",
+    "id": "aeae89a3020d2937",
     "title": "This is a test",
     "link": "https://blog.episvr.top/2025/02/02/Test-Lyrics-and-Mahjong/",
     "description": "歌词样式的测试，顺便塞了记了记我老家的麻将规则",
@@ -1209,7 +1209,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "bc9d5d7a8b8c7547",
+    "id": "c6ad5ed6ebbbe723",
     "title": "军事理论知识整理",
     "link": "https://blog.harryh.cn/Politics/Military-Theory-Knowledge-Summary/",
     "description": "<p>本文整理了《军事理论》课程的知识要点，整理自 2023 年印次的教科书、 WYJ 的手写提纲和其他网络资料。由于时代发展，军事理论的具体课程内容可能存在时效性。</p>",
@@ -1222,7 +1222,7 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
-    "id": "def569fea7f1c0d6",
+    "id": "d488c0fbda07f1e5",
     "title": "Epi 的组合数学笔记",
     "link": "https://blog.episvr.top/2025/01/07/Combinatorics/",
     "description": "组合数学 第4版 (卢开澄，卢华明编著) 第一，二章的内容。",
@@ -1235,7 +1235,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "0e88c7c8d82fe6ed",
+    "id": "adacd2d542048e25",
     "title": "Puzzlers' Day 2024@BJ 总结",
     "link": "https://blog.episvr.top/2024/12/30/Pzdaybj2024/",
     "description": "哇，是Puzzlers' Day 2024@BJ！文末有谜题！",
@@ -1248,7 +1248,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "028de34213a8455d",
+    "id": "a45dd1a8921027a0",
     "title": "Missing Semester 学习总结（上）",
     "link": "https://blog.episvr.top/2024/09/05/MissingSemester/",
     "description": "传奇课程missing semester，威大，无需多验",
@@ -1261,7 +1261,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "d7d286587430a843",
+    "id": "d2604f9daab53d80",
     "title": "《图灵完备》卡关记录 1：锁存器",
     "link": "https://blog.episvr.top/2024/09/03/TuringComplete/",
     "description": "传奇计算机组成原理模拟器。推荐外挂：数电教材。",
@@ -1274,7 +1274,7 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
-    "id": "b0457177195dd8ca",
+    "id": "ee61e67ee40ae59a",
     "title": "题解：[NOIP1998 提高组] 车站",
     "link": "https://blog.episvr.top/2024/08/24/LuoguAlgo/",
     "description": "认真分析就能避免爆破",
@@ -1287,7 +1287,7 @@
     "sourceFeed": "https://episvr.github.io/atom.xml"
   },
   {
-    "id": "62c24e04d4f40582",
+    "id": "64abf89502d23f8e",
     "title": "光线投射算法",
     "link": "https://blog.episvr.top/2024/06/22/RayCast/",
     "description": "伪3D?会高中数学就能做到！",
