@@ -1,6 +1,6 @@
 import Parser from "rss-parser";
-import { createHash } from "node:crypto";
 import { join } from "node:path";
+import { hash, normalizeLink } from "../src/utils/link";
 import { members } from "../src/data/members";
 import type { FeedStatus, Post } from "../src/type/feed";
 import { readJson, writeJson } from "../src/utils/json";
@@ -12,16 +12,6 @@ const parser = new Parser({
         "User-Agent": "planet-rss-aggregator/0.1",
     },
 });
-
-function hash(s: string) {
-    // 取sha256 hash的十六进制前16位
-    return createHash("sha256").update(s).digest("hex").slice(0, 16);
-}
-
-// Posts are identified by their link without the protocol, so switching a site from http to https won't re-collect every existing post as a new one.
-function normalizeLink(link: string) {
-    return link.replace(/^https?:\/\//i, "");
-}
 
 function normalizeText(s = "") {
     return s.replace(/\s+/g, " ").trim();
@@ -42,7 +32,7 @@ function extractDate(item: Parser.Item): string | null {
 
 const targetPath = "src/data/generated";
 const oldPosts = await readJson<Post[]>(join(targetPath, "posts.json"), []);
-const postMap = new Map(oldPosts.map((post) => [normalizeLink(post.link), post]));
+const postMap = new Map(oldPosts.map((post) => [post.id, post]));
 const status: FeedStatus[] = [];
 const fetchedAt = new Date().toISOString();
 
@@ -53,17 +43,19 @@ for (const member of members) {
         for (const item of feed.items) {
             const title = item.title?.trim();
             const link = item.link?.trim();
-            if (!title || !link) continue;
-
-            const id = hash(link);
-            const key = normalizeLink(link);
-            const known = postMap.get(key);
-            if (known) {
-                if (known.link !== link) {
-                    known.link = link;
-                }
+            if (!title || !link) {
+                console.warn(`[${member.id}] skip item without title or link: ${item.guid ?? item.id ?? "(no id)"}`);
                 continue;
             }
+
+            let id: string;
+            try {
+                id = hash(normalizeLink(link));
+            } catch {
+                console.warn(`[${member.id}] skip invalid link: ${link}`);
+                continue;
+            }
+            if (postMap.has(id)) continue;
 
             const publishedAt = extractDate(item);
             const dateKey = publishedAt ? toDayKey(publishedAt) : null;
@@ -83,7 +75,7 @@ for (const member of members) {
                 authorName: member.name,
                 sourceFeed: member.feed,
             };
-            postMap.set(key, newPost);
+            postMap.set(id, newPost);
         }
 
         status.push({
