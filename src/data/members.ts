@@ -49,4 +49,12 @@ export const members: Member[] = [
 		avatar: "level0-jj.jpg",
 		description: "Type a message…",
 	},
+	{
+		id: "isHarryh",
+		name: "Harry Huang",
+		site: "https://blog.harryh.cn",
+		feed: "https://blog.harryh.cn/atom.xml",
+		avatar: "isHarryh.png",
+		description: "Permission denied",
+	},
 ];
