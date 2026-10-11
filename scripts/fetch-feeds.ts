@@ -18,6 +18,11 @@ function hash(s: string) {
     return createHash("sha256").update(s).digest("hex").slice(0, 16);
 }
 
+// Posts are identified by their link without the protocol, so switching a site from http to https won't re-collect every existing post as a new one.
+function normalizeLink(link: string) {
+    return link.replace(/^https?:\/\//i, "");
+}
+
 function normalizeText(s = "") {
     return s.replace(/\s+/g, " ").trim();
 }
@@ -37,7 +42,7 @@ function extractDate(item: Parser.Item): string | null {
 
 const targetPath = "src/data/generated";
 const oldPosts = await readJson<Post[]>(join(targetPath, "posts.json"), []);
-const postMap = new Map(oldPosts.map((post) => [post.id, post]));
+const postMap = new Map(oldPosts.map((post) => [normalizeLink(post.link), post]));
 const status: FeedStatus[] = [];
 const fetchedAt = new Date().toISOString();
 
@@ -51,7 +56,14 @@ for (const member of members) {
             if (!title || !link) continue;
 
             const id = hash(link);
-            if (postMap.has(id)) continue;
+            const key = normalizeLink(link);
+            const known = postMap.get(key);
+            if (known) {
+                if (known.link !== link) {
+                    known.link = link;
+                }
+                continue;
+            }
 
             const publishedAt = extractDate(item);
             const dateKey = publishedAt ? toDayKey(publishedAt) : null;
@@ -71,7 +83,7 @@ for (const member of members) {
                 authorName: member.name,
                 sourceFeed: member.feed,
             };
-            postMap.set(id, newPost);
+            postMap.set(key, newPost);
         }
 
         status.push({
