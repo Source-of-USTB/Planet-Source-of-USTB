@@ -1,5 +1,31 @@
 [
   {
+    "id": "e1a656ed166fafb9",
+    "title": "Abstraction: Thinking at the Right Level",
+    "link": "https://revlogi.github.io/posts/thinking-in-abstractions/",
+    "description": "From named procedures and data interfaces to languages, compilers, processors, and operating systems.",
+    "publishedAt": "2026-10-11T00:00:00.000Z",
+    "dateKey": "2026-10-11",
+    "monthKey": "2026-10",
+    "yearKey": "2026",
+    "authorId": "revlogi",
+    "authorName": "RevLogi",
+    "sourceFeed": "https://revlogi.github.io/rss.xml"
+  },
+  {
+    "id": "01f863b1e9a3ff11",
+    "title": "关于btrfs遇到enospc的修复",
+    "link": "https://siriuns.netlify.app/posts/2026-10-10--btrfs-enospc/",
+    "description": "metadata满了",
+    "publishedAt": "2026-10-10T00:00:00.000Z",
+    "dateKey": "2026-10-10",
+    "monthKey": "2026-10",
+    "yearKey": "2026",
+    "authorId": "Siriuns",
+    "authorName": "Siriuns",
+    "sourceFeed": "https://siriuns.netlify.app/rss.xml"
+  },
+  {
     "id": "9f481e0661dca6df",
     "title": "秋、銀杏、君を待つ",
     "link": "https://blog.wdlin.com/posts/aki/",
@@ -24,6 +50,19 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
+    "id": "2c9f2d5a5c92b311",
+    "title": "NLP：形式语言与自动机",
+    "link": "https://blog.harryh.cn/AI/NLP-Formal-Languages-And-Automata/",
+    "description": "<p>本文为《自然语言处理》课程中“形式语言与自动机”一讲的整理。</p> <p>这里我们要回答的一个基本问题是：语言能否被有限条规则精确刻画？<strong>形式语言理论</strong>给出了肯定的回答——用一套重写规则（文法）就能生成一个（可能是无限的）句子集合，而<strong>有限自动机</strong>则从识别一侧给出对应的机器模型。</p> <p>本讲先建立文法与推导的形式定义，再给出 Chomsky 四型分类，最后落到有限自动机与正则文法之间的等价关系。</p>",
+    "publishedAt": "2026-09-18T13:05:00.000Z",
+    "dateKey": "2026-09-18",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
     "id": "deecfce47b3e4546",
@@ -91,6 +130,32 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
+    "id": "490f54d137dd48d7",
+    "title": "《终末地》UI设计分析",
+    "link": "https://blog.harryh.cn/Design/UI-Philosophy-Of-Endfield/",
+    "description": "<p>本文主要分析了游戏《明日方舟：终末地》（简称《终末地》）的 UI 设计原理与风格，旨在为复现这样的 UI 提供参考。</p>",
+    "publishedAt": "2026-09-12T06:36:00.000Z",
+    "dateKey": "2026-09-12",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
+    "id": "f006915fe3d32830",
+    "title": "NLP：绪论",
+    "link": "https://blog.harryh.cn/AI/NLP-Introduction/",
+    "description": "<p>本文为《自然语言处理》课程中“绪论”一讲的整理。</p> <p>自然语言处理（Natural Language Processing, NLP）研究如何让计算机处理人类的语言。它既是一门工程学科，也是一门交叉学科：向上要回答“机器能否理解语言”，向下要落成翻译、检索、问答等具体系统。</p> <p>本讲先厘清语言与语言学的基本概念，再回顾 NLP 的发展脉络，随后铺开它的研究内容、基本问题与困难，最后落到理性主义与经验主义两种研究方法。</p>",
+    "publishedAt": "2026-09-08T11:30:00.000Z",
+    "dateKey": "2026-09-08",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
     "id": "51de6cde3d146451",
     "title": "做leetcode160.相交链表有感",
     "link": "https://level0-jj.github.io/2026/09/07/%E5%81%9Aleetcode160-%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8%E6%9C%89%E6%84%9F/",
@@ -104,6 +169,32 @@
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
+    "id": "9270c290e29711f5",
+    "title": "在大型软件项目中使用AI进行编码的经验",
+    "link": "https://blog.harryh.cn/Software-Engineering/Experience-About-AI-Coding-In-Large-Softwares/",
+    "description": "<p>本文总结了本人近期对接的一个 B 端项目的相关经验，该项目为前后端开发项目，其中 <del class=\"mask\">99%</del> 100% 的代码由 AI 生成。如何在一个庞大的、时间跨度大的项目中<strong>重度使用 AI 进行编码</strong>，并最高限度地<strong>保证代码与需求的一致性和可维护性</strong>，是本文要讨论的核心问题。</p>",
+    "publishedAt": "2026-09-07T03:24:00.000Z",
+    "dateKey": "2026-09-07",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
+    "id": "203e2fd1b6bb3c4e",
+    "title": "分析与鉴赏那些令人一见钟情的旋律",
+    "link": "https://blog.harryh.cn/Music/Appreciate-Impressive-Melodies/",
+    "description": "<p>本文鉴赏和分析了一些“听第一遍就让人印象深刻”的现代歌曲旋律，纯个人主观视角、纯业余分析，不代表任何专业意见。希望能给我们作曲带来一些新的见解。</p>",
+    "publishedAt": "2026-09-06T11:15:00.000Z",
+    "dateKey": "2026-09-06",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
     "id": "51c3a7e873703e5b",
     "title": "如何用 umu+proton 在 linux 上运行游戏",
     "link": "https://siriuns.netlify.app/posts/2026-8-26--proton/",
@@ -115,6 +206,19 @@
     "authorId": "Siriuns",
     "authorName": "Siriuns",
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
+  },
+  {
+    "id": "03c0242ce6f10262",
+    "title": "libGDX引擎从1.11.0到1.14.2的变更整理",
+    "link": "https://blog.harryh.cn/Programming/LibGDX-Changelog-1110-To-1142/",
+    "description": "<p>本文整理了 <a class=\"link\" href=\"https://libgdx.com/\">libGDX<i class=\"fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon\"></i></a> 游戏开发引擎从 1.11.0 到 1.14.2 的主要变更，内容来源于<a class=\"link\" href=\"https://libgdx.com/news/changelog/\">官方变更日志<i class=\"fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon\"></i></a>。</p> <p>我整理这些内容是因为我的开源项目 <a class=\"link\" href=\"https://github.com/isHarryh/Ark-Pets\">ArkPets<i class=\"fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon\"></i></a> 将在近期（2026 年 8 月）针对所使用的 libGDX 版本进行升级。</p>",
+    "publishedAt": "2026-08-18T12:39:00.000Z",
+    "dateKey": "2026-08-18",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
     "id": "8108212285da617c",
@@ -312,6 +416,19 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
+    "id": "b5862f9c369f7d3b",
+    "title": "Ubuntu创建分页文件",
+    "link": "https://blog.harryh.cn/CS/Ubuntu-Create-Swap-File/",
+    "description": "<p>本文将介绍如何在 Ubuntu 系统中创建<a class=\"link\" href=\"https://wiki.archlinuxcn.org/wiki/Swap\">分页文件<i class=\"fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon\"></i></a>。</p>",
+    "publishedAt": "2026-06-08T12:20:00.000Z",
+    "dateKey": "2026-06-08",
+    "monthKey": "2026-06",
+    "yearKey": "2026",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
     "id": "f00b142ae6688203",
     "title": "DLinear复现实验",
     "link": "https://level0-jj.github.io/2026/05/28/DLinear%E5%A4%8D%E7%8E%B0%E5%AE%9E%E9%AA%8C/",
@@ -427,6 +544,19 @@
     "authorId": "Siriuns",
     "authorName": "Siriuns",
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
+  },
+  {
+    "id": "7178b96c181fc04e",
+    "title": "某即时通讯软件的逆向工程——数据库解密",
+    "link": "https://blog.harryh.cn/Reverse-Engineering/An-IM-Software-Reverse-Engineering-Database-Decryption/",
+    "description": "<p>本文记录了我对某个用于商家询盘的即时通讯（IM）软件的本地数据库的逆向工程过程。主要介绍了如何通过 IDA Pro 调试来分析其数据库文件的加密机制。</p>",
+    "publishedAt": "2026-04-28T01:40:00.000Z",
+    "dateKey": "2026-04-28",
+    "monthKey": "2026-04",
+    "yearKey": "2026",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
     "id": "e07adec850f6fc3a",
@@ -611,6 +741,19 @@
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
   },
   {
+    "id": "c811a6d6e1a52fc8",
+    "title": "数学建模基础",
+    "link": "https://blog.harryh.cn/Maths/Mathematical-Modeling-Basis/",
+    "description": "<p>本文是张文宇老师的数学建模培训课程的大纲整理。</p>",
+    "publishedAt": "2026-01-11T13:27:00.000Z",
+    "dateKey": "2026-01-11",
+    "monthKey": "2026-01",
+    "yearKey": "2026",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
     "id": "1c59e57a1c055cba",
     "title": "Understand Cross Product",
     "link": "https://revlogi.github.io/posts/cross-product/",
@@ -635,6 +778,19 @@
     "authorId": "level0-jj",
     "authorName": "level0-jj",
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
+  },
+  {
+    "id": "df57d3c74a5df6fe",
+    "title": "《终末地》CBT3逆向工程2：PCK文件解密",
+    "link": "https://blog.harryh.cn/Reverse-Engineering/Endfield-CBT3-Reverse-Engineering-2-PCK-Files-Decryption/",
+    "description": "<p>本文记录了我对 Unity 游戏<a class=\"link\" href=\"https://endfield.hypergryph.com/\">《明日方舟：终末地》<i class=\"fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon\"></i></a>（简称《终末地》）全面测试版本中的 <strong>PCK 文件</strong>的逆向工程过程。</p>",
+    "publishedAt": "2025-12-18T08:45:00.000Z",
+    "dateKey": "2025-12-18",
+    "monthKey": "2025-12",
+    "yearKey": "2025",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
     "id": "0ee3702a95ba7a9d",
@@ -663,6 +819,19 @@
     "sourceFeed": "https://level0-jj.github.io/rss2.xml"
   },
   {
+    "id": "e351cb50d592397b",
+    "title": "《终末地》CBT3逆向工程1：VFS资源存储解密",
+    "link": "https://blog.harryh.cn/Reverse-Engineering/Endfield-CBT3-Reverse-Engineering-1-VFS-Storage-Decryption/",
+    "description": "<p>本文记录了我对 Unity 游戏<a class=\"link\" href=\"https://endfield.hypergryph.com/\">《明日方舟：终末地》<i class=\"fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon\"></i></a>（简称《终末地》）全面测试版本中的 VFS 资源存储逻辑的逆向工程过程。主要介绍了如何通过对反编译代码的静态分析，结合调试器的动态分析，解析《终末地》的 VFS 资源存储格式，并实现解析工具。</p>",
+    "publishedAt": "2025-12-05T09:09:00.000Z",
+    "dateKey": "2025-12-05",
+    "monthKey": "2025-12",
+    "yearKey": "2025",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
     "id": "b4012ccd5a7168de",
     "title": "关于LVM",
     "link": "https://siriuns.netlify.app/posts/2025-11-17--LVM/",
@@ -687,6 +856,19 @@
     "authorId": "Siriuns",
     "authorName": "Siriuns",
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
+  },
+  {
+    "id": "51a6e29d77ea197a",
+    "title": "Ubuntu自定义欢迎消息",
+    "link": "https://blog.harryh.cn/CS/Ubuntu-Custom-Welcom-Message/",
+    "description": "<p>本文将介绍如何自定义 Ubuntu 系统远程 SSH 登录时显示的欢迎消息。</p>",
+    "publishedAt": "2025-11-01T11:11:00.000Z",
+    "dateKey": "2025-11-01",
+    "monthKey": "2025-11",
+    "yearKey": "2025",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
     "id": "9673797db9b83ccb",
@@ -739,6 +921,32 @@
     "authorId": "wdlin",
     "authorName": "wdlin",
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
+  },
+  {
+    "id": "6a554cf0608fb60b",
+    "title": "计算机视觉导言",
+    "link": "https://blog.harryh.cn/AI/CV-Preface/",
+    "description": "<p>本文是 鲁鹏 教授的《计算机视觉与深度学习》（2022 年）课程的一部分。</p>",
+    "publishedAt": "2025-08-14T12:42:00.000Z",
+    "dateKey": "2025-08-14",
+    "monthKey": "2025-08",
+    "yearKey": "2025",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
+    "id": "d3ce78a557b1150e",
+    "title": "开始上手OhMyZsh",
+    "link": "https://blog.harryh.cn/CS/Hello-OhMyZsh/",
+    "description": "<p>本文是作者在 Ubuntu 系统上配置 zsh 和 Oh My Zsh 的记录。</p>",
+    "publishedAt": "2025-07-11T14:28:00.000Z",
+    "dateKey": "2025-07-11",
+    "monthKey": "2025-07",
+    "yearKey": "2025",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
     "id": "56ae1f4c2bbaaeb7",
@@ -806,6 +1014,19 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
+    "id": "86bc614450e1346c",
+    "title": "LZ4压缩算法的块数据格式解析",
+    "link": "https://blog.harryh.cn/CS/LZ4-Compression-Block-Parsing/",
+    "description": "<p>本文是针对 <a class=\"link\" href=\"https://github.com/lz4/lz4/blob/fa1634e2ccd41ac09c087ab65e96bcbbd003fd20/doc/lz4_Block_format.md\">LZ4 Block Format Description<i class=\"fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon\"></i></a> 的部分内容的翻译和综述，解释了 LZ4 压缩算法的块数据的格式规定。</p>",
+    "publishedAt": "2025-04-09T12:12:00.000Z",
+    "dateKey": "2025-04-09",
+    "monthKey": "2025-04",
+    "yearKey": "2025",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
     "id": "afd6de13186173a3",
     "title": "自表达的代码（命名篇）",
     "link": "https://blog.episvr.top/2025/04/09/SelfexprCodes01/",
@@ -843,6 +1064,45 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
+    "id": "0829b371af96a07d",
+    "title": "开始上手Nginx服务器",
+    "link": "https://blog.harryh.cn/CS/Hello-Nginx-Server/",
+    "description": "<p>本文是作者在 Ubuntu 系统上部署 Nginx 服务器的记录。</p>",
+    "publishedAt": "2025-03-11T14:30:00.000Z",
+    "dateKey": "2025-03-11",
+    "monthKey": "2025-03",
+    "yearKey": "2025",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
+    "id": "7b0177aebfa53822",
+    "title": "开始上手PostgreSQL",
+    "link": "https://blog.harryh.cn/CS/Hello-PostgreSQL/",
+    "description": "<p>本文是作者在 Ubuntu 系统上部署 PostgreSQL 数据库的记录。</p>",
+    "publishedAt": "2025-03-10T14:56:00.000Z",
+    "dateKey": "2025-03-10",
+    "monthKey": "2025-03",
+    "yearKey": "2025",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
+    "id": "cd4e57e6d762777c",
+    "title": "高等数学（下）知识框架",
+    "link": "https://blog.harryh.cn/Maths/Advanced-Mathematics-2-Notes/",
+    "description": "<p>本文是《高等数学》（下）的知识框架，主要包括空间解析几何、多元函数积分等内容。</p>",
+    "publishedAt": "2025-03-08T07:36:00.000Z",
+    "dateKey": "2025-03-08",
+    "monthKey": "2025-03",
+    "yearKey": "2025",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
     "id": "eeb727605b35b68b",
@@ -897,6 +1157,19 @@
     "sourceFeed": "https://blog.episvr.top/atom.xml"
   },
   {
+    "id": "b763a1ceb26aeb27",
+    "title": "Ubuntu系统开荒记录",
+    "link": "https://blog.harryh.cn/CS/Ubuntu-System-Hello-World/",
+    "description": "<p>本文是作者自用的 Ubuntu 操作系统（版本 24.04）服务器的一次开荒记录。</p>",
+    "publishedAt": "2025-02-26T13:22:00.000Z",
+    "dateKey": "2025-02-26",
+    "monthKey": "2025-02",
+    "yearKey": "2025",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
     "id": "f3ee6b0f71e9fc43",
     "title": "新年第一 hunt：Cornsnaky write up",
     "link": "https://blog.episvr.top/2025/02/09/CornsnakeyWriteup/",
@@ -934,6 +1207,19 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
+    "id": "bc9d5d7a8b8c7547",
+    "title": "军事理论知识整理",
+    "link": "https://blog.harryh.cn/Politics/Military-Theory-Knowledge-Summary/",
+    "description": "<p>本文整理了《军事理论》课程的知识要点，整理自 2023 年印次的教科书、 WYJ 的手写提纲和其他网络资料。由于时代发展，军事理论的具体课程内容可能存在时效性。</p>",
+    "publishedAt": "2025-01-08T17:01:00.000Z",
+    "dateKey": "2025-01-08",
+    "monthKey": "2025-01",
+    "yearKey": "2025",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
     "id": "def569fea7f1c0d6",
