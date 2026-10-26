@@ -73,4 +73,11 @@ export const members: Member[] = [
 	  avatar: "Vespertine97.jpg",
 	  description: "你走出千萬人群獨行，往柳暗花明 山窮水盡去",
 	},
+	  id: "ybnybny",
+	  name: "ybnybny",
+	  site: "https://ybnybny.github.io",
+	  feed: "https://ybnybny.github.io/index.xml",
+	  avatar: "ybnybny.png",
+	  description: "Is this right? qwq",
+	}
 ];
