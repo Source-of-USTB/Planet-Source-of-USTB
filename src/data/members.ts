@@ -57,4 +57,12 @@ export const members: Member[] = [
 		avatar: "isHarryh.png",
 		description: "Permission denied",
 	},
+	{
+		id: "YOOkoishi",
+		name: "YOO_koishi",
+		site: "https://blog.yookoishi.com",
+		feed: "https://blog.yookoishi.com/rss.xml",
+		avatar: "yookoishi.jpg",
+		description: "YOO_koishi's blog",
+	},
 ];
