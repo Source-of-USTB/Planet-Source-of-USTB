@@ -65,4 +65,12 @@ export const members: Member[] = [
 		avatar: "yookoishi.jpg",
 		description: "YOO_koishi's blog",
 	},
+	{
+	  id: "vespertine97",
+	  name: "魏欣怡",
+	  site: "https://vespertine97.github.io/",
+	  feed: "https://vespertine97.github.io/atom.xml",
+	  avatar: "Vespertine97.jpg",
+	  description: "你走出千萬人群獨行，往柳暗花明 山窮水盡去",
+	},
 ];
