@@ -65,4 +65,12 @@ export const members: Member[] = [
 		avatar: "yookoishi.jpg",
 		description: "YOO_koishi's blog",
 	},
+	{
+	  id: "ybnybny",
+	  name: "ybnybny",
+	  site: "https://ybnybny.github.io",
+	  feed: "https://ybnybny.github.io/index.xml",
+	  avatar: "ybnybny.png",
+	  description: "Is this right? qwq",
+	}
 ];
