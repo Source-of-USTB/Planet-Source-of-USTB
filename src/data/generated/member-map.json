@@ -47,5 +47,26 @@
     "feed": "https://blog.harryh.cn/atom.xml",
     "avatar": "isHarryh.png",
     "description": "Permission denied"
+  },
+  "YOOkoishi": {
+    "name": "YOO_koishi",
+    "site": "https://blog.yookoishi.com",
+    "feed": "https://blog.yookoishi.com/rss.xml",
+    "avatar": "yookoishi.jpg",
+    "description": "YOO_koishi's blog"
+  },
+  "vespertine97": {
+    "name": "魏欣怡",
+    "site": "https://vespertine97.github.io/",
+    "feed": "https://vespertine97.github.io/atom.xml",
+    "avatar": "Vespertine97.jpg",
+    "description": "你走出千萬人群獨行，往柳暗花明 山窮水盡去"
+  },
+  "ybnybny": {
+    "name": "ybnybny",
+    "site": "https://ybnybny.github.io",
+    "feed": "https://ybnybny.github.io/index.xml",
+    "avatar": "ybnybny.png",
+    "description": "Is this right? qwq"
   }
 }
