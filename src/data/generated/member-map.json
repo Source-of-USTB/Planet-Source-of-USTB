@@ -47,5 +47,12 @@
     "feed": "https://blog.harryh.cn/atom.xml",
     "avatar": "isHarryh.png",
     "description": "Permission denied"
+  },
+  "ybnybny": {
+    "name": "ybnybny",
+    "site": "https://ybnybny.github.io",
+    "feed": "https://ybnybny.github.io/source/index.xml",
+    "avatar": "ybnybny.png",
+    "description": "noitpircsed"
   }
 }
