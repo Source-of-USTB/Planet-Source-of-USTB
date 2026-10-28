@@ -1,5 +1,44 @@
 [
   {
+    "id": "9f29546d30f31380",
+    "title": "排列 置换 与720种可能性",
+    "link": "https://ybnybny.github.io/posts/algorithm/permutation/",
+    "description": "Part 0. 引入：720个圆与置换的表示法 季节在铺沙的花园里轮转，同样的星辰为同样的人回环。 el giro de las estaciones en el jardín enarenado, la vuelta de los mismos astros para los otros mismos hombres. 胡里奥·科塔萨尔 《720个圆》 Julio Cortázar 720 Círculos 胡里奥·科塔萨尔在诗歌《720个圆》的开头这样写道： “ 这首诗既是循环的，又是开放的。像洗牌一样重排诗节，就会生成不同的组合；而每一种组合，又都能从任何一个诗节开始读起。” 他将这首诗称之为 “置换诗歌”（poesía permutante）。诗不再是一个写定的顺序，而是一组可以被置换的节；置换一次，就是一首新的诗。读者通过将诗节自由排列，与诗人共同参与诗歌创作的过程。 将 $6$ 个互不相同的诗节排列，总共可以组成 这样的计算告诉了我们 $720$ 种读法的存在，却无法叙述每一种读法下，我们如何阅读的具体过程. 于是我们将 $6$ 个诗节，根据排版时的初始顺序，分别编号为 $1,2,3,4,5,6$. 记 $\\sigma(x)=a$ 为：新排列的第 $x$ 个位置上，放的是原编号为 $a$ 的诗节. 那么如果我们按排版逆序阅读这首诗，就可以将这种诗节的排列方式形式化地表示为 $\\sigma(1)=6, \\sigma(2)=5, \\sigma(3)=4, \\sigma(4)=3, \\sigma(5)=2, \\sigma(6)=1.$ 这样“把每个位置重新指派给某个诗节”的行为，在数学上称为置换. 而诗歌的 $720$ 种读法，就可以这样表示为 $720$ 种置换. 我们也可以将刚刚那样按排版逆序的读法记作 这种置换的表示法我们称之为双行记号. 如果双行记号的行首默认按自然顺序书写，省略行首后，置换可以被表示为： $\\sigma=\\sigma(1)\\sigma(2)⋯\\sigma(𝑛).$ 我们称之为单行记号. 前文的例子利用单行记号可以写作 $\\sigma=654321$. 在继续引入新的表示法前，我们需要先留意一下刚刚“诗节重排”的过程中，出现的一个自然而优美的性质：每个位置上都恰好放了一个诗节，而每个诗节也恰好只出现在一个位置上. 有没有觉得熟悉？ 对了！双射！ 而且通过诗节编号与位置的一一对应，我们可以使之成为是两个相同集合之间的双射！ 即映射 $f:A→A$ 满足为双射. 我们把映射想象成一张以元素为节点、映射关系为有向边的图. 由双射的性质可知，每个节点的入度与出度均为 $1$，即对于每个节点，均有且仅有一条边指向它，由它发出的有向边也有其仅有一条. 这样就保证了，如果我们从任意一个节点开始，沿有向边一直走下去，所遍历的一定是一个环路 (若出现链路或环上有分支，则必然存在节点出度或入度不为 $1$ ). 那么这张映射的图，一定是由一个或多个互不相交的环路组成的（如果出现一个由自己指向自己的孤立节点，我们也视其为长度为 $1$ 的有向环）. 回到“诗节重排”问题，我们可以考虑这样一种表示排列的方法： 已知1号位置为6号诗节，那么6号位置一定是被其它诗节所占据. 于是我们找6号位置的诗节，发现恰好为1号诗节. 那么在这个重排中，1号与6号的位置是互换的. 然后继续考虑其它未被考虑过的诗节，确定它们所在的环路，就可以由 $\\sigma=654321$ 得到 $\\sigma=(61)(52)(43)$. 同一个括号内的元素，处于同一个置换环内. 由前文双射的性质可知，每一个元素所处于的环有且仅有一个. 每个置换环内，在一次重排后均相当于进行了一次轮换. 什么是 轮换 轮换是一种特殊的置换，其中所有的元素处于同一个置换环内。即若把置换所对应的映射关系如前文所述画成有向图，所形成的图由一个闭合的大有向环组成. $\\sigma=312$ 是轮换的例子之一. 我们也可以利用双行表示法更直观地展现该轮换中的环路： 第一行仍为位置序号，第二行为诗节序号，但是这次我们把每一列的诗节序号作为下一列的位置序号. 可以发现，第 $n$ 列的诗节序号与第一列的位置序号相同，形成回路. 长度为 $k$ 的轮换也称作 $k$ - 轮换 $\\sigma=312$ 为 $3$ - 轮换 $2$ - 轮换 也被称为 对换 $1$ - 轮换 是置换中的 不动点 这样把置换拆成多个轮换的复合的表示法称为置换的轮换表示. 轮换表示中的不动点可以省略. 但如果置换是恒等变换，即所有轮换长度都是一，常常记作 $(1)$ 而非全部省略． 一个更复杂的轮换表示例子： $\\sigma=265431$ 等价于 $\\sigma=(126)(35)$. 置换环的拆解唯一，但是轮换表示并不唯一，所以也可以记作 $\\sigma=(261)(53)$、$\\sigma=(612)(35)$ 等等. 读者可以自行推理. //置换的轮换表示（置换环分解） //复杂度：时间 O(n), 空间 O(n) //cycle_cnt 置换环数量 //cycle_id 所属置换环的编号 //cycle_len 置换环长度 //p 某位置上置换后的编号 for (int i = 1; i <= n; ++i) { if (cycle_id[i]) continue; // 已属于某个环，跳过 ++cycle_cnt; int j = i; while (!cycle_id[j]) // 沿置换走，直到回到已标记点 { cycle_id[j] = cycle_cnt; ++cycle_len[cycle_cnt]; j = p[j]; } } Part 1. 加速！循环的路径与置换的叠加 ⚠️ 阅前提示 此 part 着重进行算法练习总结，可能略过一些前面 part 未提及的知识 推荐根据个人需求结合 OI WIKI - 置换与排列 食用 其余可供学习的参考资料列在了文末部分 1 . 1 任意对换排序与相邻交换排序 回顾：给定一个无序数列，通过相邻对换使之变为升序的最小操作次数等于逆序对数（每交换一组相邻的数，逆序对个数 +1 或 -1，最终要使逆序对个数为零）. 如果不限制相邻对换，而是可以取任意两数进行对换，则最小操作次数为 $元素数 - 置换环数$. 通过置换环性质可以证明. 如果将单次操作赋予不同的权重，可利用贪心处理（环内对换 / 合并环后跨环对换）. 顺带一提，置换环数与逆序对数奇偶性相同. 但置换环的处理是 $O(n)$ 的. P1327 数列排序 P2091 排序 P2127 序列排序 1 . 2 置换的复合 有限集合上，所有置换均存在最小正整数 $a$ ：重复该置换 $a$ 次后，所有元素都回到原位. $a$ 为置换的阶. 于是可通过取模进行化简操作. P5151 HKE与他的小朋友 1 . 3 置换的开根 单循环长度与指数互质，开根结果唯一；与指数不互质，无解. P2227 洗牌机 1 . 4 对换所致的环的拆解与合并 对同一个环的两个不同元素进行对换操作，该环会被拆成两个环. 对不同环内的两个元素进行对换操作，两环会被合并为一个环. P10454 奇数码问题 1 . 5 置换的计数问题 1 . 5 . 1 $n$ 个元素排成 $k$ 个环 第一类斯特林数： $n$ 个元素排 $k$ 个轮换. 递推式： $n$ 个元素的排列，对所有恰好包含 $k$ 个轮换的排列情况数进行加和，可得到排列情况总数： 第二类斯特林数： $n$ 个元素划分为 $k$ 个非空子集. 递推式： 幂之间的转化 通常幂转换为下降幂 / 上升幂： 下降幂转换为通常幂： 上升幂转换为通常幂： 对偶性： 1 . 5 . 2 $k$ 个长度为 $L$ 的环拼接 设置换环 $X$ 长度为 $L$， $X^k$ 后生成 $gcd(k, L)$ 个长度为 $\\frac{L}{gcd(k, L)}$ 的小环. $k$ 个长度为 $L$ 的环拼接，有 $(gcd(k, L)-1)!\\ \\times \\ \\frac{L}{gcd(k, L)}^{gcd(k, L)-1}$ 种可能. P11256 置换 参考资料 Julio Cortázar 720 Círculos OI WIKI - 置换与排列 《潘震皓：置换群快速幂运算研究与探讨》 《具体数学》",
+    "publishedAt": "2026-10-26T13:30:00.000Z",
+    "dateKey": "2026-10-26",
+    "monthKey": "2026-10",
+    "yearKey": "2026",
+    "authorId": "ybnybny",
+    "authorName": "ybnybny",
+    "sourceFeed": "https://ybnybny.github.io/index.xml"
+  },
+  {
+    "id": "daa5c780bceade3d",
+    "title": "triton架构分析 序",
+    "link": "https://blog.yookoishi.com/blog/triton%E6%9E%B6%E6%9E%84%E5%88%86%E6%9E%90/",
+    "description": "triton",
+    "publishedAt": "2026-10-22T00:00:00.000Z",
+    "dateKey": "2026-10-22",
+    "monthKey": "2026-10",
+    "yearKey": "2026",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
+  },
+  {
+    "id": "bd6ad1ff75b7046d",
+    "title": "【论文阅读】MEPS:Privacy-preserving Edge-cloud Video Foundation Model Inference with  Privacy Protectability",
+    "link": "https://vespertine97.github.io/Study/Research/MEPS/",
+    "description": "<h1 id=\"论文信息\"><a href=\"#论文信息\" class=\"headerlink\" title=\"论文信息\"></a>论文信息</h1><p>unsenixsecurity26，香港大学、香港理工大学、香港科技大学</p> <h1 id=\"关注概念\"><a href",
+    "publishedAt": "2026-10-14T06:08:00.000Z",
+    "dateKey": "2026-10-14",
+    "monthKey": "2026-10",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
     "id": "ac861e78e3ecbcfc",
     "title": "Abstraction: Thinking at the Right Level",
     "link": "https://revlogi.github.io/posts/thinking-in-abstractions/",
@@ -13,6 +52,19 @@
     "sourceFeed": "https://revlogi.github.io/rss.xml"
   },
   {
+    "id": "34af53957a3b6c41",
+    "title": "【论文阅读】A Privacy-preserving Edge-cloud Video Analytics System via Policy-based Frame Transformation",
+    "link": "https://vespertine97.github.io/Study/Research/Preva/",
+    "description": "<p>关键词：边云视频分析</p> <h1 id=\"论文信息\"><a href=\"#论文信息\" class=\"headerlink\" title=\"论文信息\"></a>论文信息</h1><p>ACM TOIT26， 香港理工大学、武汉大学、香港科技大学</p> <h1 id=\"关",
+    "publishedAt": "2026-10-10T06:08:00.000Z",
+    "dateKey": "2026-10-10",
+    "monthKey": "2026-10",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
     "id": "9ee296cf6f662e7e",
     "title": "关于btrfs遇到enospc的修复",
     "link": "https://siriuns.netlify.app/posts/2026-10-10--btrfs-enospc/",
@@ -24,6 +76,19 @@
     "authorId": "Siriuns",
     "authorName": "Siriuns",
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
+  },
+  {
+    "id": "769bf0a3815ecf3d",
+    "title": "【论文阅读】A Reversible Framework for Efficient and Secure  Visual Privacy Protection",
+    "link": "https://vespertine97.github.io/Study/Research/TPE/",
+    "description": "<h1 id=\"关注概念：\"><a href=\"#关注概念：\" class=\"headerlink\" title=\"关注概念：\"></a>关注概念：</h1><ol> <li>TPE略缩图加密（Thumbnail-Preserving Encryption）：是Format-Pr",
+    "publishedAt": "2026-09-28T06:08:00.000Z",
+    "dateKey": "2026-09-28",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
   },
   {
     "id": "b210aa2dbbe9f60e",
@@ -143,6 +208,19 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
+    "id": "c7ab3fc34133c6ac",
+    "title": "实习面试进度",
+    "link": "https://blog.yookoishi.com/blog/%E5%AE%9E%E4%B9%A0%E5%A5%BD%E9%9A%BE%E6%89%BE/",
+    "description": "记录实习投递、面试安排与求职进度。",
+    "publishedAt": "2026-09-10T00:00:00.000Z",
+    "dateKey": "2026-09-10",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
+  },
+  {
     "id": "d850ab9de1fb9121",
     "title": "NLP：绪论",
     "link": "https://blog.harryh.cn/AI/NLP-Introduction/",
@@ -219,6 +297,188 @@
     "authorId": "isHarryh",
     "authorName": "Harry Huang",
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
+    "id": "8e7132993e98acb9",
+    "title": "【学习相关】课程总览和学习文件",
+    "link": "https://vespertine97.github.io/Study/%E8%AF%BE%E7%A8%8B%E6%80%BB%E8%A7%88/",
+    "description": "<p>写这篇是想给所有上过的课做一个资料总结和评述，希望对你有帮助:)</p> <blockquote> <ul> <li>仅代表北京科技大学学习大纲<br>注：GitHubPage最多传一个G的文件，GithubRelease不知道是网的原因还是啥太慢了。本人想尽各种方法，最后",
+    "publishedAt": "2026-08-12T16:00:00.000Z",
+    "dateKey": "2026-08-12",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "0d8f89e9dbdbcb49",
+    "title": "【密码学】（十二）密钥管理",
+    "link": "https://vespertine97.github.io/Study/Crypto/%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89%E5%AF%86%E9%92%A5%E7%AE%A1%E7%90%86/",
+    "description": "<h3 id=\"一、-密钥管理的核心原则与层次模型\"><a href=\"#一、-密钥管理的核心原则与层次模型\" class=\"headerlink\" title=\"一、 密钥管理的核心原则与层次模型\"></a>一、 密钥管理的核心原则与层次模型</h3><p>现代密码学的一个基本",
+    "publishedAt": "2026-08-12T06:12:00.000Z",
+    "dateKey": "2026-08-12",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "9b804b61d58d2286",
+    "title": "【密码学】（十一）数字签名",
+    "link": "https://vespertine97.github.io/Study/Crypto/%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D/",
+    "description": "<h3 id=\"一、-数字签名的意义\"><a href=\"#一、-数字签名的意义\" class=\"headerlink\" title=\"一、 数字签名的意义\"></a>一、 数字签名的意义</h3><p>在[[（九）消息认证与杂凑函数]]中，讲到了消息认证码（MAC）。虽然MAC",
+    "publishedAt": "2026-08-12T06:11:00.000Z",
+    "dateKey": "2026-08-12",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "f11715dd76574a2b",
+    "title": "【密码学】（十）公钥密码",
+    "link": "https://vespertine97.github.io/Study/Crypto/%EF%BC%88%E5%8D%81%EF%BC%89%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81/",
+    "description": "<h3 id=\"一、-公钥密码体制的意义\"><a href=\"#一、-公钥密码体制的意义\" class=\"headerlink\" title=\"一、 公钥密码体制的意义\"></a>一、 公钥密码体制的意义</h3><p>在对称密码体系中，加密和解密使用的是同一个密钥。这带来了致命",
+    "publishedAt": "2026-08-12T06:10:00.000Z",
+    "dateKey": "2026-08-12",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "c66f160516ea3ebe",
+    "title": "【密码学】（九）消息认证与杂凑函数",
+    "link": "https://vespertine97.github.io/Study/Crypto/%EF%BC%88%E4%B9%9D%EF%BC%89%E6%B6%88%E6%81%AF%E8%AE%A4%E8%AF%81%E4%B8%8E%E6%9D%82%E5%87%91%E5%87%BD%E6%95%B0/",
+    "description": "<h2 id=\"一、-认证与安全的必要性\"><a href=\"#一、-认证与安全的必要性\" class=\"headerlink\" title=\"一、 认证与安全的必要性\"></a>一、 认证与安全的必要性</h2><p>在信息安全中，我们不仅要防止信息被偷看，还要防止==信息被篡",
+    "publishedAt": "2026-08-12T06:09:00.000Z",
+    "dateKey": "2026-08-12",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "24104191439361a1",
+    "title": "【密码学】（八）A5算法、RC4算法",
+    "link": "https://vespertine97.github.io/Study/Crypto/%EF%BC%88%E5%85%AB%EF%BC%89A5%E7%AE%97%E6%B3%95%E3%80%81RC4%E7%AE%97%E6%B3%95/",
+    "description": "<blockquote> <p>本文转载自：<a href=\"https://www.zhihu.com/column/c_1348587875936673792\">《现代密码学》课程笔记知乎专栏</a><br>仅作个人学习记录。</p> </blockquote> <h2 id",
+    "publishedAt": "2026-08-12T06:08:00.000Z",
+    "dateKey": "2026-08-12",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "7daf674d70e95cb9",
+    "title": "【密码学】（七）非线性组合、非线性序列生成器",
+    "link": "https://vespertine97.github.io/Study/Crypto/%EF%BC%88%E4%B8%83%EF%BC%89%E9%9D%9E%E7%BA%BF%E6%80%A7%E7%BB%84%E5%90%88%E3%80%81%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%BA%8F%E5%88%97%E7%94%9F%E6%88%90%E5%99%A8/",
+    "description": "<blockquote> <p>本文转载自：<a href=\"https://www.zhihu.com/column/c_1348587875936673792\">《现代密码学》课程笔记知乎专栏</a><br>仅作个人学习记录。</p> </blockquote> <p>我们曾",
+    "publishedAt": "2026-08-12T06:07:00.000Z",
+    "dateKey": "2026-08-12",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "31d3fbc0100bcc93",
+    "title": "【密码学】（六）详解线性反馈移位寄存器（LFSR）",
+    "link": "https://vespertine97.github.io/Study/Crypto/%EF%BC%88%E5%85%AD%EF%BC%89%E8%AF%A6%E8%A7%A3%E7%BA%BF%E6%80%A7%E5%8F%8D%E9%A6%88%E7%A7%BB%E4%BD%8D%E5%AF%84%E5%AD%98%E5%99%A8%EF%BC%88LFSR%EF%BC%89/",
+    "description": "<blockquote> <p>本文转载自：<a href=\"https://www.zhihu.com/column/c_1348587875936673792\">《现代密码学》课程笔记知乎专栏</a><br>仅作个人学习记录。</p> </blockquote> <p>上节课",
+    "publishedAt": "2026-08-12T06:06:00.000Z",
+    "dateKey": "2026-08-12",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "14879df31ccacedc",
+    "title": "【密码学】（五）流密码概述、伪随机序列、密钥流生成器",
+    "link": "https://vespertine97.github.io/Study/Crypto/%EF%BC%88%E4%BA%94%EF%BC%89%E6%B5%81%E5%AF%86%E7%A0%81%E6%A6%82%E8%BF%B0%E3%80%81%E4%BC%AA%E9%9A%8F%E6%9C%BA%E5%BA%8F%E5%88%97%E3%80%81%E5%AF%86%E9%92%A5%E6%B5%81%E7%94%9F%E6%88%90%E5%99%A8/",
+    "description": "<blockquote> <p>本文转载自：<a href=\"https://www.zhihu.com/column/c_1348587875936673792\">《现代密码学》课程笔记知乎专栏</a><br>仅作个人学习记录。</p> </blockquote> <h2 id",
+    "publishedAt": "2026-08-12T06:05:00.000Z",
+    "dateKey": "2026-08-12",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "a3da04948c7b8945",
+    "title": "【密码学】（四）分组密码的五大工作模式",
+    "link": "https://vespertine97.github.io/Study/Crypto/%EF%BC%88%E5%9B%9B%EF%BC%89%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81%E7%9A%84%E4%BA%94%E5%A4%A7%E5%B7%A5%E4%BD%9C%E6%A8%A1%E5%BC%8F/",
+    "description": "<blockquote> <p>本文转载自：<a href=\"https://www.zhihu.com/column/c_1348587875936673792\">《现代密码学》课程笔记知乎专栏</a><br>仅作个人学习记录。</p> </blockquote> <p><a",
+    "publishedAt": "2026-08-12T06:04:00.000Z",
+    "dateKey": "2026-08-12",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "084ff18aa47875f3",
+    "title": "【密码学】（三）国密SM4算法",
+    "link": "https://vespertine97.github.io/Study/Crypto/%EF%BC%88%E4%B8%89%EF%BC%89%E5%9B%BD%E5%AF%86SM4%E7%AE%97%E6%B3%95/",
+    "description": "<blockquote> <p>本文转载自：<a href=\"https://www.zhihu.com/column/c_1348587875936673792\">《现代密码学》课程笔记知乎专栏</a><br>仅作个人学习记录。</p> </blockquote> <p>SM4",
+    "publishedAt": "2026-08-12T06:03:00.000Z",
+    "dateKey": "2026-08-12",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "27bc5c362fdb1199",
+    "title": "【密码学】（二）高级加密标准（AES）",
+    "link": "https://vespertine97.github.io/Study/Crypto/%EF%BC%88%E4%BA%8C%EF%BC%89%E9%AB%98%E7%BA%A7%E5%8A%A0%E5%AF%86%E6%A0%87%E5%87%86%EF%BC%88AES%EF%BC%89/",
+    "description": "<blockquote> <p>本文转载自：<a href=\"https://www.zhihu.com/column/c_1348587875936673792\">《现代密码学》课程笔记知乎专栏</a><br>仅作个人学习记录。</p> </blockquote> <p>上一次",
+    "publishedAt": "2026-08-12T06:02:00.000Z",
+    "dateKey": "2026-08-12",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "ad5179c45a65f820",
+    "title": "【密码学】（一）分组密码和DES",
+    "link": "https://vespertine97.github.io/Study/Crypto/%EF%BC%88%E4%B8%80%EF%BC%89%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81%E5%92%8CDES/",
+    "description": "<blockquote> <p>本文转载自：<a href=\"https://www.zhihu.com/column/c_1348587875936673792\">《现代密码学》课程笔记知乎专栏</a><br>仅作个人学习记录。</p> </blockquote> <p>上一讲",
+    "publishedAt": "2026-08-12T06:01:00.000Z",
+    "dateKey": "2026-08-12",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "38cd821398a9f3dd",
+    "title": "【密码学】写在前面",
+    "link": "https://vespertine97.github.io/Study/Crypto/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/",
+    "description": "<p>密码学真是梦开始的地方。我很喜欢数学，这门课因此也学得很开心。<br>上网自学这块的时候找到了一位疑似同校学姐的知乎专栏，整理的非常详细，可惜只写到A5和RC4就停止了，账号目前也已经注销。<br>所以我这里的密码学笔记前八章转载自知乎专栏（有些部分可能有修改），后面的部分",
+    "publishedAt": "2026-08-12T06:00:00.000Z",
+    "dateKey": "2026-08-12",
+    "monthKey": "2026-08",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
   },
   {
     "id": "a47c1c2de929e5e7",
@@ -624,6 +884,19 @@
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
   },
   {
+    "id": "06e9edb4ec793a10",
+    "title": "2025年终总结",
+    "link": "https://blog.yookoishi.com/blog/good-bye-2025/",
+    "description": "年终总结",
+    "publishedAt": "2026-03-24T00:00:00.000Z",
+    "dateKey": "2026-03-24",
+    "monthKey": "2026-03",
+    "yearKey": "2026",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
+  },
+  {
     "id": "739b446c8cba02f6",
     "title": "How to Scale Your Model",
     "link": "https://blog.wdlin.com/posts/scale/",
@@ -726,6 +999,19 @@
     "authorId": "wamingmo",
     "authorName": "wamingmo",
     "sourceFeed": "https://wamingmo.github.io/atom.xml"
+  },
+  {
+    "id": "5d8a6a7432adbc16",
+    "title": "【游戏评测】纸房子",
+    "link": "https://vespertine97.github.io/Entertaiment/SweetHome/",
+    "description": "<p>有很多想说的。一点一点来吧。<br>看到有很多人觉得这里面女同性恋形象太过刻板化，我觉得这对我而言完全不是一个问题。我们太缺少这种游戏，太缺少这样的人物形象了，有这样的人物塑造的出现该是一件令人高兴的事情。</p> <p>以下略有剧透部分 ：</p> <p>第一次当然是打出",
+    "publishedAt": "2026-01-20T16:00:00.000Z",
+    "dateKey": "2026-01-20",
+    "monthKey": "2026-01",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
   },
   {
     "id": "879e3f1a330cb6a3",
@@ -832,6 +1118,19 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
+    "id": "b032aba711880ac1",
+    "title": "索思科技协会第二次 Linux 技术分享会",
+    "link": "https://blog.yookoishi.com/blog/source-ms2/",
+    "description": "索思科技协会第二次 Linux 技术分享会 - Vim ， 命令行进阶 ， 常用的命令行软件",
+    "publishedAt": "2025-12-05T00:00:00.000Z",
+    "dateKey": "2025-12-05",
+    "monthKey": "2025-12",
+    "yearKey": "2025",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
+  },
+  {
     "id": "4bf7ddb9111e6b41",
     "title": "关于LVM",
     "link": "https://siriuns.netlify.app/posts/2025-11-17--LVM/",
@@ -856,6 +1155,32 @@
     "authorId": "Siriuns",
     "authorName": "Siriuns",
     "sourceFeed": "https://siriuns.netlify.app/rss.xml"
+  },
+  {
+    "id": "c22f12277b1b1b12",
+    "title": "19岁生日写给自己的话",
+    "link": "https://vespertine97.github.io/Life/19%E5%B2%81%E7%94%9F%E6%97%A5/",
+    "description": "<p>19岁不是一个什么重要的关头，但鉴于我本人实在太喜欢过生日，所以每年生日都要好好地过。其实每年我在生日前一周就开始提前激动，但今年没什么太多的实感（因为太忙了？！）。大学这一年真的很多姿多彩，这一年里也有很多新奇的体验。我和去年说的一样有在尝试各种各样的新事物，有在努力大步",
+    "publishedAt": "2025-11-03T16:00:00.000Z",
+    "dateKey": "2025-11-03",
+    "monthKey": "2025-11",
+    "yearKey": "2025",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "716070741a4711c8",
+    "title": "ASC26 备赛记录",
+    "link": "https://blog.yookoishi.com/blog/asc26/",
+    "description": "ASC26",
+    "publishedAt": "2025-11-02T00:00:00.000Z",
+    "dateKey": "2025-11-02",
+    "monthKey": "2025-11",
+    "yearKey": "2025",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
   },
   {
     "id": "649a6de54cb9018d",
@@ -897,6 +1222,32 @@
     "sourceFeed": "https://revlogi.github.io/rss.xml"
   },
   {
+    "id": "c9c632e1e1259095",
+    "title": "索思科技协会第一次 Linux 技术分享会",
+    "link": "https://blog.yookoishi.com/blog/source-ms1/",
+    "description": "索思科技协会第一次 Linux 技术分享会 - 提问的艺术、Linux Shell基础、Git与GitHub、开源贡献入门",
+    "publishedAt": "2025-10-12T00:00:00.000Z",
+    "dateKey": "2025-10-12",
+    "monthKey": "2025-10",
+    "yearKey": "2025",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
+  },
+  {
+    "id": "b1c18977e2f3f477",
+    "title": "git 详细操作",
+    "link": "https://blog.yookoishi.com/blog/git/",
+    "description": "git 的原理和详细操作，以及高阶技巧。",
+    "publishedAt": "2025-10-12T00:00:00.000Z",
+    "dateKey": "2025-10-12",
+    "monthKey": "2025-10",
+    "yearKey": "2025",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
+  },
+  {
     "id": "b3f91d78bad47867",
     "title": "系统能力大赛-os内核实现赛道",
     "link": "https://wamingmo.github.io/2025/09/21/os/",
@@ -923,6 +1274,32 @@
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
   },
   {
+    "id": "b159519df3e0306f",
+    "title": "编译学习笔记",
+    "link": "https://blog.yookoishi.com/blog/%E7%BC%96%E8%AF%91%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/",
+    "description": "学习编译过程中的记录",
+    "publishedAt": "2025-09-10T00:00:00.000Z",
+    "dateKey": "2025-09-10",
+    "monthKey": "2025-09",
+    "yearKey": "2025",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
+  },
+  {
+    "id": "5d1f8b036c820ee8",
+    "title": "最近干的事的记录",
+    "link": "https://blog.yookoishi.com/blog/%E6%9C%80%E8%BF%91todo/",
+    "description": "what i'm doing",
+    "publishedAt": "2025-09-02T00:00:00.000Z",
+    "dateKey": "2025-09-02",
+    "monthKey": "2025-09",
+    "yearKey": "2025",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
+  },
+  {
     "id": "a653880fbc3c8377",
     "title": "计算机视觉导言",
     "link": "https://blog.harryh.cn/AI/CV-Preface/",
@@ -947,6 +1324,19 @@
     "authorId": "isHarryh",
     "authorName": "Harry Huang",
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
+    "id": "9b529475759e3fd4",
+    "title": "xmake + Google Test：现代化 C++ 项目构建与测试",
+    "link": "https://blog.yookoishi.com/blog/xmake%E6%9E%84%E5%BB%BA%E7%8E%B0%E4%BB%A3%E5%8C%96cpp%E6%96%87%E4%BB%B6/",
+    "description": "深入理解 xmake 和 gtest 两大核心工具的使用和集成实践",
+    "publishedAt": "2025-07-07T00:00:00.000Z",
+    "dateKey": "2025-07-07",
+    "monthKey": "2025-07",
+    "yearKey": "2025",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
   },
   {
     "id": "fd61c56f78e2a735",
@@ -986,6 +1376,32 @@
     "authorId": "wdlin",
     "authorName": "wdlin",
     "sourceFeed": "https://wdlin233.github.io/rss.xml"
+  },
+  {
+    "id": "ffd7ab4c84f0923e",
+    "title": "第一次会议",
+    "link": "https://blog.yookoishi.com/blog/%E5%9C%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E4%B9%8B%E5%89%8D/",
+    "description": "个人初步的想法与团队开发前需要确定的一些问题",
+    "publishedAt": "2025-05-25T00:00:00.000Z",
+    "dateKey": "2025-05-25",
+    "monthKey": "2025-05",
+    "yearKey": "2025",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
+  },
+  {
+    "id": "492132b2e281ddb0",
+    "title": "西安游记",
+    "link": "https://blog.yookoishi.com/blog/%E6%B8%B8%E8%AE%B0-%E8%A5%BF%E5%AE%89/",
+    "description": "Xi'an Travel Notes",
+    "publishedAt": "2025-05-06T00:00:00.000Z",
+    "dateKey": "2025-05-06",
+    "monthKey": "2025-05",
+    "yearKey": "2025",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
   },
   {
     "id": "7c66e326a3e511da",
@@ -1170,6 +1586,19 @@
     "sourceFeed": "https://blog.harryh.cn/atom.xml"
   },
   {
+    "id": "a381f8d7bbbc3223",
+    "title": "寒假_计算机教育缺失的一个学期",
+    "link": "https://blog.yookoishi.com/blog/%E5%AF%92%E5%81%87-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%BA%E5%A4%B1%E7%9A%84%E4%B8%80%E4%B8%AA%E5%AD%A6%E6%9C%9F/",
+    "description": "Class learning note",
+    "publishedAt": "2025-02-09T00:00:00.000Z",
+    "dateKey": "2025-02-09",
+    "monthKey": "2025-02",
+    "yearKey": "2025",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
+  },
+  {
     "id": "e6c7c5647c0eb57f",
     "title": "新年第一 hunt：Cornsnaky write up",
     "link": "https://blog.episvr.top/2025/02/09/CornsnakeyWriteup/",
@@ -1246,6 +1675,45 @@
     "authorId": "episvr",
     "authorName": "episvr",
     "sourceFeed": "https://blog.episvr.top/atom.xml"
+  },
+  {
+    "id": "499190234b1565c9",
+    "title": "一些有用的CS相关网站",
+    "link": "https://blog.yookoishi.com/blog/good-webside/",
+    "description": "good website record",
+    "publishedAt": "2024-12-18T00:00:00.000Z",
+    "dateKey": "2024-12-18",
+    "monthKey": "2024-12",
+    "yearKey": "2024",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
+  },
+  {
+    "id": "02435fdba791b70a",
+    "title": "hexo配置踩坑",
+    "link": "https://blog.yookoishi.com/blog/first-blog/",
+    "description": "first blog",
+    "publishedAt": "2024-11-11T00:00:00.000Z",
+    "dateKey": "2024-11-11",
+    "monthKey": "2024-11",
+    "yearKey": "2024",
+    "authorId": "YOOkoishi",
+    "authorName": "YOO_koishi",
+    "sourceFeed": "https://blog.yookoishi.com/rss.xml"
+  },
+  {
+    "id": "cd8260552f9f1c98",
+    "title": "18岁生日写给自己的话",
+    "link": "https://vespertine97.github.io/Life/18%E5%B2%81%E7%94%9F%E6%97%A5/",
+    "description": "<p>直到我现在开始写下这段文字的时候，我都有点难以相信明天就是我的十八岁生日。我一直不太希望十八岁的来临，我很喜欢十七岁，即使过得不那么如人意，但那仿佛是最后的被允许不用太操心除学习以外的事情的时光。十八岁像是一个门槛，一个过了这个节点就必须立刻成为一个成熟的人的死线。我不喜欢",
+    "publishedAt": "2024-11-03T16:00:00.000Z",
+    "dateKey": "2024-11-03",
+    "monthKey": "2024-11",
+    "yearKey": "2024",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
   },
   {
     "id": "a45dd1a8921027a0",
