@@ -77,8 +77,8 @@ export const members: Member[] = [
 		id: "ybnybny",
 		name: "ybnybny",
 		site: "https://ybnybny.github.io",
-		feed: "https://ybnybny.github.io/index.xml",
+		feed: "https://ybnybny.github.io/source/index.xml",
 		avatar: "ybnybny.png",
-		description: "Is this right? qwq",
+		description: "description?",
 	}
 ];
