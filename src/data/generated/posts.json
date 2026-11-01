@@ -91,6 +91,19 @@
     "sourceFeed": "https://vespertine97.github.io/atom.xml"
   },
   {
+    "id": "780f172d977e2d67",
+    "title": "开始上手WSL",
+    "link": "https://blog.harryh.cn/CS/Hello-WSL/",
+    "description": "<p>本文是作者在 Windows 11 上的 WSL 2 中安装 Ubuntu 22.04 系统的记录。</p> <h2 id=\"安装-WSL\"><a href=\"#安装-WSL\" class=\"headerlink\" title=\"安装 WSL\"></a>安装 WSL</h2",
+    "publishedAt": "2026-09-26T15:38:00.000Z",
+    "dateKey": "2026-09-26",
+    "monthKey": "2026-09",
+    "yearKey": "2026",
+    "authorId": "isHarryh",
+    "authorName": "Harry Huang",
+    "sourceFeed": "https://blog.harryh.cn/atom.xml"
+  },
+  {
     "id": "b210aa2dbbe9f60e",
     "title": "秋、銀杏、君を待つ",
     "link": "https://blog.wdlin.com/posts/aki/",
