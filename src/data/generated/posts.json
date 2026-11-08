@@ -1,5 +1,31 @@
 [
   {
+    "id": "5c23628aaba8beed",
+    "title": "20岁生日写给自己的话",
+    "link": "https://vespertine97.github.io/Life/20%E5%B2%81%E7%94%9F%E6%97%A5/",
+    "description": "<p>又到了一年生日，动笔时想起来10岁那年小学还办过成长礼，而18岁那年高中也办过成人礼。今年大概是没有什么组织办个什么礼了，所以继续写点什么来记录一下当下的心情吧。</p> <p>这一年里经常陷入一些存在主义危机，从个人的、从关系上的，找不到意义和方向，强烈的痛苦和纠结把人撕",
+    "publishedAt": "2026-11-03T16:00:00.000Z",
+    "dateKey": "2026-11-03",
+    "monthKey": "2026-11",
+    "yearKey": "2026",
+    "authorId": "vespertine97",
+    "authorName": "魏欣怡",
+    "sourceFeed": "https://vespertine97.github.io/atom.xml"
+  },
+  {
+    "id": "bde703c867734c04",
+    "title": "Writing Some CPS in Haskell - Part1",
+    "link": "https://revlogi.github.io/posts/write-some-cps-in-haskell/",
+    "description": "Exploring Continuation-Passing Style in Haskell through recursive warm-ups, merge sort, and a small interpreter",
+    "publishedAt": "2026-11-02T00:00:00.000Z",
+    "dateKey": "2026-11-02",
+    "monthKey": "2026-11",
+    "yearKey": "2026",
+    "authorId": "revlogi",
+    "authorName": "RevLogi",
+    "sourceFeed": "https://revlogi.github.io/rss.xml"
+  },
+  {
     "id": "9f29546d30f31380",
     "title": "排列 置换 与720种可能性",
     "link": "https://ybnybny.github.io/posts/algorithm/permutation/",
@@ -1226,6 +1252,19 @@
     "title": "Proof of Sylvester's Rank Inequality",
     "link": "https://revlogi.github.io/posts/sylvester-rank-inequality-prood/",
     "description": "This post is for testing the draft post functionality",
+    "publishedAt": "2025-10-23T00:00:00.000Z",
+    "dateKey": "2025-10-23",
+    "monthKey": "2025-10",
+    "yearKey": "2025",
+    "authorId": "revlogi",
+    "authorName": "RevLogi",
+    "sourceFeed": "https://revlogi.github.io/rss.xml"
+  },
+  {
+    "id": "118d3bd76a280fe9",
+    "title": "Proof of Sylvester's Rank Inequality",
+    "link": "https://revlogi.github.io/posts/sylvester-rank-inequality-proof/",
+    "description": "Three proofs of Sylvester's rank inequality using block matrices, normal forms, and linear maps",
     "publishedAt": "2025-10-23T00:00:00.000Z",
     "dateKey": "2025-10-23",
     "monthKey": "2025-10",
