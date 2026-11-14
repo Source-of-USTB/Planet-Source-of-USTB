@@ -80,5 +80,13 @@ export const members: Member[] = [
 		feed: "https://ybnybny.github.io/source/index.xml",
 		avatar: "ybnybny.png",
 		description: "description?",
+	},
+	{
+		id: "sadpotato",
+		name: "sadpotato",
+		site: "https://blog.sadpotato.de5.net/",
+		feed: "https://blog.sadpotato.de5.net/rss.xml",
+		avatar: "sadpotato.jpg",
+		description: "to be continued...",
 	}
 ];
