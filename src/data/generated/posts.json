@@ -1,5 +1,18 @@
 [
   {
+    "id": "49463888237cd51f",
+    "title": "Matrix Similarity Concept Map",
+    "link": "https://revlogi.github.io/posts/matrix-similarity-map/",
+    "description": "An interactive concept map organizing eigenvalues, similarity invariants, and canonical forms",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "dateKey": "2026-11-19",
+    "monthKey": "2026-11",
+    "yearKey": "2026",
+    "authorId": "revlogi",
+    "authorName": "RevLogi",
+    "sourceFeed": "https://revlogi.github.io/rss.xml"
+  },
+  {
     "id": "70612f837f14c7b0",
     "title": "How my blog was build",
     "link": "https://blog.sadpotato.de5.net/posts/how-my-blog-was-buid/",
